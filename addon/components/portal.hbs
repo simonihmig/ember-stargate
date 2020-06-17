@@ -1,0 +1,13 @@
+{{#if this.target}}
+  {{#if this.target.multiple}}
+    {{#in-element this.target.element insertBefore=null}}
+      {{yield}}
+    {{/in-element}}
+  {{else}}
+    {{#in-element this.target.element}}
+      {{yield}}
+    {{/in-element}}
+  {{/if}}
+{{else if @renderInPlace}}
+  {{yield}}
+{{/if}}
