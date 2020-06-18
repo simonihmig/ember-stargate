@@ -3,6 +3,7 @@ import { setupRenderingTest } from 'ember-qunit';
 import { render, settled } from '@ember/test-helpers';
 import { hbs } from 'ember-cli-htmlbars';
 import { dependencySatisfies, macroCondition } from '@embroider/macros';
+import sinon from 'sinon';
 
 module('Integration | Component | portal', function (hooks) {
   setupRenderingTest(hooks);
@@ -151,5 +152,84 @@ module('Integration | Component | portal', function (hooks) {
     assert.dom('#portal #content2').hasText('bar');
 
     assert.dom('#portal').hasText('foo bar');
+  });
+
+  test('a portal target w/ multiple portals yields portal count', async function (assert) {
+    this.set('showFirst', false);
+    this.set('showSecond', false);
+    await render(hbs`
+      <PortalTarget @name="main" @multiple={{true}} id="portal" as |count|>
+        <div id="count">{{count}}</div>
+      </PortalTarget>
+
+      {{#if this.showFirst}}
+        <Portal @target="main">
+          <div id="content">foo</div>
+        </Portal>
+      {{/if}}
+
+      {{#if this.showSecond}}
+        <Portal @target="main">
+          <div id="content2">bar</div>
+        </Portal>
+      {{/if}}
+    `);
+
+    assert.dom('#count').hasText('0');
+
+    this.set('showFirst', true);
+    await settled();
+
+    assert.dom('#count').hasText('1');
+
+    this.set('showSecond', true);
+    await settled();
+
+    assert.dom('#count').hasText('2');
+
+    this.set('showSecond', false);
+    await settled();
+
+    assert.dom('#count').hasText('1');
+  });
+
+  test('rendering a portal into a target triggers onChange', async function (assert) {
+    this.set('showFirst', false);
+    this.set('showSecond', false);
+
+    this.set('action', sinon.spy());
+
+    await render(hbs`
+      <PortalTarget @name="main" @multiple={{true}} id="portal" @onChange={{this.action}} />
+
+      {{#if this.showFirst}}
+        <Portal @target="main">
+          <div id="content">foo</div>
+        </Portal>
+      {{/if}}
+
+      {{#if this.showSecond}}
+        <Portal @target="main">
+          <div id="content2">bar</div>
+        </Portal>
+      {{/if}}
+    `);
+
+    assert.notOk(this.action.called);
+
+    this.set('showFirst', true);
+    await settled();
+
+    assert.ok(this.action.calledWithExactly(1));
+
+    this.set('showSecond', true);
+    await settled();
+
+    assert.ok(this.action.calledWithExactly(2));
+
+    this.set('showSecond', false);
+    await settled();
+
+    assert.ok(this.action.calledWithExactly(1));
   });
 });
