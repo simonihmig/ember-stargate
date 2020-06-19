@@ -11,12 +11,16 @@ export default class PortalComponent extends Component {
     next(() => this.portalService.registerPortal(this.args.target));
   }
 
+  get target() {
+    return this.args.target && this.portalService.getTarget(this.args.target);
+  }
+
+  get renderInPlace() {
+    return this.args.renderInPlace === true || (!this.target && this.args.fallback === 'inplace');
+  }
+
   willDestroy() {
     super.willDestroy();
     next(() => this.portalService.unregisterPortal(this.args.target));
-  }
-
-  get target() {
-    return this.args.target && this.portalService.getTarget(this.args.target);
   }
 }

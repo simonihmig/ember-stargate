@@ -1,4 +1,6 @@
-{{#if this.target}}
+{{#if this.renderInPlace}}
+  {{yield}}
+{{else if this.target}}
   {{#if this.target.multiple}}
     {{#in-element this.target.element insertBefore=null}}
       {{yield}}
@@ -8,6 +10,4 @@
       {{yield}}
     {{/in-element}}
   {{/if}}
-{{else if @renderInPlace}}
-  {{yield}}
 {{/if}}
