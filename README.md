@@ -1,7 +1,13 @@
 ember-stargate
 ==============================================================================
 
-[Short description of the addon.]
+![CI](https://github.com/kaliber5/ember-stargate/workflows/CI/badge.svg)
+
+A modern take on using so called "portals" to render things in a
+different place of the DOM tree than they are logically defined in the app.
+
+Implemented using lightweight Glimmer components and Ember's new `{{in-element}}`,
+but without its caveats.
 
 
 Compatibility
@@ -23,7 +29,7 @@ ember install ember-stargate
 Usage
 ------------------------------------------------------------------------------
 
-[Longer description of how to use the addon in apps.]
+To Do...
 
 
 Contributing
