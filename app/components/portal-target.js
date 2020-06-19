@@ -1,1 +1,1 @@
-export { default } from 'emportal/components/portal-target';
+export { default } from 'ember-stargate/components/portal-target';

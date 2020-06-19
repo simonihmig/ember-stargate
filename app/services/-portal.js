@@ -1,1 +1,1 @@
-export { default } from 'emportal/services/-portal';
+export { default } from 'ember-stargate/services/-portal';

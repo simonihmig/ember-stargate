@@ -1,4 +1,4 @@
-emportal
+ember-stargate
 ==============================================================================
 
 [Short description of the addon.]
@@ -16,7 +16,7 @@ Installation
 ------------------------------------------------------------------------------
 
 ```
-ember install emportal
+ember install ember-stargate
 ```
 
 

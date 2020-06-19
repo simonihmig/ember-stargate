@@ -3,7 +3,7 @@
 ## Installation
 
 * `git clone <repository-url>`
-* `cd emportal`
+* `cd ember-stargate`
 * `yarn install`
 
 ## Linting

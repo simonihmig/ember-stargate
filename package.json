@@ -1,13 +1,13 @@
 {
-  "name": "emportal",
+  "name": "ember-stargate",
   "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "Modern lightweight portals for Ember",
   "keywords": [
     "ember-addon"
   ],
-  "repository": "",
+  "repository": "https://github.com/kaliber5/ember-stargate",
   "license": "MIT",
-  "author": "",
+  "author": "Simon Ihmig <simon.ihmig@kaliber5.de>",
   "directories": {
     "doc": "doc",
     "test": "tests"
