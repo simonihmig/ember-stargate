@@ -9,3 +9,6 @@
 #### Committers: 1
 - Simon Ihmig ([@simonihmig](https://github.com/simonihmig))
 
+## v0.1.0 (2020-06-19)
+
+Initial release
