@@ -28,15 +28,28 @@ module('Integration | Component | portal', function (hooks) {
     assert.dom('#content').doesNotExist();
   });
 
-  test('a portal without target but with renderInPlace renders in place', async function (assert) {
+  test('a portal without target but with fallback=inplace renders in place', async function (assert) {
     await render(hbs`
-      <Portal @renderInPlace={{true}}>
+      <Portal @fallback="inplace">
         <div id="content">foo</div>
       </Portal>
     `);
 
     assert.dom('#content').exists();
     assert.dom('#content').hasText('foo');
+  });
+
+  test('a portal with renderInPlace renders in place', async function (assert) {
+    await render(hbs`
+      <PortalTarget @name="main" id="portal" />
+      <Portal @target="main" @renderInPlace={{true}}>
+        <div id="content">foo</div>
+      </Portal>
+    `);
+
+    assert.dom('#content').exists();
+    assert.dom('#content').hasText('foo');
+    assert.dom('#portal #content').doesNotExist();
   });
 
   test('a portal with existing target renders in target', async function (assert) {

@@ -109,8 +109,9 @@ API
 ### Portal
 
 * `@target`: required argument to specify the name of the target
-* `@renderInPlace`: by default the portal's content will not render until the target is available. 
-  If this is set to `true`, the content will be rendered in place as long as the target is not available.
+* `@fallback`: by default the portal's content will not render until the target is available. 
+  With `@fallback="inplace"` the content will be rendered in place as long as the target is not available.
+* `@renderInPlace`: if `true` the portal is effectively disabled, and the content is rendered in place.  
 
 ### PortalTarget
 
