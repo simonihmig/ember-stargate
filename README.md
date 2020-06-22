@@ -90,11 +90,11 @@ application.hbs:
 {{outlet}}
 
 <footer class="sticky-footer">
-  <PortalTarget @name="footer-left" class="sticky-footer__left">
+  <PortalTarget @name="footer-left" class="sticky-footer__left" />
   
-  <PortalTarget @name="footer-title" class="sticky-footer__title">
+  <PortalTarget @name="footer-title" class="sticky-footer__title" />
   
-  <PortalTarget @name="footer-right" class="sticky-footer__right">
+  <PortalTarget @name="footer-right" class="sticky-footer__right" />
 </footer>
 ```
 
