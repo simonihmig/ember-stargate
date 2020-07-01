@@ -3,7 +3,7 @@ import { inject as service } from '@ember/service';
 import { next } from '@ember/runloop';
 
 export default class PortalComponent extends Component {
-  @service('-portal')
+  @service('ember-stargate@-portal')
   portalService;
 
   constructor() {
