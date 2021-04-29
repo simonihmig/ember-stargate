@@ -1,0 +1,44 @@
+version: 2
+registries:
+  npm-registry-npm-pkg-github-com:
+    type: npm-registry
+    url: https://npm.pkg.github.com
+    token: "${{secrets.NPM_REGISTRY_NPM_PKG_GITHUB_COM_TOKEN}}"
+
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: weekly
+    time: "08:00"
+    timezone: Europe/Berlin
+  open-pull-requests-limit: 10
+  versioning-strategy: increase
+  ignore:
+  - dependency-name: eslint-config-prettier
+    versions:
+    - 8.0.0
+    - 8.1.0
+  - dependency-name: ember-cli
+    versions:
+    - 3.24.0
+    - 3.25.0
+    - 3.25.2
+    - 3.25.3
+  - dependency-name: "@embroider/macros"
+    versions:
+    - 0.36.0
+    - 0.37.0
+    - 0.39.1
+  - dependency-name: ember-source
+    versions:
+    - 3.24.1
+    - 3.25.1
+    - 3.25.3
+  - dependency-name: ember-template-lint
+    versions:
+    - 3.1.1
+  commit-message:
+    prefix: ""
+  registries:
+  - npm-registry-npm-pkg-github-com
