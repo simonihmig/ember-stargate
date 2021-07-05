@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "@ember/optional-features": "^2.0.0",
-    "@embroider/macros": "^0.35.1",
+    "@embroider/macros": "^0.42.3",
     "@glimmer/tracking": "^1.0.4",
     "babel-eslint": "^10.1.0",
     "broccoli-asset-rev": "^3.0.0",
