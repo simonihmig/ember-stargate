@@ -1,7 +1,8 @@
 ember-stargate
 ==============================================================================
 
-![CI](https://github.com/kaliber5/ember-stargate/workflows/CI/badge.svg)
+[![CI](https://github.com/kaliber5/ember-stargate/actions/workflows/ci.yml/badge.svg)](https://github.com/kaliber5/ember-stargate/actions/workflows/ci.yml)
+[![Ember Observer Score](https://emberobserver.com/badges/ember-stargate.svg)](https://emberobserver.com/addons/ember-stargate)
 
 A modern take on using so called "portals" to render things in a
 different place of the DOM tree than they are logically defined in the app.
