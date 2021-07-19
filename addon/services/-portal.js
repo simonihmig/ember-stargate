@@ -29,7 +29,10 @@ export default class PortalService extends Service {
   }
 
   registerTarget(name, element, options) {
-    assert(`Portal target with name ${name} already exists`, !this.#targets.has(name));
+    assert(
+      `Portal target with name ${name} already exists`,
+      !this.#targets.has(name)
+    );
     this.#targets.set(name, new TargetTracker(name, element, options));
   }
 
@@ -48,7 +51,10 @@ export default class PortalService extends Service {
 
   unregisterPortal(name) {
     let count = this.#portalCount.get(name) ?? 0;
-    assert(`Trying to unregister a portal that hasn't been registered before`, count > 0);
+    assert(
+      `Trying to unregister a portal that hasn't been registered before`,
+      count > 0
+    );
     count--;
     this.#portalCount.set(name, count);
     const target = this.getTarget(name);

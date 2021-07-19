@@ -14,7 +14,10 @@ export default class PortalTargetComponent extends Component {
   @action
   register(element) {
     assert('PortalTargets needs a name', this.args.name);
-    const options = { multiple: this.args.multiple, onChange: this.args.onChange };
+    const options = {
+      multiple: this.args.multiple,
+      onChange: this.args.onChange,
+    };
     this.portalService.registerTarget(this.args.name, element, options);
   }
 
