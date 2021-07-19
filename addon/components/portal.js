@@ -16,7 +16,10 @@ export default class PortalComponent extends Component {
   }
 
   get renderInPlace() {
-    return this.args.renderInPlace === true || (!this.target && this.args.fallback === 'inplace');
+    return (
+      this.args.renderInPlace === true ||
+      (!this.target && this.args.fallback === 'inplace')
+    );
   }
 
   willDestroy() {
