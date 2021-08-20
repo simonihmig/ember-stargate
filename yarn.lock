@@ -1375,6 +1375,18 @@
     ember-cli-htmlbars "^5.7.1"
     ember-destroyable-polyfill "^2.0.3"
 
+"@ember/test-helpers@^2.3.0":
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/@ember/test-helpers/-/test-helpers-2.4.1.tgz#4ec8605ab1243b2cd8028b63f2bf4c0ea51eb779"
+  integrity sha512-CojE+K6agL8MGnoL1c6SWvBW9LOmBiBtms1m5LqHsYZQXmZXbvT2taf1ouOkT3nFh9tLEhKea8DopitD062TEA==
+  dependencies:
+    "@ember/test-waiters" "^3.0.0"
+    broccoli-debug "^0.6.5"
+    broccoli-funnel "^3.0.8"
+    ember-cli-babel "^7.26.6"
+    ember-cli-htmlbars "^5.7.1"
+    ember-destroyable-polyfill "^2.0.3"
+
 "@ember/test-waiters@^2.4.4":
   version "2.4.5"
   resolved "https://registry.yarnpkg.com/@ember/test-waiters/-/test-waiters-2.4.5.tgz#6e8e34d1bc46a9b0cc22cb11cc5936046e926031"
@@ -1383,6 +1395,16 @@
     calculate-cache-key-for-tree "^2.0.0"
     ember-cli-babel "^7.26.6"
     ember-cli-typescript "^4.1.0"
+    ember-cli-version-checker "^5.1.2"
+    semver "^7.3.5"
+
+"@ember/test-waiters@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@ember/test-waiters/-/test-waiters-3.0.0.tgz#b66a35cd5b78ec3c296a6f5f5fb3852780a5d3c8"
+  integrity sha512-z6+gIlq/rXLKroWv2wxAoiiLtgSOGQFCw6nUufERausV+jLnA7CYbWwzEo5R7XaOejSDpgA5d6haXIBsD5j0oQ==
+  dependencies:
+    calculate-cache-key-for-tree "^2.0.0"
+    ember-cli-babel "^7.26.6"
     ember-cli-version-checker "^5.1.2"
     semver "^7.3.5"
 
@@ -3838,7 +3860,7 @@ broccoli-funnel@^2.0.0, broccoli-funnel@^2.0.1, broccoli-funnel@^2.0.2:
     symlink-or-copy "^1.0.0"
     walk-sync "^0.3.1"
 
-broccoli-funnel@^3.0.3, broccoli-funnel@^3.0.6:
+broccoli-funnel@^3.0.3, broccoli-funnel@^3.0.6, broccoli-funnel@^3.0.8:
   version "3.0.8"
   resolved "https://registry.yarnpkg.com/broccoli-funnel/-/broccoli-funnel-3.0.8.tgz#f5b62e2763c3918026a15a3c833edc889971279b"
   integrity sha512-ng4eIhPYiXqMw6SyGoxPHR3YAwEd2lr9FgBI1CyTbspl4txZovOsmzFkMkGAlu88xyvYXJqHiM2crfLa65T1BQ==
@@ -5621,7 +5643,7 @@ ember-cli-babel@^6.0.0-beta.4:
     ember-cli-version-checker "^2.1.2"
     semver "^5.5.0"
 
-ember-cli-babel@^7.0.0, ember-cli-babel@^7.10.0, ember-cli-babel@^7.13.0, ember-cli-babel@^7.13.2, ember-cli-babel@^7.17.2, ember-cli-babel@^7.22.1, ember-cli-babel@^7.23.0, ember-cli-babel@^7.23.1, ember-cli-babel@^7.26.3, ember-cli-babel@^7.26.6, ember-cli-babel@^7.7.3:
+ember-cli-babel@^7.0.0, ember-cli-babel@^7.10.0, ember-cli-babel@^7.13.0, ember-cli-babel@^7.13.2, ember-cli-babel@^7.17.2, ember-cli-babel@^7.22.1, ember-cli-babel@^7.23.0, ember-cli-babel@^7.23.1, ember-cli-babel@^7.26.3, ember-cli-babel@^7.26.5, ember-cli-babel@^7.26.6, ember-cli-babel@^7.7.3:
   version "7.26.6"
   resolved "https://registry.yarnpkg.com/ember-cli-babel/-/ember-cli-babel-7.26.6.tgz#322fbbd3baad9dd99e3276ff05bc6faef5e54b39"
   integrity sha512-040svtfj2RC35j/WMwdWJFusZaXmNoytLAMyBDGLMSlRvznudTxZjGlPV6UupmtTBApy58cEF8Fq4a+COWoEmQ==
@@ -6163,6 +6185,14 @@ ember-template-recast@^5.0.3:
     slash "^3.0.0"
     tmp "^0.2.1"
     workerpool "^6.1.4"
+
+ember-tracked-storage-polyfill@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/ember-tracked-storage-polyfill/-/ember-tracked-storage-polyfill-1.0.0.tgz#84d307a1e4badc5f84dca681db2cfea9bdee8a77"
+  integrity sha512-eL7lZat68E6P/D7b9UoTB5bB5Oh/0aju0Z7PCMi3aTwhaydRaxloE7TGrTRYU+NdJuyNVZXeGyxFxn2frvd3TA==
+  dependencies:
+    ember-cli-babel "^7.26.3"
+    ember-cli-htmlbars "^5.7.1"
 
 ember-try-config@^3.0.0:
   version "3.0.0"
@@ -10897,7 +10927,7 @@ qunit-dom@^1.6.0:
     ember-cli-babel "^7.23.0"
     ember-cli-version-checker "^5.1.1"
 
-qunit@^2.15.0:
+qunit@^2.15.0, qunit@^2.16.0:
   version "2.16.0"
   resolved "https://registry.yarnpkg.com/qunit/-/qunit-2.16.0.tgz#b8ed63d512e5d4eaada5afc0c6c9e8b844181ba1"
   integrity sha512-88x9t+rRMbB6IrCIUZvYU4pJy7NiBEv7SX8jD4LZAsIj+dV+kwGnFStOmPNvqa6HM96VZMD8CIIFKH2+3qvluA==
@@ -12665,13 +12695,16 @@ tr46@^2.0.2:
   dependencies:
     punycode "^2.1.1"
 
-tracked-maps-and-sets@^2.2.1:
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/tracked-maps-and-sets/-/tracked-maps-and-sets-2.2.1.tgz#323dd40540c561e8b0ffdec8bf129c68ec5025f9"
-  integrity sha512-XYrXh6L/GpGmVmG3KcN/qoDyi4FxHh8eZY/BA/RuoxynskV+GZSfwrX3R+5DR2CIkzkCx4zi4kkDRg1AMDfDhg==
+tracked-maps-and-sets@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/tracked-maps-and-sets/-/tracked-maps-and-sets-3.0.1.tgz#aa3a71aa7ef4785e784324059b21b83153df445b"
+  integrity sha512-x1IC6C6muJzpeZaQOcollKiLYSazWEtSM5EDCO5PUfbU7RTMa1x7t9SJrwqDxeasvmJCa1QftECsRtI7osOs8w==
   dependencies:
+    "@ember/test-helpers" "^2.3.0"
     "@glimmer/tracking" "^1.0.0"
-    ember-cli-babel "^7.17.2"
+    ember-cli-babel "^7.26.5"
+    ember-tracked-storage-polyfill "1.0.0"
+    qunit "^2.16.0"
 
 tree-sync@^1.2.2:
   version "1.4.0"
