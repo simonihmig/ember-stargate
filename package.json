@@ -39,7 +39,7 @@
     "@embroider/macros": "0.43.3",
     "@embroider/test-setup": "0.41.0",
     "@glimmer/tracking": "^1.0.4",
-    "babel-eslint": "^10.1.0",
+    "babel-eslint": "10.1.0",
     "broccoli-asset-rev": "3.0.0",
     "ember-auto-import": "1.11.3",
     "ember-cli": "3.27.0",
