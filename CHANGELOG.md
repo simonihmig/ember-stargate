@@ -1,3 +1,25 @@
+
+## v0.3.0 (2021-08-30)
+
+#### :boom: Breaking Change
+* [#263](https://github.com/kaliber5/ember-stargate/pull/263) Update `tracked-maps-and-sets` to support Ember 4.0, drop support for Ember <3.24 ([@simonihmig](https://github.com/simonihmig))
+* [#252](https://github.com/kaliber5/ember-stargate/pull/252) Drop node 10 support ([@simonihmig](https://github.com/simonihmig))
+* [#251](https://github.com/kaliber5/ember-stargate/pull/251) Update to Ember 3.27, drop support for Ember <3.20 ([@simonihmig](https://github.com/simonihmig))
+
+#### :rocket: Enhancement
+* [#263](https://github.com/kaliber5/ember-stargate/pull/263) Update `tracked-maps-and-sets` to support Ember 4.0, drop support for Ember <3.24 ([@simonihmig](https://github.com/simonihmig))
+
+#### :house: Internal
+* [#264](https://github.com/kaliber5/ember-stargate/pull/264) Configure Renovate ([@renovate[bot]](https://github.com/apps/renovate))
+* [#251](https://github.com/kaliber5/ember-stargate/pull/251) Update to Ember 3.27, drop support for Ember <3.20 ([@simonihmig](https://github.com/simonihmig))
+* [#9](https://github.com/kaliber5/ember-stargate/pull/9) Removed the public version of the -portal service ([@cah-briangantzler](https://github.com/cah-briangantzler))
+
+#### Committers: 4
+- Alex Kanunnikov ([@lifeart](https://github.com/lifeart))
+- Brian Gantzler ([@cah-briangantzler](https://github.com/cah-briangantzler))
+- Simon Ihmig ([@simonihmig](https://github.com/simonihmig))
+- [@dependabot-preview[bot]](https://github.com/apps/dependabot-preview)
+
 ## v0.2.0 (2020-06-19)
 
 #### :boom: Breaking Change
