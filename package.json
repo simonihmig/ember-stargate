@@ -99,5 +99,8 @@
       "release": true,
       "tokenRef": "GITHUB_AUTH"
     }
+  },
+  "resolutions": {
+    "socket.io": "4.2.0"
   }
 }
