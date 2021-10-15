@@ -32,6 +32,7 @@
     "ember-cli-babel": "^7.26.6",
     "ember-cli-htmlbars": "^5.7.1",
     "ember-in-element-polyfill": "^1.0.1",
+    "ember-resources": "^3.2.1",
     "tracked-maps-and-sets": "^3.0.1"
   },
   "devDependencies": {
