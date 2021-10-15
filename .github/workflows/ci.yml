@@ -23,7 +23,7 @@ jobs:
         with:
           node-version: 12
       - name: Install dependencies
-        uses: bahmutov/npm-install@v1
+        uses: bahmutov/npm-install@v1.7.10
       - name: Lint
         run: yarn lint
       - name: Test
@@ -42,7 +42,7 @@ jobs:
         with:
           node-version: 12
       - name: Install dependencies
-        uses: bahmutov/npm-install@v1
+        uses: bahmutov/npm-install@v1.7.10
         with:
           useLockFile: false
       - name: Test
@@ -71,6 +71,6 @@ jobs:
         with:
           node-version: 12
       - name: Install dependencies
-        uses: bahmutov/npm-install@v1
+        uses: bahmutov/npm-install@v1.7.10
       - name: Test
         run: yarn ember try:one ${{ matrix.scenario }}
