@@ -4,28 +4,32 @@ import { next } from '@ember/runloop';
 import { LifecycleResource, useResource } from 'ember-resources';
 
 class PortalTrackerResource extends LifecycleResource {
-  @service('ember-stargate@-portal')
+  @service('-portal')
   portalService;
 
-  target;
+  _target;
+
+  get target() {
+    return this.portalService.getTarget(this._target);
+  }
 
   setup() {
-    this.target = this.args.positional[0];
+    this._target = this.args.positional[0];
     next(() => this.portalService.registerPortal(this.target));
   }
 
   update() {
-    const previousTarget = this.target;
+    const previousTarget = this._target;
     const newTarget = this.args.positional[0];
     next(() => {
       this.portalService.registerPortal(newTarget);
       this.portalService.unregisterPortal(previousTarget);
     });
-    this.target = newTarget;
+    this._target = newTarget;
   }
 
   teardown() {
-    this.portalService.unregisterPortal(this.target);
+    this.portalService.unregisterPortal(this._target);
   }
 }
 
@@ -36,9 +40,7 @@ export default class PortalComponent extends Component {
   tracker = useResource(this, PortalTrackerResource, () => [this.args.target]);
 
   get target() {
-    return (
-      this.tracker.target && this.portalService.getTarget(this.tracker.target)
-    );
+    return this.tracker.target;
   }
 
   get renderInPlace() {

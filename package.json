@@ -103,7 +103,8 @@
     "main": "addon-main.js",
     "app-js": {
       "./components/portal-target.js": "./dist/_app_/components/portal-target.js",
-      "./components/portal.js": "./dist/_app_/components/portal.js"
+      "./components/portal.js": "./dist/_app_/components/portal.js",
+      "./services/-portal.js": "./dist/_app_/services/-portal.js"
     }
   },
   "release-it": {

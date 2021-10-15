@@ -4,7 +4,7 @@ import { inject as service } from '@ember/service';
 import { assert } from '@ember/debug';
 
 export default class PortalTargetComponent extends Component {
-  @service('ember-stargate@-portal')
+  @service('-portal')
   portalService;
 
   get count() {
