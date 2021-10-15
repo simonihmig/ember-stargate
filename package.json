@@ -23,12 +23,16 @@
     "start": "ember serve",
     "test": "npm-run-all lint test:*",
     "test:ember": "ember test",
-    "test:ember-compatibility": "ember try:each"
+    "test:ember-compatibility": "ember try:each",
+    "prepare": "npm-run-all prepublishOnly link-test-app",
+    "link-test-app": "addon-dev link-test-app",
+    "prepublishOnly": "rollup --config",
+    "sync-dev-deps": "addon-dev sync-dev-deps"
   },
   "dependencies": {
     "@ember/render-modifiers": "^1.0.2",
+    "@embroider/addon-shim": "^0.47.0",
     "@glimmer/component": "^1.0.4",
-    "ember-auto-import": "^2.2.2",
     "ember-cli-babel": "^7.26.6",
     "ember-cli-htmlbars": "^5.7.1",
     "ember-in-element-polyfill": "^1.0.1",
@@ -36,13 +40,19 @@
     "tracked-maps-and-sets": "^3.0.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/plugin-proposal-decorators": "^7.15.8",
+    "@babel/plugin-syntax-decorators": "^7.14.5",
     "@ember/optional-features": "2.0.0",
     "@ember/test-helpers": "2.4.2",
+    "@embroider/addon-dev": "^0.47.0",
     "@embroider/macros": "0.44.2",
     "@embroider/test-setup": "0.44.2",
     "@glimmer/tracking": "1.0.4",
+    "@rollup/plugin-babel": "^5.3.0",
     "babel-eslint": "10.1.0",
     "broccoli-asset-rev": "3.0.0",
+    "ember-auto-import": "^2.2.2",
     "ember-cli": "3.28.0",
     "ember-cli-dependency-checker": "3.2.0",
     "ember-cli-inject-live-reload": "2.1.0",
@@ -73,6 +83,7 @@
     "qunit-dom": "2.0.0",
     "release-it": "14.11.6",
     "release-it-lerna-changelog": "3.1.0",
+    "rollup": "^2.58.0",
     "webpack": "5.58.2"
   },
   "engines": {
@@ -85,7 +96,13 @@
     "edition": "octane"
   },
   "ember-addon": {
-    "configPath": "tests/dummy/config"
+    "version": 2,
+    "type": "addon",
+    "main": "addon-main.js",
+    "app-js": {
+      "./components/portal-target.js": "./dist/_app_/components/portal-target.js",
+      "./components/portal.js": "./dist/_app_/components/portal.js"
+    }
   },
   "release-it": {
     "plugins": {
