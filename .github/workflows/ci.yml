@@ -29,24 +29,26 @@ jobs:
       - name: Test
         run: yarn test:ember
 
-  test-no-lock:
-    name: Floating Dependencies
-    runs-on: ubuntu-latest
-    needs:
-      - test
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-      - name: Setup node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: 12
-      - name: Install dependencies
-        uses: bahmutov/npm-install@v1
-        with:
-          useLockFile: false
-      - name: Test
-        run: yarn test:ember
+# re-enable this when the socket.io issue has been resolved.
+# `bahmutov/npm-install` does not work with yarn resolutions here, as yarn is not used due to https://github.com/bahmutov/npm-install/issues/95
+#  test-no-lock:
+#    name: Floating Dependencies
+#    runs-on: ubuntu-latest
+#    needs:
+#      - test
+#    steps:
+#      - name: Checkout code
+#        uses: actions/checkout@v2
+#      - name: Setup node.js
+#        uses: actions/setup-node@v2
+#        with:
+#          node-version: 12
+#      - name: Install dependencies
+#        uses: bahmutov/npm-install@v1
+#        with:
+#          useLockFile: false
+#      - name: Test
+#        run: yarn test:ember
 
   test-try:
     name: Additional Tests
