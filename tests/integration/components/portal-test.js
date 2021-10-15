@@ -120,6 +120,27 @@ module('Integration | Component | portal', function (hooks) {
     assert.dom('#content').doesNotExist();
   });
 
+  test('switching the target moves existing content', async function (assert) {
+    this.set('target', 'p1');
+    await render(hbs`
+      <PortalTarget @name="p1" id="p1"/>
+      <PortalTarget @name="p2" id="p2"/>
+
+      <Portal @target={{this.target}}>
+        <div id="content">foo</div>
+      </Portal>
+    `);
+
+    assert.dom('#p1').hasText('foo');
+    assert.dom('#p2').hasNoText();
+
+    this.set('target', 'p2');
+    await settled();
+
+    assert.dom('#p1').hasNoText();
+    assert.dom('#p2').hasText('foo');
+  });
+
   if (macroCondition(dependencySatisfies('ember-source', '^3.18.0'))) {
     // This usage (in-element clearing DOM from other still active component) seems to not work in Ember <3.18
     // probably due to GlimmerVM changes only introduced in 3.18, see:
