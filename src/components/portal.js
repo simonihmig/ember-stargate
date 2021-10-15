@@ -15,7 +15,7 @@ class PortalTrackerResource extends LifecycleResource {
 
   setup() {
     this._target = this.args.positional[0];
-    next(() => this.portalService.registerPortal(this.target));
+    next(() => this.portalService.registerPortal(this._target));
   }
 
   update() {
@@ -34,9 +34,6 @@ class PortalTrackerResource extends LifecycleResource {
 }
 
 export default class PortalComponent extends Component {
-  @service('ember-stargate@-portal')
-  portalService;
-
   tracker = useResource(this, PortalTrackerResource, () => [this.args.target]);
 
   get target() {
