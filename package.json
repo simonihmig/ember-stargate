@@ -38,6 +38,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.15.8",
+    "@babel/plugin-proposal-class-properties": "^7.14.5",
     "@babel/plugin-proposal-decorators": "^7.15.8",
     "@babel/plugin-syntax-decorators": "^7.14.5",
     "@ember/optional-features": "2.0.0",
@@ -45,13 +46,17 @@
     "@embroider/addon-dev": "^0.47.0",
     "@embroider/macros": "0.44.2",
     "@embroider/test-setup": "0.44.2",
+    "@glimmer/component": "^1.0.4",
     "@glimmer/tracking": "1.0.4",
     "@rollup/plugin-babel": "^5.3.0",
     "babel-eslint": "10.1.0",
     "broccoli-asset-rev": "3.0.0",
     "ember-auto-import": "^2.2.2",
     "ember-cli": "3.28.0",
+    "ember-cli-app-version": "^5.0.0",
+    "ember-cli-babel": "^7.26.6",
     "ember-cli-dependency-checker": "3.2.0",
+    "ember-cli-htmlbars": "^5.7.1",
     "ember-cli-inject-live-reload": "2.1.0",
     "ember-cli-sri": "2.1.1",
     "ember-cli-terser": "4.0.2",
@@ -81,11 +86,7 @@
     "release-it": "14.11.6",
     "release-it-lerna-changelog": "3.1.0",
     "rollup": "^2.58.0",
-    "webpack": "5.58.2",
-    "@glimmer/component": "^1.0.4",
-    "ember-cli-app-version": "^5.0.0",
-    "ember-cli-babel": "^7.26.6",
-    "ember-cli-htmlbars": "^5.7.1"
+    "webpack": "5.58.2"
   },
   "engines": {
     "node": "12.* || >= 14"
@@ -122,5 +123,9 @@
   },
   "resolutions": {
     "socket.io": "4.2.0"
+  },
+  "exports": {
+    "./*": "./dist/*",
+    "./addon-main.js": "./addon-main.js"
   }
 }
