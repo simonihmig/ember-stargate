@@ -1,0 +1,93 @@
+{
+  "name": "ember-stargate",
+  "version": "0.3.0",
+  "description": "Modern lightweight portals for Ember",
+  "keywords": [
+    "ember-addon"
+  ],
+  "repository": "https://github.com/kaliber5/ember-stargate",
+  "license": "MIT",
+  "author": "Simon Ihmig <simon.ihmig@kaliber5.de>",
+  "directories": {
+    "doc": "doc",
+    "test": "tests"
+  },
+  "scripts": {
+    "build": "rollup --config",
+    "lint": "npm-run-all --aggregate-output --continue-on-error --parallel \"lint:!(fix)\"",
+    "lint:fix": "npm-run-all --aggregate-output --continue-on-error --parallel lint:*:fix",
+    "lint:hbs": "ember-template-lint .",
+    "lint:hbs:fix": "ember-template-lint . --fix",
+    "lint:js": "eslint . --cache",
+    "lint:js:fix": "eslint . --fix",
+    "start": "rollup --config --watch",
+    "test": "npm-run-all lint test:*",
+    "prepublishOnly": "yarn build"
+  },
+  "dependencies": {
+    "@ember/render-modifiers": "^1.0.2",
+    "@embroider/addon-shim": "^0.47.0",
+    "@glimmer/component": "^1.0.4",
+    "ember-resources": "^3.2.1",
+    "tracked-maps-and-sets": "^3.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/plugin-proposal-class-properties": "^7.14.5",
+    "@babel/plugin-proposal-decorators": "^7.15.8",
+    "@babel/plugin-syntax-decorators": "^7.14.5",
+    "@embroider/addon-dev": "^0.47.0",
+    "@rollup/plugin-babel": "^5.3.0",
+    "babel-eslint": "10.1.0",
+    "ember-template-lint": "3.7.0",
+    "eslint": "7.32.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-ember": "10.5.5",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-prettier": "4.0.0",
+    "eslint-plugin-qunit": "6.2.0",
+    "npm-run-all": "4.1.5",
+    "rollup": "^2.58.0"
+  },
+  "engines": {
+    "node": "12.* || >= 14"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "ember": {
+    "edition": "octane"
+  },
+  "ember-addon": {
+    "version": 2,
+    "type": "addon",
+    "main": "addon-main.js",
+    "app-js": {
+      "./components/portal-target.js": "./dist/_app_/components/portal-target.js",
+      "./components/portal.js": "./dist/_app_/components/portal.js",
+      "./services/-portal.js": "./dist/_app_/services/-portal.js"
+    }
+  },
+  "release-it": {
+    "plugins": {
+      "release-it-lerna-changelog": {
+        "infile": "CHANGELOG.md",
+        "launchEditor": false
+      }
+    },
+    "git": {
+      "tagName": "v${version}"
+    },
+    "github": {
+      "release": true,
+      "tokenRef": "GITHUB_AUTH"
+    }
+  },
+  "resolutions": {
+    "socket.io": "4.2.0"
+  },
+  "exports": {
+    "./*": "./dist/*",
+    "./addon-main.js": "./addon-main.js"
+  }
+}
