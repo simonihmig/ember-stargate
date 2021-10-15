@@ -1,5 +1,9 @@
-{{page-title "TestApp"}}
+{{page-title "ember-stargate"}}
 
-<h2 id="title">Welcome to Ember</h2>
+<Portal @target="target">
+  <p>This content used a Portal!</p>
+</Portal>
 
-{{outlet}}
+<h2 id="title">Welcome to ember-stargate</h2>
+
+<PortalTarget @name="target"/>
