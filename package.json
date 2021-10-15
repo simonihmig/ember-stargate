@@ -33,9 +33,6 @@
     "@ember/render-modifiers": "^1.0.2",
     "@embroider/addon-shim": "^0.47.0",
     "@glimmer/component": "^1.0.4",
-    "ember-cli-babel": "^7.26.6",
-    "ember-cli-htmlbars": "^5.7.1",
-    "ember-in-element-polyfill": "^1.0.1",
     "ember-resources": "^3.2.1",
     "tracked-maps-and-sets": "^3.0.1"
   },
@@ -84,7 +81,11 @@
     "release-it": "14.11.6",
     "release-it-lerna-changelog": "3.1.0",
     "rollup": "^2.58.0",
-    "webpack": "5.58.2"
+    "webpack": "5.58.2",
+    "@glimmer/component": "^1.0.4",
+    "ember-cli-app-version": "^5.0.0",
+    "ember-cli-babel": "^7.26.6",
+    "ember-cli-htmlbars": "^5.7.1"
   },
   "engines": {
     "node": "12.* || >= 14"
