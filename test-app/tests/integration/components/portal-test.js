@@ -2,7 +2,6 @@ import { module, test } from 'qunit';
 import { setupRenderingTest } from 'ember-qunit';
 import { render, settled } from '@ember/test-helpers';
 import { hbs } from 'ember-cli-htmlbars';
-import { dependencySatisfies, macroCondition } from '@embroider/macros';
 import sinon from 'sinon';
 
 module('Integration | Component | portal', function (hooks) {
@@ -141,13 +140,8 @@ module('Integration | Component | portal', function (hooks) {
     assert.dom('#p2').hasText('foo');
   });
 
-  if (macroCondition(dependencySatisfies('ember-source', '^3.18.0'))) {
-    // This usage (in-element clearing DOM from other still active component) seems to not work in Ember <3.18
-    // probably due to GlimmerVM changes only introduced in 3.18, see:
-    // * https://github.com/emberjs/ember.js/issues/18696
-    // * https://github.com/glimmerjs/glimmer-vm/pull/1023
-    test('a portal target renders only one portal by default', async function (assert) {
-      await render(hbs`
+  test('a portal target renders only one portal by default', async function (assert) {
+    await render(hbs`
       <PortalTarget @name="main" id="portal" />
 
       <Portal @target="main">
@@ -159,12 +153,11 @@ module('Integration | Component | portal', function (hooks) {
       </Portal>
     `);
 
-      assert.dom('#portal #content').doesNotExist();
+    assert.dom('#portal #content').doesNotExist();
 
-      assert.dom('#portal #content2').exists();
-      assert.dom('#portal #content2').hasText('bar');
-    });
-  }
+    assert.dom('#portal #content2').exists();
+    assert.dom('#portal #content2').hasText('bar');
+  });
 
   test('a portal target can allow multiple portals', async function (assert) {
     await render(hbs`
