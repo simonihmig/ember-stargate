@@ -6,6 +6,9 @@
   "repository": "https://github.com/kaliber5/ember-stargate",
   "license": "MIT",
   "author": "Simon Ihmig <simon.ihmig@kaliber5.de>",
+  "scripts": {
+    "prepare": "yarn workspace ember-stargate run prepare"
+  },
   "devDependencies": {
     "prettier": "2.4.1",
     "release-it": "14.11.6",

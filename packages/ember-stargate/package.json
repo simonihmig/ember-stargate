@@ -22,6 +22,7 @@
     "lint:js:fix": "eslint . --fix",
     "start": "rollup --config --watch",
     "test": "npm-run-all lint test:*",
+    "prepare": "yarn build",
     "prepublishOnly": "yarn build"
   },
   "dependencies": {
