@@ -1,7 +1,6 @@
 {
   "workspaces": [
     "packages/*",
-    "test-packages/*"
   ],
   "private": true,
   "repository": "https://github.com/kaliber5/ember-stargate",
