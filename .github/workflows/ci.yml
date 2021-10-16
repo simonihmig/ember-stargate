@@ -26,10 +26,8 @@ jobs:
         uses: bahmutov/npm-install@v1
       - name: Lint
         run: yarn lint
-        working-directory: packages/ember-stargate
       - name: Test
         run: yarn test
-        working-directory: packages/test-app
 
 # re-enable this when the socket.io issue has been resolved.
 # `bahmutov/npm-install` does not work with yarn resolutions here, as yarn is not used due to https://github.com/bahmutov/npm-install/issues/95

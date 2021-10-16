@@ -21,7 +21,7 @@
     "lint:js": "eslint . --cache",
     "lint:js:fix": "eslint . --fix",
     "start": "rollup --config --watch",
-    "test": "npm-run-all lint test:*",
+    "test": "echo 'Addon does not have tests, run tests in test-app'",
     "prepare": "yarn build",
     "prepublishOnly": "yarn build"
   },
