@@ -44,6 +44,6 @@
     }
   },
   "resolutions": {
-    "socket.io": "4.2.0"
+    "socket.io": "4.3.1"
   }
 }
