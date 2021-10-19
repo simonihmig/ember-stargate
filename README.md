@@ -4,7 +4,7 @@ ember-stargate
 [![CI](https://github.com/kaliber5/ember-stargate/actions/workflows/ci.yml/badge.svg)](https://github.com/kaliber5/ember-stargate/actions/workflows/ci.yml)
 [![Ember Observer Score](https://emberobserver.com/badges/ember-stargate.svg)](https://emberobserver.com/addons/ember-stargate)
 
-A modern take on using so called "portals" to render things in a
+A modern take on using so-called "portals" to render things in a
 different place of the DOM tree than they are logically defined in the app.
 
 Implemented using lightweight Glimmer components and Ember's new `{{in-element}}`,
@@ -15,8 +15,7 @@ Compatibility
 ------------------------------------------------------------------------------
 
 * Ember.js v3.24 or above
-* Ember CLI v3.20 or above
-* Node.js v12 or above
+* Embroider or ember-auto-import v2
 
 
 Installation
