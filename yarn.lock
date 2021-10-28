@@ -4425,7 +4425,7 @@ data-urls@^2.0.0:
     whatwg-mimetype "^2.3.0"
     whatwg-url "^8.0.0"
 
-date-fns@^2.23.0, date-fns@^2.25.0:
+date-fns@^2.25.0:
   version "2.25.0"
   resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.25.0.tgz#8c5c8f1d958be3809a9a03f4b742eba894fc5680"
   integrity sha512-ovYRFnTrbGPD4nqaEqescPEv1mNwvt+UTqI3Ay9SzNtey9NZnYu6E2qCcBBgJ6/2VF1zGGygpyTDITqpQQ5e+w==
@@ -5334,10 +5334,10 @@ ember-source@3.28.4:
     semver "^7.3.4"
     silent-error "^1.1.1"
 
-ember-template-lint@3.10.0:
-  version "3.10.0"
-  resolved "https://registry.yarnpkg.com/ember-template-lint/-/ember-template-lint-3.10.0.tgz#7d728dacfe787b582ff4c240b63e85e5d6200a26"
-  integrity sha512-QP6gN9FwZbK+ypDr5PLXeKMPuAvKwfOWpIoqVD6DB660evnKE+rXfAdNga3CqSC7mDekpgJoLuxVQUw9oLcnjQ==
+ember-template-lint@3.11.0:
+  version "3.11.0"
+  resolved "https://registry.yarnpkg.com/ember-template-lint/-/ember-template-lint-3.11.0.tgz#d766bf483e6bd3f0899a5ab86eeeb1288c44c7a1"
+  integrity sha512-5evTA7ddblB4x52QHwEJbyNttcf+/DWSOfqHWun2/JiQodLhh83TzcuJUktjCgHuEQwCwk5M3J5Xz35JoYKSKg==
   dependencies:
     "@ember-template-lint/todo-utils" "^10.0.0"
     chalk "^4.1.2"
@@ -5349,26 +5349,6 @@ ember-template-lint@3.10.0:
     get-stdin "^8.0.0"
     globby "^11.0.4"
     is-glob "^4.0.3"
-    micromatch "^4.0.4"
-    requireindex "^1.2.0"
-    resolve "^1.20.0"
-    v8-compile-cache "^2.3.0"
-    yargs "^16.2.0"
-
-ember-template-lint@3.7.0:
-  version "3.7.0"
-  resolved "https://registry.yarnpkg.com/ember-template-lint/-/ember-template-lint-3.7.0.tgz#e0565102b291974afeb65de6933f0d154be508d3"
-  integrity sha512-C3oFFdB+g14CvFKZrnAS8Yt0IojTpOhdU5KZoLUs6hOgQjkEF4l/OCBNPtBmL8Nm/dxmc5iTsd5TL98CCcnK+w==
-  dependencies:
-    "@ember-template-lint/todo-utils" "^10.0.0"
-    chalk "^4.1.2"
-    date-fns "^2.23.0"
-    ember-template-recast "^5.0.3"
-    find-up "^5.0.0"
-    fuse.js "^6.4.6"
-    get-stdin "^8.0.0"
-    globby "^11.0.4"
-    is-glob "^4.0.1"
     micromatch "^4.0.4"
     requireindex "^1.2.0"
     resolve "^1.20.0"
