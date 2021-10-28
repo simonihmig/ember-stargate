@@ -34,11 +34,7 @@
         "infile": "CHANGELOG.md",
         "launchEditor": false
       },
-      "release-it-yarn-workspaces": {
-        "workspaces": [
-          "packages/ember-stargate"
-        ]
-      }
+      "release-it-yarn-workspaces": true
     },
     "git": {
       "tagName": "v${version}"
