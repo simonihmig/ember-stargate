@@ -2,10 +2,6 @@
 
 ## v0.4.0 (2021-10-28)
 
-## v0.4.0-1 (2021-10-28)
-
-## v0.4.0-0 (2021-10-28)
-
 #### :boom: Breaking Change
 * `ember-stargate`, `test-app`
   * [#324](https://github.com/kaliber5/ember-stargate/pull/324) Convert to v2 addon ([@simonihmig](https://github.com/simonihmig))
