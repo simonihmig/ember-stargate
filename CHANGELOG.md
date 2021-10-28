@@ -1,4 +1,23 @@
 
+
+## v0.4.0-0 (2021-10-28)
+
+#### :boom: Breaking Change
+* `ember-stargate`, `test-app`
+  * [#324](https://github.com/kaliber5/ember-stargate/pull/324) Convert to v2 addon ([@simonihmig](https://github.com/simonihmig))
+* Other
+  * [#319](https://github.com/kaliber5/ember-stargate/pull/319) Require ember-auto-import v2 ([@simonihmig](https://github.com/simonihmig))
+
+#### :rocket: Enhancement
+* `ember-stargate`, `test-app`
+  * [#324](https://github.com/kaliber5/ember-stargate/pull/324) Convert to v2 addon ([@simonihmig](https://github.com/simonihmig))
+
+#### :bug: Bug Fix
+* [#318](https://github.com/kaliber5/ember-stargate/pull/318) Fix changing portal targets, uses resources instead of lifecycle hooks ([@simonihmig](https://github.com/simonihmig))
+
+#### Committers: 1
+- Simon Ihmig ([@simonihmig](https://github.com/simonihmig))
+
 ## v0.3.0 (2021-08-30)
 
 #### :boom: Breaking Change
