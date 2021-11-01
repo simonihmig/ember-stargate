@@ -26,8 +26,7 @@
     "lint:js:fix": "eslint . --fix",
     "start": "rollup --config --watch",
     "test": "echo 'Addon does not have tests, run tests in test-app'",
-    "prepare": "yarn build",
-    "prepublishOnly": "yarn build"
+    "prepare": "yarn build"
   },
   "dependencies": {
     "@ember/render-modifiers": "^2.0.0",
