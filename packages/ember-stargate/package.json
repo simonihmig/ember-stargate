@@ -33,7 +33,7 @@
     "@ember/render-modifiers": "^2.0.0",
     "@embroider/addon-shim": "^0.47.0",
     "@glimmer/component": "^1.0.4",
-    "ember-resources": "^3.2.1",
+    "ember-resources": "^4.0.0",
     "tracked-maps-and-sets": "^3.0.1"
   },
   "devDependencies": {
