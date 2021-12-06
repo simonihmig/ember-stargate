@@ -4545,7 +4545,7 @@ elliptic@^6.5.3:
     minimalistic-assert "^1.0.1"
     minimalistic-crypto-utils "^1.0.1"
 
-ember-auto-import@2.4.1, ember-auto-import@^2.2.0:
+ember-auto-import@2.4.1:
   version "2.4.1"
   resolved "https://registry.yarnpkg.com/ember-auto-import/-/ember-auto-import-2.4.1.tgz#25e1c21d403eed116b21972ccc5336b49a7ca46b"
   integrity sha512-lyCl2hzIb6Dlcmfm3gI3lAtaOk/nzR2kM4GDJRRu19YJhhSkpiIMSDVjw8ShxmnYiI005R1eOcP3C/GgRRW5mA==
@@ -10147,7 +10147,7 @@ resolve-package-path@^3.1.0:
     path-root "^0.1.1"
     resolve "^1.17.0"
 
-resolve-package-path@^4.0.1:
+resolve-package-path@^4.0.1, resolve-package-path@^4.0.3:
   version "4.0.3"
   resolved "https://registry.yarnpkg.com/resolve-package-path/-/resolve-package-path-4.0.3.tgz#31dab6897236ea6613c72b83658d88898a9040aa"
   integrity sha512-SRpNAPW4kewOaNUt8VPqhJ0UMxawMwzJD8V7m1cJfdSTK9ieZwS6K7Dabsm4bmLFM96Z5Y/UznrpG5kt1im8yA==
