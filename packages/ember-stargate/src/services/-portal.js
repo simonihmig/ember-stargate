@@ -52,7 +52,7 @@ export default class PortalService extends Service {
   unregisterPortal(name) {
     let count = this.#portalCount.get(name) ?? 0;
     assert(
-      `Trying to unregister a portal that hasn't been registered before`,
+      `Trying to unregister a portal "${name}" that hasn't been registered before`,
       count > 0
     );
     count--;
