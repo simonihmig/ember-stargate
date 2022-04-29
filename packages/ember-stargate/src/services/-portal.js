@@ -1,5 +1,6 @@
 import Service from '@ember/service';
 import { assert } from '@ember/debug';
+import { next } from '@ember/runloop';
 import { TrackedMap } from 'tracked-maps-and-sets';
 
 class TargetTracker {
@@ -29,11 +30,14 @@ export default class PortalService extends Service {
   }
 
   registerTarget(name, element, options) {
-    assert(
-      `Portal target with name ${name} already exists`,
-      !this.#targets.has(name)
-    );
-    this.#targets.set(name, new TargetTracker(name, element, options));
+    next(this, () => {
+      assert(
+        `Portal target with name ${name} already exists`,
+        !this.#targets.has(name)
+      );
+
+      this.#targets.set(name, new TargetTracker(name, element, options));
+    });
   }
 
   unregisterTarget(name) {
