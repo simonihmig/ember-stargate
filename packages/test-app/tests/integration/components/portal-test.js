@@ -119,6 +119,33 @@ module('Integration | Component | portal', function (hooks) {
     assert.dom('#content').doesNotExist();
   });
 
+  test('switching between targets with the same name', async function (assert) {
+    this.set('showPortal', true);
+
+    await render(hbs`
+      {{#if this.showPortal}}
+        <PortalTarget @name="main" id="portal" />
+      {{else}}
+        <PortalTarget @name="main" id="other-portal" />
+      {{/if}}
+
+      <Portal @target="main">
+        <div id="content">foo</div>
+      </Portal>
+    `);
+
+    assert.dom('#portal #content').exists();
+    assert.dom('#portal #content').hasText('foo');
+    assert.dom('#other-portal').doesNotExist();
+
+    this.set('showPortal', false);
+    await settled();
+
+    assert.dom('#other-portal #content').exists();
+    assert.dom('#other-portal #content').hasText('foo');
+    assert.dom('#portal').doesNotExist();
+  });
+
   test('switching the target moves existing content', async function (assert) {
     this.set('target', 'p1');
     await render(hbs`
