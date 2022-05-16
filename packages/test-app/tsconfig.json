@@ -72,6 +72,9 @@
       "test-app/*": [
         "app/*"
       ],
+      "ember-stargate/*": [
+        "../../node_modules/ember-stargate/dist/*"
+      ],
       "*": [
         "types/*"
       ]

@@ -18,6 +18,7 @@
     "lint:hbs:fix": "ember-template-lint . --fix",
     "lint:js": "eslint . --cache",
     "lint:js:fix": "eslint . --fix",
+    "lint:ts": "glint",
     "start": "ember serve",
     "test": "npm-run-all lint test:*",
     "test:ember": "ember test"
@@ -28,6 +29,8 @@
     "@embroider/test-setup": "1.7.1",
     "@glimmer/component": "1.1.2",
     "@glimmer/tracking": "1.1.2",
+    "@glint/core": "^0.8.0",
+    "@glint/environment-ember-loose": "^0.8.0",
     "@types/ember-qunit": "5.0.0",
     "@types/ember-resolver": "5.0.11",
     "@types/ember__application": "4.0.0",

@@ -9,7 +9,7 @@ module('Integration | Component | portal', function (hooks) {
 
   test('a portal without target does not render anything', async function (assert) {
     await render(hbs`
-      <Portal>
+      <Portal @target="">
         <div id="content">foo</div>
       </Portal>
     `);
@@ -29,7 +29,7 @@ module('Integration | Component | portal', function (hooks) {
 
   test('a portal without target but with fallback=inplace renders in place', async function (assert) {
     await render(hbs`
-      <Portal @fallback="inplace">
+      <Portal @target="" @fallback="inplace">
         <div id="content">foo</div>
       </Portal>
     `);

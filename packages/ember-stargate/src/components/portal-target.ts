@@ -14,7 +14,7 @@ interface PortalTargetSignature {
   Blocks: { default: [number] };
 }
 
-export default class PortalTargetComponent extends Component<PortalTargetSignature> {
+export default class PortalTarget extends Component<PortalTargetSignature> {
   @service('-portal')
   portalService!: PortalService;
 
