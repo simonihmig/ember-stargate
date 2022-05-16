@@ -1,24 +1,26 @@
 import Component from '@glimmer/component';
 import { inject as service } from '@ember/service';
 import { next } from '@ember/runloop';
-import { LifecycleResource, useResource } from 'ember-resources';
+import { LifecycleResource, Positional, useResource } from 'ember-resources';
+import type PortalService from '../services/-portal';
+import type { Target } from '../services/-portal';
 
-class PortalTrackerResource extends LifecycleResource {
+class PortalTrackerResource extends LifecycleResource<Positional<[string]>> {
   @service('-portal')
-  portalService;
+  portalService!: PortalService;
 
-  _target;
+  _target!: string;
 
-  get target() {
+  get target(): Target | undefined {
     return this.portalService.getTarget(this._target);
   }
 
-  setup() {
+  setup(): void {
     this._target = this.args.positional[0];
     next(() => this.portalService.registerPortal(this._target));
   }
 
-  update() {
+  update(): void {
     const previousTarget = this._target;
     const newTarget = this.args.positional[0];
     next(() => {
@@ -28,19 +30,30 @@ class PortalTrackerResource extends LifecycleResource {
     this._target = newTarget;
   }
 
-  teardown() {
+  teardown(): void {
     this.portalService.unregisterPortal(this._target);
   }
 }
 
-export default class PortalComponent extends Component {
+interface PortalSignature {
+  Args: {
+    target: string;
+    renderInPlace?: boolean;
+    fallback?: 'inplace';
+  };
+  Blocks: { default: [] };
+}
+
+export default class PortalComponent extends Component<PortalSignature> {
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore the types of ember-resources cause an error here
   tracker = useResource(this, PortalTrackerResource, () => [this.args.target]);
 
-  get target() {
+  get target(): Target | undefined {
     return this.tracker.target;
   }
 
-  get renderInPlace() {
+  get renderInPlace(): boolean {
     return (
       this.args.renderInPlace === true ||
       (!this.target && this.args.fallback === 'inplace')
