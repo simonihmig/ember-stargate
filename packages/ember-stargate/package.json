@@ -90,7 +90,7 @@
     }
   },
   "resolutions": {
-    "socket.io": "4.5.0"
+    "socket.io": "4.5.1"
   },
   "exports": {
     "./*": "./dist/*",
