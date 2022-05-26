@@ -36,7 +36,7 @@
     "tracked-maps-and-sets": "^3.0.1"
   },
   "devDependencies": {
-    "@babel/core": "7.18.0",
+    "@babel/core": "7.18.2",
     "@babel/preset-typescript": "7.17.12",
     "@embroider/addon-dev": "1.7.1",
     "@types/ember": "^4.0.0",
