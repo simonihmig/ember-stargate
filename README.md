@@ -128,7 +128,7 @@ TypeScript usage
 All components have proper [Glint](https://github.com/typed-ember/glint) types, which allow you when using TypeScript to get strict type checking in your templates.
 
 Unless you are using [strict mode](http://emberjs.github.io/rfcs/0496-handlebars-strict-mode.html) templates (via [first class component templates](http://emberjs.github.io/rfcs/0779-first-class-component-templates.html)),
-you need to import the addon's Glint template registry entries as described in the [Using Addons#using-glint-enabled-addons](https://typed-ember.gitbook.io/glint/using-glint/ember/using-addons) documentation:
+you need to import the addon's Glint template registry entries as described in the [Using Addons](https://typed-ember.gitbook.io/glint/using-glint/ember/using-addons#using-glint-enabled-addons) documentation:
 
 ```ts
 // e.g. types/glint.d.ts
