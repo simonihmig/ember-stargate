@@ -1,5 +1,22 @@
 
 
+
+## v0.4.2 (2022-05-31)
+
+#### :rocket: Enhancement
+* `ember-stargate`, `test-app`
+  * [#494](https://github.com/kaliber5/ember-stargate/pull/494) Expose Glint types ([@simonihmig](https://github.com/simonihmig))
+* `ember-stargate`
+  * [#491](https://github.com/kaliber5/ember-stargate/pull/491) Convert to TypeScript ([@simonihmig](https://github.com/simonihmig))
+
+#### :house: Internal
+* `test-app`
+  * [#378](https://github.com/kaliber5/ember-stargate/pull/378) Fix Embroider testing setup ([@simonihmig](https://github.com/simonihmig))
+
+#### Committers: 2
+- Benedikt Deicke ([@benedikt](https://github.com/benedikt))
+- Simon Ihmig ([@simonihmig](https://github.com/simonihmig))
+
 ## v0.4.0 (2021-10-28)
 
 #### :boom: Breaking Change

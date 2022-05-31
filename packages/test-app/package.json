@@ -1,6 +1,6 @@
 {
   "name": "test-app",
-  "version": "0.4.0",
+  "version": "0.4.2",
   "private": true,
   "description": "Small description for test-app goes here",
   "repository": "",
@@ -76,7 +76,7 @@
     "ember-sinon-qunit": "6.0.0",
     "ember-source": "3.28.9",
     "ember-source-channel-url": "3.0.0",
-    "ember-stargate": "0.4.1",
+    "ember-stargate": "0.4.2",
     "ember-template-lint": "4.10.0",
     "ember-try": "2.0.0",
     "eslint": "7.32.0",
