@@ -1280,7 +1280,7 @@
   dependencies:
     babel-plugin-debug-macros "^0.3.4"
 
-"@glint/config@^0.8.0", "@glint/config@^0.8.2":
+"@glint/config@^0.8.2":
   version "0.8.2"
   resolved "https://registry.yarnpkg.com/@glint/config/-/config-0.8.2.tgz#42e03caf1461f75b2cac758f046dcf4ffb19f11a"
   integrity sha512-waMpF7C53kHzeTua1kWbVFqTWAOHLZDcCHo1BNUH37r1GH5dMlqNjBbVe/t4XcA/8qzUnBnzzSC7oKHc1u0pmA==
@@ -1291,21 +1291,7 @@
     resolve "^1.17.0"
     silent-error "^1.1.1"
 
-"@glint/core@0.8.0":
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/@glint/core/-/core-0.8.0.tgz#c46743d25b3bfb9901dc1dfc5f441969d3092a9a"
-  integrity sha512-PnYj6BUPQiuXzjwy4DldcxCv6b/S6LQS0XjZCfLyHL+VDdKFatuF5NK/2RSKV3A2KCU3wCZT/mtjtP/a6rdo+Q==
-  dependencies:
-    "@glint/config" "^0.8.0"
-    "@glint/transform" "^0.8.0"
-    resolve "^1.17.0"
-    uuid "^8.3.2"
-    vscode-languageserver "^7.0.0"
-    vscode-languageserver-textdocument "^1.0.1"
-    vscode-uri "^3.0.2"
-    yargs "^15.3.1"
-
-"@glint/core@^0.8.0":
+"@glint/core@0.8.2", "@glint/core@^0.8.0":
   version "0.8.2"
   resolved "https://registry.yarnpkg.com/@glint/core/-/core-0.8.2.tgz#0cf2fe44e8bc7da90e7fddf6e5615c9047c87751"
   integrity sha512-Lt6iaR+G1v1bF4FY1fhww0N/XVlM9drjh87OO4xMyb8bbjv4QVCXrmPE/aL8hfYWZO7eKvy30PaLKIGfZAXg/g==
@@ -1319,15 +1305,7 @@
     vscode-uri "^3.0.2"
     yargs "^15.3.1"
 
-"@glint/environment-ember-loose@0.8.0":
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/@glint/environment-ember-loose/-/environment-ember-loose-0.8.0.tgz#e483f799e979fbda28977bdcff361000f85a520d"
-  integrity sha512-+zf+POTyiiKujGXDGvA2wBLrRvbm1GyOhOPz255SE66qc4alGgtOHq63B5X0gTSqoL1nCJUduGMc/HubvuYHyw==
-  dependencies:
-    "@glint/config" "^0.8.0"
-    "@glint/template" "^0.8.0"
-
-"@glint/environment-ember-loose@^0.8.0":
+"@glint/environment-ember-loose@0.8.2", "@glint/environment-ember-loose@^0.8.0":
   version "0.8.2"
   resolved "https://registry.yarnpkg.com/@glint/environment-ember-loose/-/environment-ember-loose-0.8.2.tgz#c44ba6003e564e0e7d3f13b9684b377371f508de"
   integrity sha512-I/M9eKvQ5pvNgRbk+LvSqVLz1CiIrDG7Hm+eUvCbsMDQu28Oe8Wl1O+CGelCERkuQIsB1t3EJybGyMCpt8/0qw==
@@ -1335,12 +1313,12 @@
     "@glint/config" "^0.8.2"
     "@glint/template" "^0.8.2"
 
-"@glint/template@^0.8.0", "@glint/template@^0.8.2":
+"@glint/template@^0.8.2":
   version "0.8.2"
   resolved "https://registry.yarnpkg.com/@glint/template/-/template-0.8.2.tgz#b984dccbc2dcf6fbb8699439010529d48fea46e7"
   integrity sha512-EAVJQYewqmwm18/mlLXkjKhFgUhYJHyKKuMa87FZSfY1CItgjxJAeoz5ai0dedwuKPc+/RIN16rAUHl0JSLKxQ==
 
-"@glint/transform@^0.8.0", "@glint/transform@^0.8.2":
+"@glint/transform@^0.8.2":
   version "0.8.2"
   resolved "https://registry.yarnpkg.com/@glint/transform/-/transform-0.8.2.tgz#d3ba37c19b182e91b516e2e3209a19999ef1f80d"
   integrity sha512-pmq/vcGa5mW+z5FIDhvsSBrqyL02XNvIM3ocKvzYJvZQBY8bt3gjLPKnhwjSIzc246Z40pPlDhj79XsXfYTvhQ==
@@ -10994,7 +10972,7 @@ rollup-plugin-delete@^2.0.0:
   dependencies:
     del "^5.1.0"
 
-rollup-plugin-ts@2.0.7:
+rollup-plugin-ts@^2.0.7:
   version "2.0.7"
   resolved "https://registry.yarnpkg.com/rollup-plugin-ts/-/rollup-plugin-ts-2.0.7.tgz#6994a656b096660f58eb24669f4e30b773f7a680"
   integrity sha512-M9sppRKX6y/b2KXbGdUdHid0tshAEK/sEeYLBHBJiBa4swukSsoFVXKGGZasLcjaXhgUnnizFuvFFj6znxwvSA==
@@ -12375,6 +12353,11 @@ typescript@4.6.4:
   version "4.6.4"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.6.4.tgz#caa78bbc3a59e6a5c510d35703f6a09877ce45e9"
   integrity sha512-9ia/jWHIEbo49HfjrLGfKbZSuWo9iTMwXO+Ca3pRsSpbsMbc7/IU8NKdCZVRRBafVPGnoJeFL76ZOAA84I9fEg==
+
+typescript@^4.6.4:
+  version "4.7.2"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.7.2.tgz#1f9aa2ceb9af87cca227813b4310fff0b51593c4"
+  integrity sha512-Mamb1iX2FDUpcTRzltPxgWMKy3fhg0TN378ylbktPGPK/99KbDtMQ4W1hwgsbPAsG3a0xKa1vmw4VKZQbkvz5A==
 
 ua-parser-js@^1.0.2:
   version "1.0.2"
