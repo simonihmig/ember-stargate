@@ -103,7 +103,7 @@
     "./addon-main.js": "./addon-main.js",
     "./*": {
       "types": "./dist/*.d.ts",
-      "default": "./dist/*.js"
+      "default": "./dist/*"
     }
   },
   "typesVersions": {
