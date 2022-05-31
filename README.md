@@ -121,6 +121,24 @@ API
 * `@onChange`: whenever a portal is rendered to or removed from the target, this action will be called. It will receive 
   the current portal count of this target as an argument.
 
+
+TypeScript usage
+------------------------------------------------------------------------------
+
+All components have proper [Glint](https://github.com/typed-ember/glint) types, which allow you when using TypeScript to get strict type checking in your templates.
+
+Unless you are using [strict mode](http://emberjs.github.io/rfcs/0496-handlebars-strict-mode.html) templates (via [first class component templates](http://emberjs.github.io/rfcs/0779-first-class-component-templates.html)),
+you need to import the addon's Glint template registry entries as described in the [Using Addons#using-glint-enabled-addons](https://typed-ember.gitbook.io/glint/using-glint/ember/using-addons) documentation:
+
+```ts
+// e.g. types/glint.d.ts
+import '@glint/environment-ember-loose';
+import 'ember-stargate/glint';
+```
+
+> Note that Glint itself is still under active development, and as such breaking changes might occur. Therefore, Glint support by this addon is also considered experimental, and not covered by our SemVer contract!
+
+
 Contributing
 ------------------------------------------------------------------------------
 
