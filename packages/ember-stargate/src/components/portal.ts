@@ -44,7 +44,7 @@ interface PortalSignature {
   Blocks: { default: [] };
 }
 
-export default class PortalComponent extends Component<PortalSignature> {
+export default class Portal extends Component<PortalSignature> {
   // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore the types of ember-resources cause an error here
   tracker = useResource(this, PortalTrackerResource, () => [this.args.target]);

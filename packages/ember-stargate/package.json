@@ -24,6 +24,7 @@
     "lint:hbs:fix": "ember-template-lint . --fix",
     "lint:js": "eslint . --cache",
     "lint:js:fix": "eslint . --fix",
+    "lint:ts": "glint",
     "start": "rollup --config --watch",
     "test": "echo 'Addon does not have tests, run tests in test-app'",
     "prepare": "yarn build"
@@ -38,11 +39,17 @@
   "devDependencies": {
     "@babel/core": "7.18.2",
     "@babel/preset-typescript": "7.17.12",
+    "@babel/plugin-proposal-class-properties": "7.17.12",
+    "@babel/plugin-proposal-decorators": "7.18.2",
     "@embroider/addon-dev": "1.7.1",
-    "@types/ember": "^4.0.0",
+    "@glint/core": "0.8.2",
+    "@glint/environment-ember-loose": "0.8.2",
+    "@types/ember": "4.0.0",
+    "@types/ember__test-helpers": "2.6.1",
     "@typescript-eslint/eslint-plugin": "5.26.0",
     "@typescript-eslint/parser": "5.26.0",
     "babel-eslint": "10.1.0",
+    "ember-modifier": "3.2.7",
     "ember-template-lint": "4.10.0",
     "eslint": "7.32.0",
     "eslint-config-prettier": "8.5.0",
@@ -52,8 +59,8 @@
     "eslint-plugin-qunit": "7.2.0",
     "npm-run-all": "4.1.5",
     "rollup": "2.75.3",
-    "rollup-plugin-ts": "^2.0.7",
-    "typescript": "^4.6.4"
+    "rollup-plugin-ts": "3.0.0",
+    "typescript": "4.7.2"
   },
   "engines": {
     "node": "12.* || >= 14"
@@ -93,7 +100,17 @@
     "socket.io": "4.5.1"
   },
   "exports": {
-    "./*": "./dist/*",
-    "./addon-main.js": "./addon-main.js"
+    "./addon-main.js": "./addon-main.js",
+    "./*": {
+      "types": "./dist/*.d.ts",
+      "default": "./dist/*"
+    }
+  },
+  "typesVersions": {
+    "*": {
+      "*": [
+        "dist/*"
+      ]
+    }
   }
 }

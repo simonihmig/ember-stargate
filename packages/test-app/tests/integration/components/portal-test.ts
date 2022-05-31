@@ -9,7 +9,7 @@ module('Integration | Component | portal', function (hooks) {
 
   test('a portal without target does not render anything', async function (assert) {
     await render(hbs`
-      <Portal>
+      <Portal @target="">
         <div id="content">foo</div>
       </Portal>
     `);
@@ -29,7 +29,7 @@ module('Integration | Component | portal', function (hooks) {
 
   test('a portal without target but with fallback=inplace renders in place', async function (assert) {
     await render(hbs`
-      <Portal @fallback="inplace">
+      <Portal @target="" @fallback="inplace">
         <div id="content">foo</div>
       </Portal>
     `);
@@ -251,7 +251,8 @@ module('Integration | Component | portal', function (hooks) {
     this.set('showFirst', false);
     this.set('showSecond', false);
 
-    this.set('action', sinon.spy());
+    const action = sinon.spy();
+    this.set('action', action);
 
     await render(hbs`
       <PortalTarget @name="main" @multiple={{true}} id="portal" @onChange={{this.action}} />
@@ -269,21 +270,21 @@ module('Integration | Component | portal', function (hooks) {
       {{/if}}
     `);
 
-    assert.notOk(this.action.called);
+    assert.notOk(action.called);
 
     this.set('showFirst', true);
     await settled();
 
-    assert.ok(this.action.calledWithExactly(1));
+    assert.ok(action.calledWithExactly(1));
 
     this.set('showSecond', true);
     await settled();
 
-    assert.ok(this.action.calledWithExactly(2));
+    assert.ok(action.calledWithExactly(2));
 
     this.set('showSecond', false);
     await settled();
 
-    assert.ok(this.action.calledWithExactly(1));
+    assert.ok(action.calledWithExactly(1));
   });
 });
