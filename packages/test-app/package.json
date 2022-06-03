@@ -51,7 +51,7 @@
     "@types/ember__test-helpers": "2.6.1",
     "@types/ember__utils": "4.0.0",
     "@types/htmlbars-inline-precompile": "3.0.0",
-    "@types/qunit": "2.11.3",
+    "@types/qunit": "2.19.0",
     "@types/rsvp": "4.0.4",
     "@types/sinon": "^10.0.11",
     "babel-eslint": "10.1.0",
