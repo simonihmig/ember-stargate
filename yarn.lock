@@ -1847,6 +1847,11 @@
     "@types/ember__debug" "*"
     "@types/ember__object" "*"
 
+"@types/ember__destroyable@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@types/ember__destroyable/-/ember__destroyable-4.0.0.tgz#997af44863323979796fbd153e9ad76498defb33"
+  integrity sha512-QxyRhCOlQmc056tbWvHOQZ7vIjlFOFYMOU82P3pcCFfxyi55+NRhj4ySruymcBCfrzKQmVQLCbbOGhyFMLqq0Q==
+
 "@types/ember__engine@*", "@types/ember__engine@4.0.0":
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/@types/ember__engine/-/ember__engine-4.0.0.tgz#e39c06d98c7a085912508e8257c48a70196c1a87"
@@ -5731,10 +5736,10 @@ ember-resolver@8.0.3:
     ember-cli-version-checker "^5.1.2"
     resolve "^1.20.0"
 
-ember-resources@^4.6.4:
-  version "4.8.0"
-  resolved "https://registry.yarnpkg.com/ember-resources/-/ember-resources-4.8.0.tgz#574bca0a8ade9e09b35f43fdfcf9c4cb828bc065"
-  integrity sha512-TGvV3+cZG5EgpiK4jw9eYYox4jFr4kdn6SXXqvpA2etMfNouFIniofy4LioqMzz7sKz8YRCBkRHqBQD1nbcmpA==
+ember-resources@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/ember-resources/-/ember-resources-5.0.1.tgz#1538b23c96c42d9cd5b87afcf81419edeec454ea"
+  integrity sha512-C3LfNowKTm7Tkmj0m1PctbDTInRaDpz5GSOE0UC6ySvv6huJievVngqv1vdq8Wi0NGyM+w8ZV8qIUogk9TBFIw==
   dependencies:
     "@babel/runtime" "^7.17.8"
     "@embroider/addon-shim" "^1.2.0"
