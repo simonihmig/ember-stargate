@@ -1,37 +1,45 @@
 import Component from '@glimmer/component';
 import { inject as service } from '@ember/service';
 import { next } from '@ember/runloop';
-import { LifecycleResource, Positional, useResource } from 'ember-resources';
+import { Resource } from 'ember-resources';
 import type PortalService from '../services/-portal';
 import type { Target } from '../services/-portal';
+import { registerDestructor } from '@ember/destroyable';
 
-class PortalTrackerResource extends LifecycleResource<Positional<[string]>> {
+interface PortalTrackerResourceArgs {
+  Positional: [string];
+}
+
+class PortalTrackerResource extends Resource<PortalTrackerResourceArgs> {
   @service('-portal')
   portalService!: PortalService;
 
-  _target!: string;
+  _target?: string;
+
+  constructor(owner: unknown) {
+    super(owner);
+
+    registerDestructor(
+      this,
+      () => this._target && this.portalService.unregisterPortal(this._target)
+    );
+  }
 
   get target(): Target | undefined {
-    return this.portalService.getTarget(this._target);
+    return this._target
+      ? this.portalService.getTarget(this._target)
+      : undefined;
   }
 
-  setup(): void {
-    this._target = this.args.positional[0];
-    next(() => this.portalService.registerPortal(this._target));
-  }
-
-  update(): void {
+  modify([newTarget]: [string]): void {
     const previousTarget = this._target;
-    const newTarget = this.args.positional[0];
     next(() => {
       this.portalService.registerPortal(newTarget);
-      this.portalService.unregisterPortal(previousTarget);
+      if (previousTarget) {
+        this.portalService.unregisterPortal(previousTarget);
+      }
     });
     this._target = newTarget;
-  }
-
-  teardown(): void {
-    this.portalService.unregisterPortal(this._target);
   }
 }
 
@@ -45,9 +53,7 @@ interface PortalSignature {
 }
 
 export default class Portal extends Component<PortalSignature> {
-  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-  // @ts-ignore the types of ember-resources cause an error here
-  tracker = useResource(this, PortalTrackerResource, () => [this.args.target]);
+  tracker = PortalTrackerResource.from(this, () => [this.args.target]);
 
   get target(): Target | undefined {
     return this.tracker.target;
