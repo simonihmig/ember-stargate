@@ -1,6 +1,21 @@
 
 
 
+
+## v0.4.3 (2022-07-01)
+
+#### :rocket: Enhancement
+* `ember-stargate`
+  * [#541](https://github.com/kaliber5/ember-stargate/pull/541) Upgrade to ember-resources v5 ([@simonihmig](https://github.com/simonihmig))
+
+#### :bug: Bug Fix
+* `ember-stargate`, `test-app`
+  * [#537](https://github.com/kaliber5/ember-stargate/pull/537) Ensure PortalTarget onChange is called on initial render ([@meirish](https://github.com/meirish))
+
+#### Committers: 2
+- Matthew Irish ([@meirish](https://github.com/meirish))
+- Simon Ihmig ([@simonihmig](https://github.com/simonihmig))
+
 ## v0.4.2 (2022-05-31)
 
 #### :rocket: Enhancement
