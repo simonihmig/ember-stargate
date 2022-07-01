@@ -59,12 +59,14 @@ export default class PortalService extends Service {
   }
 
   registerPortal(name: string): void {
-    const count = (this.#portalCount.get(name) ?? 0) + 1;
-    this.#portalCount.set(name, count);
-    const target = this.#targets.get(name);
-    if (target && target.onChange) {
-      target.onChange(count);
-    }
+    next(this, () => {
+      const count = (this.#portalCount.get(name) ?? 0) + 1;
+      this.#portalCount.set(name, count);
+      const target = this.#targets.get(name);
+      if (target && target.onChange) {
+        target.onChange(count);
+      }
+    });
   }
 
   unregisterPortal(name: string): void {

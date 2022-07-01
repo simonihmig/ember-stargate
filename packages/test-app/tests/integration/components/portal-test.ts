@@ -287,4 +287,25 @@ module('Integration | Component | portal', function (hooks) {
 
     assert.ok(action.calledWithExactly(1));
   });
+
+  test('initial rendering a portal into a target triggers onChange', async function (assert) {
+    const action = sinon.spy();
+    this.set('action', action);
+
+    await render(hbs`
+      <PortalTarget @name="main" @multiple={{true}} id="portal" @onChange={{this.action}} />
+
+      <Portal @target="main">
+        <div id="content">foo</div>
+      </Portal>
+
+      <Portal @target="main">
+        <div id="content2">bar</div>
+      </Portal>
+    `);
+
+    assert.ok(action.calledWithExactly(1));
+    assert.ok(action.calledWithExactly(2));
+    assert.strictEqual(action.callCount, 2);
+  });
 });
