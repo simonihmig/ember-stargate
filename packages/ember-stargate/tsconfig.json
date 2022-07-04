@@ -12,5 +12,11 @@
   "include": [
     "src/**/*",
     "types/**/*"
-  ]
+  ],
+  "glint": {
+    "environment": "ember-loose",
+    "transform": {
+      "include": ["src/**"]
+    }
+  }
 }
