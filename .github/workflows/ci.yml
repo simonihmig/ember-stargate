@@ -78,4 +78,4 @@ jobs:
         uses: bahmutov/npm-install@v1
       - name: Test
         run: yarn ember try:one ${{ matrix.scenario }}
-        working-directory: packages/test-app
+        working-directory: test-app
