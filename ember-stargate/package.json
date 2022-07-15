@@ -46,7 +46,7 @@
     "@glint/environment-ember-loose": "0.9.1",
     "@types/ember": "4.0.0",
     "@types/ember__destroyable": "4.0.0",
-    "@types/ember__test-helpers": "2.6.1",
+    "@types/ember__test-helpers": "2.8.0",
     "@typescript-eslint/eslint-plugin": "5.30.6",
     "@typescript-eslint/parser": "5.30.6",
     "babel-eslint": "10.1.0",
