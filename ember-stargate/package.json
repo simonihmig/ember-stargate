@@ -37,10 +37,10 @@
     "tracked-maps-and-sets": "^3.0.1"
   },
   "devDependencies": {
-    "@babel/core": "7.18.6",
+    "@babel/core": "7.18.9",
     "@babel/preset-typescript": "7.18.6",
     "@babel/plugin-proposal-class-properties": "7.18.6",
-    "@babel/plugin-proposal-decorators": "7.18.6",
+    "@babel/plugin-proposal-decorators": "7.18.9",
     "@embroider/addon-dev": "1.8.3",
     "@glint/core": "0.9.1",
     "@glint/environment-ember-loose": "0.9.1",
