@@ -1842,10 +1842,10 @@
   dependencies:
     "@types/ember__object" "*"
 
-"@types/ember@*", "@types/ember@4.0.0":
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/@types/ember/-/ember-4.0.0.tgz#0c29294fa0e5aa07ba6090f60243707dde8fc411"
-  integrity sha512-IR4o8OkFgoiRKVLRI8URvyNhEBSkjO5DXp2900/TptxOl0Retu8/tKtFaRTwkqteg2a0/6zXAA1rpFb3BbxNpA==
+"@types/ember@*", "@types/ember@4.0.1":
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/@types/ember/-/ember-4.0.1.tgz#5fe3dc8219b7e0391b2c97d8db945a9e0881badc"
+  integrity sha512-fYCZtkGq1UqD1rWjvdY4bVQpdZvxkHqVx/B6p2M0cUdyheLNjQgwXfx3o1UU0Bk99mls5Or4ZCnW7s1yliABiw==
   dependencies:
     "@types/ember__application" "*"
     "@types/ember__array" "*"

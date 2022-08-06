@@ -44,7 +44,7 @@
     "@embroider/addon-dev": "1.8.3",
     "@glint/core": "0.9.1",
     "@glint/environment-ember-loose": "0.9.1",
-    "@types/ember": "4.0.0",
+    "@types/ember": "4.0.1",
     "@types/ember__destroyable": "4.0.0",
     "@types/ember__test-helpers": "2.8.0",
     "@typescript-eslint/eslint-plugin": "5.32.0",
