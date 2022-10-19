@@ -1740,6 +1740,32 @@
     "@pnpm/network.ca-file" "^1.0.1"
     config-chain "^1.1.11"
 
+"@release-it-plugins/lerna-changelog@5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@release-it-plugins/lerna-changelog/-/lerna-changelog-5.0.0.tgz#cbbbc47fd40ef212f2d7c0e24867d3fcea4cd232"
+  integrity sha512-nMhAUptKSfIsiY0c//HuBcd2VT7D/IoxAQNwRgPx+jf3FM7HA5KD4KSl3oLoz4uA4GjvypWQP4ODX8UbWjmUZA==
+  dependencies:
+    execa "^5.1.1"
+    lerna-changelog "^2.2.0"
+    lodash.template "^4.5.0"
+    mdast-util-from-markdown "^1.2.0"
+    tmp "^0.2.1"
+    validate-peer-dependencies "^2.0.0"
+    which "^2.0.2"
+
+"@release-it-plugins/workspaces@3.2.0":
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/@release-it-plugins/workspaces/-/workspaces-3.2.0.tgz#c8209b864f635149c373aefbc5a5dabfc4c1ef46"
+  integrity sha512-ooEIgwb4qwGFQa9kXoTaQDHgD2Vymy5Z/aKL1JefnVUg1hiKL8Lh5fEfkDXggeXetTYk+SaFm2YNLrVOarX+Kw==
+  dependencies:
+    detect-indent "^6.0.0"
+    detect-newline "^3.1.0"
+    semver "^7.1.3"
+    url-join "^4.0.1"
+    validate-peer-dependencies "^1.0.0"
+    walk-sync "^2.0.2"
+    yaml "^2.1.1"
+
 "@rollup/pluginutils@^4.1.1", "@rollup/pluginutils@^4.2.1":
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/@rollup/pluginutils/-/pluginutils-4.2.1.tgz#e6c6c3aba0744edce3fb2074922d3776c0af2a6d"
@@ -11664,31 +11690,6 @@ regjsparser@^0.9.1:
   dependencies:
     jsesc "~0.5.0"
 
-release-it-lerna-changelog@5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/release-it-lerna-changelog/-/release-it-lerna-changelog-5.0.0.tgz#2df62efc4c7435959201e7d4b50e72db4c111d0e"
-  integrity sha512-s/rHzwAwp878bivWKsJKNya9SRVKYZjgpyyGzg5ddBKZY5u5lhTWhxHtld7mHTRg4azIN7YypPH3rGaOfVmNVw==
-  dependencies:
-    execa "^5.1.1"
-    lerna-changelog "^2.2.0"
-    lodash.template "^4.5.0"
-    mdast-util-from-markdown "^1.2.0"
-    tmp "^0.2.1"
-    validate-peer-dependencies "^2.0.0"
-    which "^2.0.2"
-
-release-it-yarn-workspaces@3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/release-it-yarn-workspaces/-/release-it-yarn-workspaces-3.0.0.tgz#6f254b7e97e1f303f6cf9d109e53d17c46082218"
-  integrity sha512-OwrnvDSBEp/L4dLL3JMTiD1Qi1poEK2a6E7o1iqygywSCwM6hMTVN4RNV6MsC5Sjqx7T+RZ5o/lAN54oguDkAA==
-  dependencies:
-    detect-indent "^6.0.0"
-    detect-newline "^3.1.0"
-    semver "^7.1.3"
-    url-join "^4.0.1"
-    validate-peer-dependencies "^1.0.0"
-    walk-sync "^2.0.2"
-
 release-it@15.3.0:
   version "15.3.0"
   resolved "https://registry.yarnpkg.com/release-it/-/release-it-15.3.0.tgz#700a7edca3664653991c39f0c2e7d268aee5c4b7"
@@ -14198,6 +14199,11 @@ yaml@^1.10.0:
   version "1.10.2"
   resolved "https://registry.yarnpkg.com/yaml/-/yaml-1.10.2.tgz#2301c5ffbf12b467de8da2333a459e29e7920e4b"
   integrity sha512-r3vXyErRCYJ7wg28yvBY5VSoAF8ZvlcW9/BwUzEtUsjvX/DKs24dIkuwjtuprwJJHsbyUbLApepYTR1BN4uHrg==
+
+yaml@^2.1.1:
+  version "2.1.3"
+  resolved "https://registry.yarnpkg.com/yaml/-/yaml-2.1.3.tgz#9b3a4c8aff9821b696275c79a8bee8399d945207"
+  integrity sha512-AacA8nRULjKMX2DvWvOAdBZMOfQlypSFkjcOcu9FalllIDJ1kvlREzcdIZmidQUqqeMv7jorHjq2HlLv/+c2lg==
 
 yargs-parser@21.1.1, yargs-parser@^21.0.0:
   version "21.1.1"
