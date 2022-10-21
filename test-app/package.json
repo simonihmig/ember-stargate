@@ -30,7 +30,7 @@
     "@glimmer/component": "1.1.2",
     "@glimmer/tracking": "1.1.2",
     "@glint/core": "0.9.7",
-    "@glint/environment-ember-loose": "0.9.6",
+    "@glint/environment-ember-loose": "0.9.7",
     "@types/ember-qunit": "5.0.2",
     "@types/ember-resolver": "5.0.11",
     "@types/ember__application": "4.0.2",
