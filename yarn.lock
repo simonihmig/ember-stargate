@@ -1440,23 +1440,23 @@
     "@glimmer/interfaces" "^0.42.2"
     "@glimmer/util" "^0.42.2"
 
-"@glint/config@^0.9.6":
-  version "0.9.6"
-  resolved "https://registry.yarnpkg.com/@glint/config/-/config-0.9.6.tgz#34b8061a13f4062016e7de700c19f265cf696f3c"
-  integrity sha512-/kFlc6rTpyCxKd88w4/umTXDn1ZcytYhprPE1oRQfqZnnhxiLio4s7et7CM0JGxVV3hxsa9HCjhdlZzlQC2uQA==
+"@glint/config@^0.9.6", "@glint/config@^0.9.7":
+  version "0.9.7"
+  resolved "https://registry.yarnpkg.com/@glint/config/-/config-0.9.7.tgz#43077e9cd2743d3bb66f6c4670681c49644ac139"
+  integrity sha512-XkWIZ3fuOlcofUJUaJmRS57mVVNi+Af2HtrZkBXEOCh4+BNz2wclxv2WKvkhmtvLhEUOhHb5eU3gwI58SuwgXQ==
   dependencies:
     escape-string-regexp "^4.0.0"
     minimatch "^3.0.4"
     resolve "^1.17.0"
     silent-error "^1.1.1"
 
-"@glint/core@0.9.6":
-  version "0.9.6"
-  resolved "https://registry.yarnpkg.com/@glint/core/-/core-0.9.6.tgz#187c8ca402239a01130b4e5e24cce9fbe701935b"
-  integrity sha512-2+hoWIYjEx8NXXEQx+zgqVBULHFxQuqpX7S/sn5on8Kcvgf+zNFqUjDUn4LcF1MtB3xbPkI9cdbxzZ/zD0h6YA==
+"@glint/core@0.9.7":
+  version "0.9.7"
+  resolved "https://registry.yarnpkg.com/@glint/core/-/core-0.9.7.tgz#887dbdfa10d89702549de36197cc2eb0783a5c86"
+  integrity sha512-1YLHNRnuYI1dDUKWq/ue4JqiBt6TVR8e7VQJWy37CKB0tiBhWw/FPvr7/S7XbUxCt6KHO0Kl0x/eqLunu3WiQw==
   dependencies:
-    "@glint/config" "^0.9.6"
-    "@glint/transform" "^0.9.6"
+    "@glint/config" "^0.9.7"
+    "@glint/transform" "^0.9.7"
     resolve "^1.17.0"
     uuid "^8.3.2"
     vscode-languageserver "^8.0.1"
@@ -1477,13 +1477,13 @@
   resolved "https://registry.yarnpkg.com/@glint/template/-/template-0.9.6.tgz#9a3b236b7622f419b08eb3873def52f498bb7945"
   integrity sha512-64jXQD5JKIoHa+uzvTvwQmD6eVqpGgJfCQ3lFNeV24qb8OPsghEcnOIY/HhUt1ZDyB1IWI76nuaNJRB+6gIbWA==
 
-"@glint/transform@^0.9.6":
-  version "0.9.6"
-  resolved "https://registry.yarnpkg.com/@glint/transform/-/transform-0.9.6.tgz#8bc2f6257333dcbc44bebe75f6d151798574d8df"
-  integrity sha512-G4X9i/pBCeDfTfurA9h3P6QhG8x/fZKChkUoKGValr3eMYNLtGcBUNcACfTA1loeGXfPt4W0ysO8CxU/oKL1QQ==
+"@glint/transform@^0.9.7":
+  version "0.9.7"
+  resolved "https://registry.yarnpkg.com/@glint/transform/-/transform-0.9.7.tgz#01c60249c1fe6663955d2acd2cf7625a551fb3f3"
+  integrity sha512-vd0th+Zo4cirYepASpC0fE0ZCqAcI9Y6qHYE0xi4+MY05bFRxBr7Q9ggDoWk+slynTyUrVgzCCeazAYOlZsYcg==
   dependencies:
     "@glimmer/syntax" "^0.84.2"
-    "@glint/config" "^0.9.6"
+    "@glint/config" "^0.9.7"
 
 "@handlebars/parser@~2.0.0":
   version "2.0.0"
