@@ -1705,7 +1705,7 @@
     "@pnpm/network.ca-file" "^1.0.1"
     config-chain "^1.1.11"
 
-"@release-it-plugins/lerna-changelog@^5.0.0":
+"@release-it-plugins/lerna-changelog@5.0.0":
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/@release-it-plugins/lerna-changelog/-/lerna-changelog-5.0.0.tgz#cbbbc47fd40ef212f2d7c0e24867d3fcea4cd232"
   integrity sha512-nMhAUptKSfIsiY0c//HuBcd2VT7D/IoxAQNwRgPx+jf3FM7HA5KD4KSl3oLoz4uA4GjvypWQP4ODX8UbWjmUZA==
@@ -1718,7 +1718,7 @@
     validate-peer-dependencies "^2.0.0"
     which "^2.0.2"
 
-"@release-it-plugins/workspaces@^3.2.0":
+"@release-it-plugins/workspaces@3.2.0":
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/@release-it-plugins/workspaces/-/workspaces-3.2.0.tgz#c8209b864f635149c373aefbc5a5dabfc4c1ef46"
   integrity sha512-ooEIgwb4qwGFQa9kXoTaQDHgD2Vymy5Z/aKL1JefnVUg1hiKL8Lh5fEfkDXggeXetTYk+SaFm2YNLrVOarX+Kw==
@@ -4279,21 +4279,6 @@ concurrently@7.2.1:
     tree-kill "^1.2.2"
     yargs "^17.3.1"
 
-concurrently@^7.2.1:
-  version "7.5.0"
-  resolved "https://registry.yarnpkg.com/concurrently/-/concurrently-7.5.0.tgz#4dd432d4634a8251f27ab000c4974e78e3906bd3"
-  integrity sha512-5E3mwiS+i2JYBzr5BpXkFxOnleZTMsG+WnE/dCG4/P+oiVXrbmrBwJ2ozn4SxwB2EZDrKR568X+puVohxz3/Mg==
-  dependencies:
-    chalk "^4.1.0"
-    date-fns "^2.29.1"
-    lodash "^4.17.21"
-    rxjs "^7.0.0"
-    shell-quote "^1.7.3"
-    spawn-command "^0.0.2-1"
-    supports-color "^8.1.0"
-    tree-kill "^1.2.2"
-    yargs "^17.3.1"
-
 config-chain@^1.1.11:
   version "1.1.13"
   resolved "https://registry.yarnpkg.com/config-chain/-/config-chain-1.1.13.tgz#fad0795aa6a6cdaff9ed1b68e9dff94372c232f4"
@@ -4557,7 +4542,7 @@ data-urls@^2.0.0:
     whatwg-mimetype "^2.3.0"
     whatwg-url "^8.0.0"
 
-date-fns@^2.16.1, date-fns@^2.29.1, date-fns@^2.29.2:
+date-fns@^2.16.1, date-fns@^2.29.2:
   version "2.29.3"
   resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.29.3.tgz#27402d2fc67eb442b511b70bbdf98e6411cd68a8"
   integrity sha512-dDCnyH2WnnKusqvZZ6+jA1O51Ibt8ZMRNkDZdyAyK4YfbDwa/cEmuztzG5pk6hqlp9aSBPYcjOlktquahGwGeA==
@@ -10148,7 +10133,7 @@ prettier@2.5.1:
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.5.1.tgz#fff75fa9d519c54cf0fce328c1017d94546bc56a"
   integrity sha512-vBZcPRUR5MZJwoyi3ZoyQlc1rXeEck8KgeC9AwwOn+exuxLxq5toTRDTSaVrXHxelDMHy9zlicw8u66yxoSUFg==
 
-prettier@2.7.1, prettier@^2.5.1:
+prettier@2.7.1:
   version "2.7.1"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.7.1.tgz#e235806850d057f97bb08368a4f7d899f7760c64"
   integrity sha512-ujppO+MkdPqoVINuDFDRLClm7D78qbDt0/NR+wp5FqEZOoTNAjPHWj17QRhu7geIHJfcNhRk1XVQmF8Bp3ye+g==
@@ -10538,7 +10523,7 @@ regjsparser@^0.9.1:
   dependencies:
     jsesc "~0.5.0"
 
-release-it@^15.5.0:
+release-it@15.5.0:
   version "15.5.0"
   resolved "https://registry.yarnpkg.com/release-it/-/release-it-15.5.0.tgz#773c247d4fd5a5e5c8801b02bf1e7e9e536bee27"
   integrity sha512-/pQo/PwEXAWRBgVGLE+3IQ3hUoeiDZMGAo/Egin1envCyLyjzrU7+0P2w4iZ1Xv5OxhC2AcaPaN5eY1ql47cBA==
@@ -10853,7 +10838,7 @@ rxjs@^6.4.0, rxjs@^6.6.0, rxjs@^6.6.3:
   dependencies:
     tslib "^1.9.0"
 
-rxjs@^7.0.0, rxjs@^7.5.6:
+rxjs@^7.5.6:
   version "7.5.7"
   resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-7.5.7.tgz#2ec0d57fdc89ece220d2e702730ae8f1e49def39"
   integrity sha512-z9MzKh/UcOqB3i20H6rtrlaE/CgjLOvheWK/9ILrbhROGTweAi1BaFsTT9FbwZi5Trr1qNRs+MXkhmR06awzQA==
