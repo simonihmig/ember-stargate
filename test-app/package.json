@@ -18,10 +18,10 @@
     "lint:hbs:fix": "ember-template-lint . --fix",
     "lint:js": "eslint . --cache",
     "lint:js:fix": "eslint . --fix",
-    "lint:ts": "glint",
     "start": "ember serve",
-    "test": "npm-run-all lint test:*",
-    "test:ember": "ember test"
+    "test": "npm-run-all lint \"test:!(watch)\"",
+    "test:ember": "ember test",
+    "test:watch": "ember test --server"
   },
   "devDependencies": {
     "@ember/optional-features": "2.0.0",
@@ -95,7 +95,7 @@
     "webpack": "5.75.0"
   },
   "engines": {
-    "node": "12.* || 14.* || >= 16"
+    "node": "14.* || >= 16"
   },
   "ember": {
     "edition": "octane"

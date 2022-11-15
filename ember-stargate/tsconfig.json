@@ -1,22 +1,7 @@
 {
-  "compilerOptions": {
-    "target": "ESNext",
-    "module": "es2015",
-    "inlineSourceMap": true,
-    "inlineSources": true,
-    "moduleResolution": "node",
-    "experimentalDecorators": true,
-    "strict": true,
-    "declaration": true
-  },
-  "include": [
-    "src/**/*",
-    "types/**/*"
-  ],
+  "extends": "@tsconfig/ember/tsconfig.json",
+  "include": ["src/**/*", "unpublished-development-types/**/*"],
   "glint": {
-    "environment": "ember-loose",
-    "transform": {
-      "include": ["src/**"]
-    }
+    "environment": "ember-loose"
   }
 }

@@ -18,16 +18,16 @@
   ],
   "scripts": {
     "build": "rollup --config",
-    "lint": "npm-run-all --aggregate-output --continue-on-error --parallel \"lint:!(fix)\"",
-    "lint:fix": "npm-run-all --aggregate-output --continue-on-error --parallel lint:*:fix",
-    "lint:hbs": "ember-template-lint .",
-    "lint:hbs:fix": "ember-template-lint . --fix",
+    "lint": "concurrently 'npm:lint:*(!fix)' --names 'lint:'",
+    "lint:fix": "concurrently 'npm:lint:*:fix' --names 'fix:'",
+    "lint:hbs": "ember-template-lint . --no-error-on-unmatched-pattern",
     "lint:js": "eslint . --cache",
+    "lint:hbs:fix": "ember-template-lint . --fix --no-error-on-unmatched-pattern",
     "lint:js:fix": "eslint . --fix",
-    "lint:ts": "glint",
+    "lint:types": "glint",
     "start": "rollup --config --watch",
-    "test": "echo 'Addon does not have tests, run tests in test-app'",
-    "prepare": "yarn build"
+    "test": "echo 'A v2 addon does not have tests, run tests in test-app'",
+    "prepack": "rollup --config"
   },
   "dependencies": {
     "@ember/render-modifiers": "^2.0.0",
@@ -41,15 +41,32 @@
     "@babel/preset-typescript": "7.18.6",
     "@babel/plugin-proposal-class-properties": "7.18.6",
     "@babel/plugin-proposal-decorators": "7.20.2",
-    "@embroider/addon-dev": "1.8.3",
+    "@embroider/addon-dev": "2.0.0",
     "@glint/core": "0.9.7",
     "@glint/environment-ember-loose": "0.9.7",
+    "@tsconfig/ember": "1.0.1",
     "@types/ember": "4.0.2",
     "@types/ember__destroyable": "4.0.1",
-    "@types/ember__test-helpers": "2.8.2",
+    "@types/ember__object": "4.0.5",
+    "@types/ember__service": "4.0.1",
+    "@types/ember__controller": "4.0.3",
+    "@types/ember__string": "3.16.0",
+    "@types/ember__template": "4.0.1",
+    "@types/ember__polyfills": "4.0.1",
+    "@types/ember__utils": "4.0.2",
+    "@types/ember__runloop": "4.0.2",
+    "@types/ember__debug": "4.0.3",
+    "@types/ember__engine": "4.0.4",
+    "@types/ember__application": "4.0.4",
+    "@types/ember__test": "4.0.1",
+    "@types/ember__array": "4.0.3",
+    "@types/ember__error": "4.0.1",
+    "@types/ember__component": "4.0.11",
+    "@types/ember__routing": "4.0.12",
+    "@types/ember__test-helpers": "2.6.1",
     "@typescript-eslint/eslint-plugin": "5.43.0",
     "@typescript-eslint/parser": "5.43.0",
-    "babel-eslint": "10.1.0",
+    "concurrently": "7.2.1",
     "ember-modifier": "3.2.7",
     "ember-template-lint": "4.18.0",
     "eslint": "7.32.0",
@@ -57,9 +74,9 @@
     "eslint-plugin-ember": "11.2.0",
     "eslint-plugin-node": "11.1.0",
     "eslint-plugin-prettier": "4.2.1",
-    "eslint-plugin-qunit": "7.3.2",
-    "npm-run-all": "4.1.5",
+    "prettier": "2.5.1",
     "rollup": "2.79.1",
+    "rollup-plugin-copy": "3.4.0",
     "rollup-plugin-ts": "3.0.2",
     "typescript": "4.7.4"
   },
@@ -82,30 +99,13 @@
       "./services/-portal.js": "./dist/_app_/services/-portal.js"
     }
   },
-  "release-it": {
-    "plugins": {
-      "release-it-lerna-changelog": {
-        "infile": "CHANGELOG.md",
-        "launchEditor": false
-      }
-    },
-    "git": {
-      "tagName": "v${version}"
-    },
-    "github": {
-      "release": true,
-      "tokenRef": "GITHUB_AUTH"
-    }
-  },
-  "resolutions": {
-    "socket.io": "4.5.3"
-  },
   "exports": {
-    "./addon-main.js": "./addon-main.js",
+    ".": "./dist/index.js",
     "./*": {
       "types": "./dist/*.d.ts",
-      "default": "./dist/*"
-    }
+      "default": "./dist/*.js"
+    },
+    "./addon-main.js": "./addon-main.js"
   },
   "typesVersions": {
     "*": {
