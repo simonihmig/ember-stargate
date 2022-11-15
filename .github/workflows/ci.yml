@@ -3,80 +3,77 @@ name: CI
 on:
   push:
     branches:
+      - main
       - master
       - renovate/*
-    tags:
-      - '*'
-  pull_request:
-  schedule:
-    - cron:  '0 4 * * 5' # Fridays at 4am
+  pull_request: {}
+
+concurrency:
+  group: ci-${{ github.head_ref || github.ref }}
+  cancel-in-progress: true
 
 jobs:
   test:
-    name: Tests
+    name: 'Tests'
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-      - name: Setup node.js
+      - uses: actions/checkout@v3
+      - name: Install Node
         uses: actions/setup-node@v3
         with:
-          node-version: 14
-      - name: Install dependencies
-        uses: bahmutov/npm-install@v1
+          node-version: 14.x
+          cache: yarn
+      - name: Install Dependencies
+        run: yarn install --frozen-lockfile
       - name: Lint
         run: yarn lint
-      - name: Test
+      - name: Run Tests
         run: yarn test
 
-# re-enable this when the socket.io issue has been resolved.
-# `bahmutov/npm-install` does not work with yarn resolutions here, as yarn is not used due to https://github.com/bahmutov/npm-install/issues/95
-#  test-no-lock:
-#    name: Floating Dependencies
-#    runs-on: ubuntu-latest
-#    needs:
-#      - test
-#    steps:
-#      - name: Checkout code
-#        uses: actions/checkout@v2
-#      - name: Setup node.js
-#        uses: actions/setup-node@v2
-#        with:
-#          node-version: 12
-#      - name: Install dependencies
-#        uses: bahmutov/npm-install@v1
-#        with:
-#          useLockFile: false
-#      - name: Test
-#        run: yarn test:ember
-
-  test-try:
-    name: Additional Tests
+  floating:
+    name: 'Floating Dependencies'
     runs-on: ubuntu-latest
-    needs:
-      - test
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 14.x
+          cache: yarn
+      - name: Install Dependencies
+        run: yarn install --no-lockfile
+      - name: Run Tests
+        run: yarn test
+
+  try-scenarios:
+    name: ${{ matrix.try-scenario }}
+    runs-on: ubuntu-latest
+    needs: 'test'
+
     strategy:
+      fail-fast: false
       matrix:
-        scenario:
+        try-scenario:
           - ember-lts-3.24
+          - ember-lts-3.28
+          - ember-lts-4.4
           - ember-release
           - ember-beta
           - ember-canary
-          - ember-default-with-jquery
           - ember-classic
           - embroider-safe
           - embroider-optimized
-      fail-fast: false
+
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-      - name: Setup node.js
+      - uses: actions/checkout@v3
+      - name: Install Node
         uses: actions/setup-node@v3
         with:
-          node-version: 14
-      - name: Install dependencies
-        uses: bahmutov/npm-install@v1
-      - name: Test
-        run: yarn ember try:one ${{ matrix.scenario }}
+          node-version: 14.x
+          cache: yarn
+      - name: Install Dependencies
+        run: yarn install --frozen-lockfile
+      - name: Run Tests
+        run: yarn ember try:one ${{ matrix.try-scenario }}
         working-directory: test-app

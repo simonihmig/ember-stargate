@@ -4,13 +4,9 @@ module.exports = {
   root: true,
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    ecmaVersion: 2021,
-    sourceType: 'module',
-    ecmaFeatures: {
-      legacyDecorators: true,
-    },
+    ecmaVersion: 'latest',
   },
-  plugins: ['ember', '@typescript-eslint'],
+  plugins: ['ember'],
   extends: [
     'eslint:recommended',
     'plugin:ember/recommended',
@@ -39,7 +35,12 @@ module.exports = {
     },
     // node files
     {
-      files: ['.eslintrc.js', '.template-lintrc.js', 'addon-main.js'],
+      files: [
+        './.eslintrc.js',
+        './.prettierrc.js',
+        './.template-lintrc.js',
+        './addon-main.js',
+      ],
       parserOptions: {
         sourceType: 'script',
       },
@@ -49,11 +50,6 @@ module.exports = {
       },
       plugins: ['node'],
       extends: ['plugin:node/recommended'],
-    },
-    {
-      // Test files:
-      files: ['tests/**/*-test.{js,ts}'],
-      extends: ['plugin:qunit/recommended'],
     },
   ],
 };
