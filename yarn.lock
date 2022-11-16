@@ -2037,17 +2037,6 @@
     "@types/ember__test-helpers" "*"
     "@types/htmlbars-inline-precompile" "*"
 
-"@types/ember__test-helpers@2.6.1":
-  version "2.6.1"
-  resolved "https://registry.yarnpkg.com/@types/ember__test-helpers/-/ember__test-helpers-2.6.1.tgz#2835bc60fd7daa93292d669fa9b61706836fe2e7"
-  integrity sha512-d2RShuBSaBzp04nt8ad+mNE1F6rbIcIIud8WFUVQqGSUGHuZQUq1051Jza12ksCUnXduyE/J9UDjyZvNKOHeBQ==
-  dependencies:
-    "@types/ember-resolver" "*"
-    "@types/ember__application" "*"
-    "@types/ember__error" "*"
-    "@types/ember__test-helpers" "*"
-    "@types/htmlbars-inline-precompile" "*"
-
 "@types/ember__test@*", "@types/ember__test@4.0.1":
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/@types/ember__test/-/ember__test-4.0.1.tgz#9ef25c8ebda6921daa3a16b7265be025eadfaa7b"

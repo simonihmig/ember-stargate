@@ -63,7 +63,7 @@
     "@types/ember__error": "4.0.1",
     "@types/ember__component": "4.0.11",
     "@types/ember__routing": "4.0.12",
-    "@types/ember__test-helpers": "2.6.1",
+    "@types/ember__test-helpers": "2.8.2",
     "@typescript-eslint/eslint-plugin": "5.43.0",
     "@typescript-eslint/parser": "5.43.0",
     "concurrently": "7.2.2",
