@@ -44,7 +44,7 @@
     "@embroider/addon-dev": "2.0.0",
     "@glint/core": "0.9.7",
     "@glint/environment-ember-loose": "0.9.7",
-    "@tsconfig/ember": "1.0.1",
+    "@tsconfig/ember": "1.1.0",
     "@types/ember": "4.0.2",
     "@types/ember__destroyable": "4.0.1",
     "@types/ember__object": "4.0.5",
