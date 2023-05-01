@@ -167,6 +167,14 @@ module('Integration | Component | portal', function (hooks) {
     assert.dom('#p2').hasText('foo');
   });
 
+  test('a portal target renders as an empty div', async function (assert) {
+    await render(hbs`
+      <PortalTarget @name="main" id="portal" />
+    `);
+
+    assert.dom('div#portal:empty').exists();
+  });
+
   test('a portal target renders only one portal by default', async function (assert) {
     await render(hbs`
       <PortalTarget @name="main" id="portal" />
