@@ -50,7 +50,7 @@
     "@types/ember__test": "4.0.1",
     "@types/ember__utils": "4.0.2",
     "@types/htmlbars-inline-precompile": "3.0.0",
-    "@types/qunit": "2.19.4",
+    "@types/qunit": "2.19.5",
     "@types/rsvp": "4.0.4",
     "@types/sinon": "10.0.13",
     "@typescript-eslint/eslint-plugin": "5.56.0",
