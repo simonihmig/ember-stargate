@@ -4779,43 +4779,7 @@ electron-to-chromium@^1.4.284:
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.378.tgz#73431ffd5fffebc18b4e897fac2e7d4ae6d559d9"
   integrity sha512-RfCD26kGStl6+XalfX3DGgt3z2DNwJS5DKRHCpkPq5T/PqpZMPB1moSRXuK9xhkt/sF57LlpzJgNoYl7mO7Z6w==
 
-ember-auto-import@2.6.1:
-  version "2.6.1"
-  resolved "https://registry.yarnpkg.com/ember-auto-import/-/ember-auto-import-2.6.1.tgz#bd8d434143bd411b99f4a8f32d8b58414d7da4f3"
-  integrity sha512-3bCRi/pXp4QslmuCXGlSz9xwR7DF5oDx3zZO5OXKzNZihtkqAM1xvGuRIdQSl46pvbAXOkp8Odl5fOen1i0dRw==
-  dependencies:
-    "@babel/core" "^7.16.7"
-    "@babel/plugin-proposal-class-properties" "^7.16.7"
-    "@babel/plugin-proposal-decorators" "^7.16.7"
-    "@babel/preset-env" "^7.16.7"
-    "@embroider/macros" "^1.0.0"
-    "@embroider/shared-internals" "^2.0.0"
-    babel-loader "^8.0.6"
-    babel-plugin-ember-modules-api-polyfill "^3.5.0"
-    babel-plugin-htmlbars-inline-precompile "^5.2.1"
-    babel-plugin-syntax-dynamic-import "^6.18.0"
-    broccoli-debug "^0.6.4"
-    broccoli-funnel "^3.0.8"
-    broccoli-merge-trees "^4.2.0"
-    broccoli-plugin "^4.0.0"
-    broccoli-source "^3.0.0"
-    css-loader "^5.2.0"
-    debug "^4.3.1"
-    fs-extra "^10.0.0"
-    fs-tree-diff "^2.0.0"
-    handlebars "^4.3.1"
-    js-string-escape "^1.0.1"
-    lodash "^4.17.19"
-    mini-css-extract-plugin "^2.5.2"
-    parse5 "^6.0.1"
-    resolve "^1.20.0"
-    resolve-package-path "^4.0.3"
-    semver "^7.3.4"
-    style-loader "^2.0.0"
-    typescript-memoize "^1.0.0-alpha.3"
-    walk-sync "^3.0.0"
-
-ember-auto-import@^2.6.0:
+ember-auto-import@2.6.3, ember-auto-import@^2.6.0:
   version "2.6.3"
   resolved "https://registry.yarnpkg.com/ember-auto-import/-/ember-auto-import-2.6.3.tgz#f18d1b93dd10b08ba5496518436f9d56dd4e000a"
   integrity sha512-uLhrRDJYWCRvQ4JQ1e64XlSrqAKSd6PXaJ9ZsZI6Tlms9T4DtQFxNXasqji2ZRJBVrxEoLCRYX3RTldsQ0vNGQ==
