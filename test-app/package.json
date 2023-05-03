@@ -52,7 +52,7 @@
     "@types/htmlbars-inline-precompile": "3.0.0",
     "@types/qunit": "2.19.5",
     "@types/rsvp": "4.0.4",
-    "@types/sinon": "10.0.13",
+    "@types/sinon": "10.0.14",
     "@typescript-eslint/eslint-plugin": "5.56.0",
     "@typescript-eslint/parser": "5.56.0",
     "broccoli-asset-rev": "3.0.0",
