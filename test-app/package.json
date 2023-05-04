@@ -73,7 +73,7 @@
     "ember-qunit": "6.2.0",
     "ember-resolver": "10.1.0",
     "ember-sinon-qunit": "6.0.0",
-    "ember-source": "3.28.11",
+    "ember-source": "3.28.12",
     "ember-source-channel-url": "3.0.0",
     "ember-stargate": "0.4.3",
     "ember-template-lint": "5.7.3",
