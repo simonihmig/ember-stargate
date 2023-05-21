@@ -56,6 +56,7 @@ export default class PortalService extends Service {
 
   unregisterTarget(name: string): void {
     this.#targets.delete(name);
+    this.#portalCount.delete(name);
   }
 
   registerPortal(name: string): void {
@@ -70,11 +71,11 @@ export default class PortalService extends Service {
   }
 
   unregisterPortal(name: string): void {
-    let count = this.#portalCount.get(name) ?? 0;
-    assert(
-      `Trying to unregister a portal "${name}" that hasn't been registered before`,
-      count > 0
-    );
+    let count = this.#portalCount.get(name);
+    if (count === undefined) {
+      return;
+    }
+
     count--;
     this.#portalCount.set(name, count);
     const target = this.#targets.get(name);

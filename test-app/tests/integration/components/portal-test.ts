@@ -1,6 +1,6 @@
 import { module, test } from 'qunit';
 import { setupRenderingTest } from 'ember-qunit';
-import { render, settled } from '@ember/test-helpers';
+import { render, rerender, settled } from '@ember/test-helpers';
 import { hbs } from 'ember-cli-htmlbars';
 import sinon from 'sinon';
 
@@ -315,5 +315,26 @@ module('Integration | Component | portal', function (hooks) {
     assert.ok(action.calledWithExactly(1));
     assert.ok(action.calledWithExactly(2));
     assert.strictEqual(action.callCount, 2);
+  });
+
+  test('portal can be immediately unrendered', async function (assert) {
+    assert.expect(0);
+
+    this.set('show', true);
+    const promise = render(hbs`
+      {{#if this.show}}
+      xxx
+      <PortalTarget @name="main" />
+      <Portal @target="main">
+        foo
+      </Portal>
+      {{/if}}
+    `);
+
+    await rerender();
+
+    this.set('show', false);
+
+    await promise;
   });
 });
