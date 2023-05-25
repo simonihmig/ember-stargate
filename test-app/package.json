@@ -91,7 +91,7 @@
     "qunit-dom": "2.0.0",
     "sinon": "15.1.0",
     "typescript": "5.0.4",
-    "webpack": "5.84.0"
+    "webpack": "5.84.1"
   },
   "engines": {
     "node": "14.* || >= 16"
