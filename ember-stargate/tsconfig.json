@@ -3,5 +3,10 @@
   "include": ["src/**/*", "unpublished-development-types/**/*"],
   "glint": {
     "environment": "ember-loose"
+  },
+  "compilerOptions": {
+    "declarationDir": "declarations",
+    "emitDeclarationOnly": true,
+    "noEmit": false
   }
 }
