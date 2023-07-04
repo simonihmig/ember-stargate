@@ -5466,10 +5466,10 @@ ember-template-imports@^3.4.2:
     string.prototype.matchall "^4.0.6"
     validate-peer-dependencies "^1.1.0"
 
-ember-template-lint@5.10.0:
-  version "5.10.0"
-  resolved "https://registry.npmjs.org/ember-template-lint/-/ember-template-lint-5.10.0.tgz#8e049e1db18b0de7ced5e6e83b94d518ca193216"
-  integrity sha512-LK+ZBXuqflI8KYXgzS5HcgkxSMAEOqilQVBMrwmWyfY7otDOL17mlPjMeB0OFUMXYKIq/qzz72HbM+J7WsBE6A==
+ember-template-lint@5.11.0:
+  version "5.11.0"
+  resolved "https://registry.npmjs.org/ember-template-lint/-/ember-template-lint-5.11.0.tgz#539ed054a9040066fd2ad2a81ffb391e8b96ce71"
+  integrity sha512-uoVz4IAFRyg3JnMTL+SDtZkHPZM6O1qhvvgcb7LD6325W6asjPZGF1YHDyxnssEOnCSVsu1S5bk77tqE5NnyNg==
   dependencies:
     "@lint-todo/utils" "^13.0.3"
     aria-query "^5.0.2"
@@ -5482,7 +5482,7 @@ ember-template-lint@5.10.0:
     find-up "^6.3.0"
     fuse.js "^6.5.3"
     get-stdin "^9.0.0"
-    globby "^13.1.4"
+    globby "^13.2.0"
     is-glob "^4.0.3"
     language-tags "^1.0.8"
     micromatch "^4.0.5"
@@ -7032,7 +7032,7 @@ globby@^11.0.3, globby@^11.1.0:
     merge2 "^1.4.1"
     slash "^3.0.0"
 
-globby@^13.1.4:
+globby@^13.2.0:
   version "13.2.1"
   resolved "https://registry.npmjs.org/globby/-/globby-13.2.1.tgz#986d44187ba6a9fc4aa9b16caf0ab9a04db94ae9"
   integrity sha512-DPCBxctI7dN4EeIqjW2KGqgdcUMbrhJ9AzON+PlxCtvppWhubTLD4+a0GFxiym14ZvacUydTPjLPc2DlKz7EIg==

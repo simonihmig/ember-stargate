@@ -78,7 +78,7 @@
     "ember-source": "3.28.12",
     "ember-source-channel-url": "3.0.0",
     "ember-stargate": "0.4.3",
-    "ember-template-lint": "5.10.0",
+    "ember-template-lint": "5.11.0",
     "ember-try": "2.0.0",
     "eslint": "7.32.0",
     "eslint-config-prettier": "8.8.0",
