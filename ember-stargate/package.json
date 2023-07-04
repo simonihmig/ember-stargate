@@ -105,7 +105,7 @@
   "exports": {
     ".": "./dist/index.js",
     "./*": {
-      "types": "./declarations/*.js",
+      "types": "./declarations/*.d.js",
       "default": "./dist/*.js"
     },
     "./addon-main.js": "./addon-main.js"
