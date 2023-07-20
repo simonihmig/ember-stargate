@@ -14,10 +14,13 @@
   },
   "files": [
     "addon-main.js",
+    "declarations",
     "dist"
   ],
   "scripts": {
-    "build": "rollup --config",
+    "build": "concurrently 'npm:build:*'",
+    "build:js": "rollup --config",
+    "build:types": "glint --declaration",
     "lint": "concurrently 'npm:lint:*(!fix)' --names 'lint:'",
     "lint:fix": "concurrently 'npm:lint:*:fix' --names 'fix:'",
     "lint:hbs": "ember-template-lint . --no-error-on-unmatched-pattern",
@@ -25,7 +28,9 @@
     "lint:hbs:fix": "ember-template-lint . --fix --no-error-on-unmatched-pattern",
     "lint:js:fix": "eslint . --fix",
     "lint:types": "glint",
-    "start": "rollup --config --watch",
+    "start": "concurrently 'npm:start:*'",
+    "start:js": "rollup --config --watch --no-watch.clearScreen",
+    "start:types": "glint -d --watch",
     "test": "echo 'A v2 addon does not have tests, run tests in test-app'",
     "prepack": "rollup --config"
   },
@@ -46,29 +51,30 @@
     "@glint/environment-ember-loose": "1.0.2",
     "@glint/template": "1.0.2",
     "@tsconfig/ember": "2.0.0",
-    "@types/ember": "4.0.3",
-    "@types/ember__destroyable": "4.0.1",
-    "@types/ember__object": "4.0.5",
-    "@types/ember__service": "4.0.2",
-    "@types/ember__controller": "4.0.4",
+    "@types/ember": "4.0.4",
+    "@types/ember__destroyable": "4.0.2",
+    "@types/ember__object": "4.0.6",
+    "@types/ember__service": "4.0.3",
+    "@types/ember__controller": "4.0.5",
     "@types/ember__string": "3.16.3",
-    "@types/ember__template": "4.0.1",
-    "@types/ember__polyfills": "4.0.1",
-    "@types/ember__utils": "4.0.2",
-    "@types/ember__runloop": "4.0.2",
-    "@types/ember__debug": "4.0.3",
-    "@types/ember__engine": "4.0.4",
-    "@types/ember__application": "4.0.5",
-    "@types/ember__test": "4.0.1",
-    "@types/ember__array": "4.0.3",
-    "@types/ember__error": "4.0.2",
-    "@types/ember__component": "4.0.13",
-    "@types/ember__routing": "4.0.12",
+    "@types/ember__template": "4.0.2",
+    "@types/ember__polyfills": "4.0.2",
+    "@types/ember__utils": "4.0.3",
+    "@types/ember__runloop": "4.0.3",
+    "@types/ember__debug": "4.0.4",
+    "@types/ember__engine": "4.0.5",
+    "@types/ember__application": "4.0.6",
+    "@types/ember__test": "4.0.2",
+    "@types/ember__array": "4.0.4",
+    "@types/ember__error": "4.0.3",
+    "@types/ember__component": "4.0.14",
+    "@types/ember__routing": "4.0.13",
     "@typescript-eslint/eslint-plugin": "5.59.7",
     "@typescript-eslint/parser": "5.59.7",
+    "@rollup/plugin-babel": "6.0.3",
     "concurrently": "8.0.1",
     "ember-modifier": "4.1.0",
-    "ember-template-lint": "5.10.0",
+    "ember-template-lint": "5.11.0",
     "eslint": "7.32.0",
     "eslint-config-prettier": "8.8.0",
     "eslint-plugin-ember": "11.7.2",
@@ -77,7 +83,6 @@
     "prettier": "2.8.8",
     "rollup": "3.23.0",
     "rollup-plugin-copy": "3.4.0",
-    "rollup-plugin-ts": "3.2.0",
     "typescript": "5.0.4"
   },
   "publishConfig": {
@@ -97,9 +102,12 @@
     }
   },
   "exports": {
-    ".": "./dist/index.js",
+    ".": {
+      "types": "./declarations/index.d.ts",
+      "default": "./dist/index.js"
+    },
     "./*": {
-      "types": "./dist/*.d.ts",
+      "types": "./declarations/*.d.ts",
       "default": "./dist/*.js"
     },
     "./addon-main.js": "./addon-main.js"
@@ -107,7 +115,7 @@
   "typesVersions": {
     "*": {
       "*": [
-        "dist/*"
+        "declarations/*"
       ]
     }
   }

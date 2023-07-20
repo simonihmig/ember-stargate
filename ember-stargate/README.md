@@ -124,7 +124,13 @@ you need to import the addon's Glint template registry entries as described in t
 ```ts
 // e.g. types/glint.d.ts
 import '@glint/environment-ember-loose';
-import 'ember-stargate/glint';
+import type StargateRegistry from 'ember-stargate/template-registry';
+
+declare module '@glint/environment-ember-loose/registry' {
+  export default interface Registry extends StargateRegistry, /* other addon registries */ {
+    // local entries
+  }
+}
 ```
 
 > Note that Glint itself is still under active development, and as such breaking changes might occur. Therefore, Glint support by this addon is also considered experimental, and not covered by our SemVer contract!
