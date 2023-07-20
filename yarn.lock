@@ -4816,6 +4816,14 @@ electron-to-chromium@^1.4.431:
   resolved "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.4.449.tgz#79ffe4514c81c35d4eb13030a63ff3383a8cc655"
   integrity sha512-TxLRpRUj/107ATefeP8VIUWNOv90xJxZZbCW/eIbSZQiuiFANCx2b7u+GbVc9X4gU+xnbvypNMYVM/WArE1DNQ==
 
+ember-async-data@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/ember-async-data/-/ember-async-data-1.0.1.tgz#57158eba0c75eac64b7d030a6e5c5d01b4cb6020"
+  integrity sha512-R9nBxCZ9WDPMJpuGBODs8wV1PHXUbkSbrzVmL34R4aOWbx237yLBllJghQOwfJs1+D72wdzgxg/+J3DY43xz3g==
+  dependencies:
+    "@ember/test-waiters" "^3.0.0"
+    "@embroider/addon-shim" "^1.8.4"
+
 ember-auto-import@2.6.3, ember-auto-import@^2.6.0, ember-auto-import@^2.6.1:
   version "2.6.3"
   resolved "https://registry.npmjs.org/ember-auto-import/-/ember-auto-import-2.6.3.tgz#f18d1b93dd10b08ba5496518436f9d56dd4e000a"
@@ -5346,14 +5354,15 @@ ember-resolver@10.1.0:
   dependencies:
     ember-cli-babel "^7.26.11"
 
-ember-resources@^5.0.1:
-  version "5.6.4"
-  resolved "https://registry.npmjs.org/ember-resources/-/ember-resources-5.6.4.tgz#1ae05bb5398ab0d8fab8c0925c5bf679ee86e327"
-  integrity sha512-ShdosnruPm37jPpzPOgPVelymEDJT/27Jz/j5AGPVAfCaUhRIocTxNMtPx13ox890A2babuPF5M3Ur8UFidqtw==
+ember-resources@^6.0.0:
+  version "6.2.2"
+  resolved "https://registry.yarnpkg.com/ember-resources/-/ember-resources-6.2.2.tgz#0901212e52ff21fd0d56132221ab99196481cfc2"
+  integrity sha512-KAYIyJdCrFyRuMr+FO/FjoEjr6fGhDk2sOwIANamos2lezieGLLiGxx44QiEHD8yYe0CqVw6LBbvQUY/7C/GKw==
   dependencies:
     "@babel/runtime" "^7.17.8"
     "@embroider/addon-shim" "^1.2.0"
     "@embroider/macros" "^1.2.0"
+    ember-async-data "^1.0.1"
 
 ember-rfc176-data@^0.3.15, ember-rfc176-data@^0.3.17:
   version "0.3.18"
