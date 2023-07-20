@@ -1,5 +1,4 @@
 import { babel } from '@rollup/plugin-babel';
-import { nodeResolve } from '@rollup/plugin-node-resolve';
 import copy from 'rollup-plugin-copy';
 import { Addon } from '@embroider/addon-dev/rollup';
 
@@ -9,7 +8,7 @@ const addon = new Addon({
 });
 
 // Add extensions here, such as ts, gjs, etc that you may import
-const extensions = ['.js', '.ts', '.hbs'];
+const extensions = ['.js', '.ts'];
 
 export default {
   // This provides defaults that work well alongside `publicEntrypoints` below.
@@ -43,8 +42,6 @@ export default {
       extensions,
       babelHelpers: 'bundled',
     }),
-    // Allows rollup to resolve imports of files with the specified extensions
-    nodeResolve({ extensions }),
 
     // Ensure that standalone .hbs files are properly integrated as Javascript.
     addon.hbs(),

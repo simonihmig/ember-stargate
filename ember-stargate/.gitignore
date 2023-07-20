@@ -3,8 +3,3 @@
 # will also appear in published NPM packages.
 /README.md
 /LICENSE.md
-# Build output
-/dist/
-/declarations/
-# npm/pnpm/yarn pack output
-*.tgz

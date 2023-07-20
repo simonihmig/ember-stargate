@@ -14,13 +14,13 @@
   },
   "files": [
     "addon-main.js",
-    "dist",
-    "declarations"
+    "declarations",
+    "dist"
   ],
   "scripts": {
     "build": "concurrently 'npm:build:*'",
     "build:js": "rollup --config",
-    "build:types": "glint -d",
+    "build:types": "glint --declaration",
     "lint": "concurrently 'npm:lint:*(!fix)' --names 'lint:'",
     "lint:fix": "concurrently 'npm:lint:*:fix' --names 'fix:'",
     "lint:hbs": "ember-template-lint . --no-error-on-unmatched-pattern",
@@ -72,7 +72,6 @@
     "@typescript-eslint/eslint-plugin": "5.59.7",
     "@typescript-eslint/parser": "5.59.7",
     "@rollup/plugin-babel": "6.0.3",
-    "@rollup/plugin-node-resolve": "15.1.0",
     "concurrently": "8.0.1",
     "ember-modifier": "4.1.0",
     "ember-template-lint": "5.11.0",
@@ -103,9 +102,12 @@
     }
   },
   "exports": {
-    ".": "./dist/index.js",
+    ".": {
+      "types": "./declarations/index.d.ts",
+      "default": "./dist/index.js"
+    },
     "./*": {
-      "types": "./declarations/*.d.js",
+      "types": "./declarations/*.d.ts",
       "default": "./dist/*.js"
     },
     "./addon-main.js": "./addon-main.js"
