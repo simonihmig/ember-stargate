@@ -2,6 +2,31 @@
 
 
 
+
+## v0.5.0 (2023-07-21)
+
+#### :boom: Breaking Change
+* [#608](https://github.com/simonihmig/ember-stargate/pull/608) Drop Ember 3.24 support ([@simonihmig](https://github.com/simonihmig))
+
+#### :rocket: Enhancement
+* [#636](https://github.com/simonihmig/ember-stargate/pull/636) Update to Glint 1.0 ([@simonihmig](https://github.com/simonihmig))
+* [#635](https://github.com/simonihmig/ember-stargate/pull/635) Make portal target render as empty ([@simonihmig](https://github.com/simonihmig))
+
+#### :bug: Bug Fix
+* [#644](https://github.com/simonihmig/ember-stargate/pull/644) Fix `Trying to unregister a portal` assertion when immediately unrendering portal ([@simonihmig](https://github.com/simonihmig))
+
+#### :house: Internal
+* [#655](https://github.com/simonihmig/ember-stargate/pull/655) Drop rollup-plugin-ts, use updated addon blueprint ([@simonihmig](https://github.com/simonihmig))
+* [#634](https://github.com/simonihmig/ember-stargate/pull/634) Update dependencies for Ember 5 ([@simonihmig](https://github.com/simonihmig))
+* [#633](https://github.com/simonihmig/ember-stargate/pull/633) Update to use node 18 internally ([@simonihmig](https://github.com/simonihmig))
+* [#596](https://github.com/simonihmig/ember-stargate/pull/596) Align v2 addon boilerplate with latest blueprint ([@simonihmig](https://github.com/simonihmig))
+* [#586](https://github.com/simonihmig/ember-stargate/pull/586) Update release-it plugins ([@simonihmig](https://github.com/simonihmig))
+* [#563](https://github.com/simonihmig/ember-stargate/pull/563) Setup ESLint + TS properly in test-app ([@simonihmig](https://github.com/simonihmig))
+* [#553](https://github.com/simonihmig/ember-stargate/pull/553) Update workspace layout ([@simonihmig](https://github.com/simonihmig))
+
+#### Committers: 1
+- Simon Ihmig ([@simonihmig](https://github.com/simonihmig))
+
 ## v0.4.3 (2022-07-01)
 
 #### :rocket: Enhancement
