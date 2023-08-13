@@ -22,7 +22,7 @@
     "@release-it-plugins/workspaces": "3.2.0",
     "concurrently": "8.2.0",
     "prettier": "2.8.8",
-    "release-it": "15.11.0"
+    "release-it": "16.1.5"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
