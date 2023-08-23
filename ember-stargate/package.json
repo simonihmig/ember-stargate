@@ -67,7 +67,7 @@
     "@types/ember__test": "4.0.2",
     "@types/ember__array": "4.0.4",
     "@types/ember__error": "4.0.3",
-    "@types/ember__component": "4.0.14",
+    "@types/ember__component": "4.0.15",
     "@types/ember__routing": "4.0.13",
     "@typescript-eslint/eslint-plugin": "6.2.0",
     "@typescript-eslint/parser": "6.2.0",
