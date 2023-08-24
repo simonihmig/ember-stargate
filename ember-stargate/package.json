@@ -42,8 +42,8 @@
     "tracked-maps-and-sets": "^3.0.1"
   },
   "devDependencies": {
-    "@babel/core": "7.22.10",
-    "@babel/preset-typescript": "7.22.5",
+    "@babel/core": "7.22.11",
+    "@babel/preset-typescript": "7.22.11",
     "@babel/plugin-proposal-class-properties": "7.18.6",
     "@babel/plugin-proposal-decorators": "7.22.10",
     "@embroider/addon-dev": "4.1.0",
