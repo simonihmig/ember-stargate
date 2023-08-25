@@ -48,7 +48,7 @@
     "@babel/plugin-proposal-decorators": "7.22.10",
     "@embroider/addon-dev": "4.1.0",
     "@glint/core": "1.1.0",
-    "@glint/environment-ember-loose": "1.0.2",
+    "@glint/environment-ember-loose": "1.1.0",
     "@glint/template": "1.0.2",
     "@tsconfig/ember": "3.0.0",
     "@types/ember": "4.0.4",
