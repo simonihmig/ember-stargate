@@ -32,7 +32,7 @@
     "@glimmer/tracking": "1.1.2",
     "@glint/core": "1.1.0",
     "@glint/environment-ember-loose": "1.1.0",
-    "@glint/template": "1.0.2",
+    "@glint/template": "1.1.0",
     "@types/ember": "4.0.4",
     "@types/ember__destroyable": "4.0.2",
     "@types/ember__object": "4.0.6",
