@@ -82,7 +82,7 @@
     "eslint-plugin-prettier": "4.2.1",
     "prettier": "2.8.8",
     "rollup": "3.28.1",
-    "rollup-plugin-copy": "3.4.0",
+    "rollup-plugin-copy": "3.5.0",
     "typescript": "5.2.2"
   },
   "publishConfig": {
