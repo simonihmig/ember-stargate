@@ -1956,10 +1956,10 @@
   resolved "https://registry.yarnpkg.com/@types/ember__polyfills/-/ember__polyfills-4.0.2.tgz#6eb180d15a60d6a9d0480fd9aae74a309632d5e7"
   integrity sha512-DMtjEhCHgrMion+qDWQVC9gW5SIY5wElueFbAmBLghTcUOgLWLTFzah3PxKln9cQNRO36699Irg2UdYOJsY6Jg==
 
-"@types/ember__routing@*", "@types/ember__routing@4.0.13":
-  version "4.0.13"
-  resolved "https://registry.yarnpkg.com/@types/ember__routing/-/ember__routing-4.0.13.tgz#d73ffee1199f673ea7730ba2f9127970df3126d4"
-  integrity sha512-CNBx6RmGzZpe8ahuy6+aPYKc/EelmbkndqgCigGkkrqvV5B+ayb3rdeKa2XojyXIqSjvjmcYyj9TTvian0yDgg==
+"@types/ember__routing@*", "@types/ember__routing@4.0.14":
+  version "4.0.14"
+  resolved "https://registry.yarnpkg.com/@types/ember__routing/-/ember__routing-4.0.14.tgz#ca2cbd412d53c1f97ac30e62dca80f3ebb2e9334"
+  integrity sha512-3PR7TQBd4h8886z11NkOuq64zHFrhBjQA94i+5NnaJ2K8Fg7BVB5xyBDjARGqXemenBwU/gGsykntLVitd9n7Q==
   dependencies:
     "@types/ember" "*"
     "@types/ember__controller" "*"
