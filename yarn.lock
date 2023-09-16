@@ -1796,10 +1796,10 @@
   resolved "https://registry.yarnpkg.com/@tootallnate/quickjs-emscripten/-/quickjs-emscripten-0.23.0.tgz#db4ecfd499a9765ab24002c3b696d02e6d32a12c"
   integrity sha512-C5Mc6rdnsaJDjO3UpGW/CQTHtCKaYlScZTly4JIu97Jxo/odCiH0ITnDXSJPTOrEKk/ycSZ0AOgTmkDtkOsvIA==
 
-"@tsconfig/ember@3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@tsconfig/ember/-/ember-3.0.0.tgz#a9e34e021a6188eeef4347abdc340a30850b656c"
-  integrity sha512-KF9F9f4i+8LE31OKS014n5uEDt1mB/6ZvyQz/Mam28nAKDTSMBlOWHgTOj0TY8l4BfbEE+BgUuWCSoUHhb2BMw==
+"@tsconfig/ember@3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@tsconfig/ember/-/ember-3.0.1.tgz#2e252c7b4716909a7c0ac052991c33e7a22b14cd"
+  integrity sha512-IBoECN9o9StxTZSy12eNSPdqiH5VzngD5Qx9YQDfteiXk9XyJhnyRQuBoU/MQCVnqau9fJpgKoA8Sy/0qItFXw==
 
 "@types/body-parser@*":
   version "1.19.2"
