@@ -21,7 +21,7 @@
     "@release-it-plugins/lerna-changelog": "6.0.0",
     "@release-it-plugins/workspaces": "4.0.0",
     "concurrently": "8.2.1",
-    "prettier": "2.8.8",
+    "prettier": "3.2.5",
     "release-it": "16.1.5"
   },
   "publishConfig": {
