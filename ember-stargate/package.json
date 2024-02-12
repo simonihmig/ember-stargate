@@ -68,7 +68,7 @@
     "@types/ember__array": "4.0.5",
     "@types/ember__error": "4.0.3",
     "@types/ember__component": "4.0.16",
-    "@types/ember__routing": "4.0.14",
+    "@types/ember__routing": "4.0.22",
     "@typescript-eslint/eslint-plugin": "6.7.2",
     "@typescript-eslint/parser": "6.7.2",
     "@rollup/plugin-babel": "6.0.3",
