@@ -1,7 +1,7 @@
 import Component from '@glimmer/component';
 import { inject as service } from '@ember/service';
 import { next } from '@ember/runloop';
-import { Resource } from 'ember-resources';
+import { Resource } from 'ember-modify-based-class-resource';
 import type PortalService from '../services/-portal';
 import type { Target } from '../services/-portal';
 import { registerDestructor } from '@ember/destroyable';

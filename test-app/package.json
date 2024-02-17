@@ -74,7 +74,7 @@
     "ember-page-title": "8.0.0",
     "ember-qunit": "6.2.0",
     "ember-resolver": "11.0.1",
-    "ember-sinon-qunit": "7.1.4",
+    "ember-sinon-qunit": "7.4.0",
     "ember-source": "3.28.12",
     "ember-source-channel-url": "3.0.0",
     "ember-stargate": "0.5.0",
