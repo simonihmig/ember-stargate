@@ -1035,7 +1035,7 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.14.0", "@babel/runtime@^7.17.8", "@babel/runtime@^7.21.0", "@babel/runtime@^7.8.4":
+"@babel/runtime@^7.14.0", "@babel/runtime@^7.21.0", "@babel/runtime@^7.8.4":
   version "7.22.15"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.22.15.tgz#38f46494ccf6cf020bd4eed7124b425e83e523b8"
   integrity sha512-T0O+aa+4w0u06iNmapipJXMV4HoUir03hpx3/YqXXhu9xim3w+dVphjFWl1OH8NbZHw5Lbm9k45drDkgq2VNNA==
@@ -1166,7 +1166,7 @@
     walk-sync "^3.0.0"
     yargs "^17.0.1"
 
-"@embroider/addon-shim@^1.0.0", "@embroider/addon-shim@^1.2.0", "@embroider/addon-shim@^1.8.4", "@embroider/addon-shim@^1.8.5":
+"@embroider/addon-shim@^1.0.0", "@embroider/addon-shim@^1.2.0", "@embroider/addon-shim@^1.8.4":
   version "1.8.6"
   resolved "https://registry.yarnpkg.com/@embroider/addon-shim/-/addon-shim-1.8.6.tgz#b676991b4fa32c3a98dc7db7dc6cd655029c3f09"
   integrity sha512-siC9kP78uucEbpDcVyxjkwa76pcs5rVzDVpWO4PDc9EAXRX+pzmUuSTLAK3GztUwx7/PWhz1BenAivqdSvSgfg==
@@ -4806,14 +4806,6 @@ electron-to-chromium@^1.4.477:
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.523.tgz#f82f99243c827df05c26776d49712cb284972df6"
   integrity sha512-9AreocSUWnzNtvLcbpng6N+GkXnCcBR80IQkxRC9Dfdyg4gaWNUPBujAHUpKkiUkoSoR9UlhA4zD/IgBklmhzg==
 
-ember-async-data@^1.0.1:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/ember-async-data/-/ember-async-data-1.0.2.tgz#6eb0a6aa74486dc691e082e9a6675937914a3a1a"
-  integrity sha512-HCnQnnPCV5A7FADoW6/e+48PVxQ1ElatxZeJJoTb2UuklMHK8CpdAvEILVC0qtEeyIEbcG/LyOIxuHK0ja63zQ==
-  dependencies:
-    "@ember/test-waiters" "^3.0.0"
-    "@embroider/addon-shim" "^1.8.5"
-
 ember-auto-import@2.6.3, ember-auto-import@^2.6.0, ember-auto-import@^2.6.1:
   version "2.6.3"
   resolved "https://registry.yarnpkg.com/ember-auto-import/-/ember-auto-import-2.6.3.tgz#f18d1b93dd10b08ba5496518436f9d56dd4e000a"
@@ -5376,15 +5368,13 @@ ember-resolver@11.0.1:
   dependencies:
     ember-cli-babel "^7.26.11"
 
-ember-resources@^6.0.0:
-  version "6.4.0"
-  resolved "https://registry.yarnpkg.com/ember-resources/-/ember-resources-6.4.0.tgz#fe49cf3d8722316b481a8e4fcb5b1038ffb1d751"
-  integrity sha512-F5tfwhu8yRrPsMQk5nJWAZJuCi1xvGaTHp3izT+8rwuBXZSvjJAW+EapWNhKR7SYmtail9cPVwh37lcDd6HLXQ==
+ember-resources@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/ember-resources/-/ember-resources-7.0.0.tgz#5f7c0fd0e8d2bf5f45cc17e79ba8ced18b2ebe12"
+  integrity sha512-BRah6wsXMejHWfTBFJZ+8MYeUz4ylLP4afUxK+sPCb+Nv3LKqBTEPpvahHoE5FwY56pOPhg1TQWJI/+Aj1rWWA==
   dependencies:
-    "@babel/runtime" "^7.17.8"
     "@embroider/addon-shim" "^1.2.0"
     "@embroider/macros" "^1.12.3"
-    ember-async-data "^1.0.1"
 
 ember-rfc176-data@^0.3.15, ember-rfc176-data@^0.3.17:
   version "0.3.18"
