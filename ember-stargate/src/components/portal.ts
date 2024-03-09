@@ -12,7 +12,7 @@ class Tracker {
 
   _target?: string;
 
-  modify(newTarget: string) {
+  modify(newTarget: string): void {
     const previousTarget = this._target;
     next(() => {
       this.portalService.registerPortal(newTarget);
@@ -29,7 +29,7 @@ class Tracker {
       : undefined;
   }
 
-  destroy() {
+  destroy(): void {
     if (!this._target) {
       return;
     }
@@ -38,15 +38,15 @@ class Tracker {
   }
 }
 
-function PortalTrackerResource(inputFn: () => string) {
-  let state = new Tracker();
+function PortalTrackerResource(inputFn: () => string): Tracker {
+  const state = new Tracker();
 
   return resource(({ on, owner }) => {
     setOwner(state, owner);
 
     on.cleanup(() => state.destroy());
 
-    return () => {
+    return (): Tracker => {
       state.modify(inputFn());
 
       return state;
