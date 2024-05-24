@@ -1,37 +1,18 @@
 import Component from '@glimmer/component';
 import { inject as service } from '@ember/service';
 import { next } from '@ember/runloop';
-import { Resource } from 'ember-resources';
+import { use, resource } from 'ember-resources';
 import type PortalService from '../services/-portal';
 import type { Target } from '../services/-portal';
-import { registerDestructor } from '@ember/destroyable';
+import { setOwner } from '@ember/application';
 
-interface PortalTrackerResourceArgs {
-  Positional: [string];
-}
-
-class PortalTrackerResource extends Resource<PortalTrackerResourceArgs> {
+class Tracker {
   @service('-portal')
   portalService!: PortalService;
 
   _target?: string;
 
-  constructor(owner: unknown) {
-    super(owner);
-
-    registerDestructor(
-      this,
-      () => this._target && this.portalService.unregisterPortal(this._target)
-    );
-  }
-
-  get target(): Target | undefined {
-    return this._target
-      ? this.portalService.getTarget(this._target)
-      : undefined;
-  }
-
-  modify([newTarget]: [string]): void {
+  modify(newTarget: string): void {
     const previousTarget = this._target;
     next(() => {
       this.portalService.registerPortal(newTarget);
@@ -41,6 +22,36 @@ class PortalTrackerResource extends Resource<PortalTrackerResourceArgs> {
     });
     this._target = newTarget;
   }
+
+  get target(): Target | undefined {
+    return this._target
+      ? this.portalService.getTarget(this._target)
+      : undefined;
+  }
+
+  destroy(): void {
+    if (!this._target) {
+      return;
+    }
+
+    this.portalService.unregisterPortal(this._target);
+  }
+}
+
+function PortalTrackerResource(inputFn: () => string): Tracker {
+  const state = new Tracker();
+
+  return resource(({ on, owner }) => {
+    setOwner(state, owner);
+
+    on.cleanup(() => state.destroy());
+
+    return (): Tracker => {
+      state.modify(inputFn());
+
+      return state;
+    };
+  });
 }
 
 interface PortalSignature {
@@ -53,7 +64,7 @@ interface PortalSignature {
 }
 
 export default class Portal extends Component<PortalSignature> {
-  tracker = PortalTrackerResource.from(this, () => [this.args.target]);
+  @use tracker = PortalTrackerResource(() => this.args.target);
 
   get target(): Target | undefined {
     return this.tracker.target;
