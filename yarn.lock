@@ -5200,10 +5200,10 @@ ember-cli-version-checker@^5.1.1, ember-cli-version-checker@^5.1.2:
     semver "^7.3.4"
     silent-error "^1.1.1"
 
-ember-cli@4.12.2:
-  version "4.12.2"
-  resolved "https://registry.yarnpkg.com/ember-cli/-/ember-cli-4.12.2.tgz#a9d2dd191093fcf18122732fae8999c9ca873447"
-  integrity sha512-990UglceEsB3nd/pTI08wL+hbApICrd6P4BO88486rSf9r3XjZ7LBcD318N8I1AGe5IUDkbccMrOQxoHge6zNg==
+ember-cli@4.12.3:
+  version "4.12.3"
+  resolved "https://registry.yarnpkg.com/ember-cli/-/ember-cli-4.12.3.tgz#a8c3f0e62ed1c595fd2348eca82a3a068c6bf001"
+  integrity sha512-Ilap7fVGx0+sF6y5O1id+xVPYlc2cJ8OAG6faEQPyvbaCCUsCZnAEr7EMA+5qg0kNqjawIIHJTgnQesdbaDwtg==
   dependencies:
     "@babel/core" "^7.21.0"
     "@babel/plugin-transform-modules-amd" "^7.20.11"
@@ -5267,7 +5267,7 @@ ember-cli@4.12.2:
     isbinaryfile "^5.0.0"
     js-yaml "^4.1.0"
     leek "0.0.24"
-    lodash.template "^4.5.0"
+    lodash "^4.17.21"
     markdown-it "^13.0.1"
     markdown-it-terminal "^0.4.0"
     minimatch "^7.4.1"
