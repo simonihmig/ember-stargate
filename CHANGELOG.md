@@ -3,6 +3,20 @@
 
 
 
+
+## v0.6.0 (2024-06-03)
+
+#### :boom: Breaking Change
+* [#696](https://github.com/simonihmig/ember-stargate/pull/696) Drop support for Ember < 4.12 ([@simonihmig](https://github.com/simonihmig))
+* [#687](https://github.com/simonihmig/ember-stargate/pull/687) Require ember-resources v7 ([@basz](https://github.com/basz))
+
+#### :rocket: Enhancement
+* [#687](https://github.com/simonihmig/ember-stargate/pull/687) Require ember-resources v7 ([@basz](https://github.com/basz))
+
+#### Committers: 2
+- Bas Kamer ([@basz](https://github.com/basz))
+- Simon Ihmig ([@simonihmig](https://github.com/simonihmig))
+
 ## v0.5.0 (2023-07-21)
 
 #### :boom: Breaking Change
