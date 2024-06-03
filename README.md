@@ -11,7 +11,7 @@ but without its caveats.
 
 ## Compatibility
 
-- Ember.js v3.28 or above
+- Ember.js v4.12 or above
 - Embroider or ember-auto-import v2
 
 ## Installation
@@ -127,7 +127,8 @@ import '@glint/environment-ember-loose';
 import type StargateRegistry from 'ember-stargate/template-registry';
 
 declare module '@glint/environment-ember-loose/registry' {
-  export default interface Registry extends StargateRegistry, /* other addon registries */ {
+  export default interface Registry
+    extends StargateRegistry /* other addon registries */ {
     // local entries
   }
 }
