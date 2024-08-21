@@ -46,7 +46,7 @@
   },
   "version": "0.6.0",
   "volta": {
-    "node": "18.20.3",
+    "node": "18.20.4",
     "yarn": "1.22.22"
   },
   "dependencies": {}
