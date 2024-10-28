@@ -54,7 +54,7 @@ function PortalTrackerResource(inputFn: () => string): Tracker {
   });
 }
 
-interface PortalSignature {
+export interface PortalSignature {
   Args: {
     target: string;
     renderInPlace?: boolean;

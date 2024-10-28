@@ -4,7 +4,7 @@ import { inject as service } from '@ember/service';
 import { assert } from '@ember/debug';
 import type PortalService from '../services/-portal';
 
-interface PortalTargetSignature {
+export interface PortalTargetSignature {
   Element: HTMLDivElement;
   Args: {
     name: string;
