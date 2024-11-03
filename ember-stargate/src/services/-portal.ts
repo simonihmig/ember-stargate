@@ -1,7 +1,7 @@
 import Service from '@ember/service';
 import { assert } from '@ember/debug';
 import { next } from '@ember/runloop';
-import { TrackedMap } from 'tracked-maps-and-sets';
+import { TrackedMap } from 'tracked-built-ins';
 
 interface TargetTrackerOptions {
   multiple?: boolean;
