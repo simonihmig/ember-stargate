@@ -17,7 +17,7 @@
 
 ## Running the test-app application
 
-* `yarm start`
+* `yarn start`
 * Visit the application at [http://localhost:4200](http://localhost:4200).
 
 For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
