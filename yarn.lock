@@ -1153,17 +1153,7 @@
     walk-sync "^3.0.0"
     yargs "^17.0.1"
 
-"@embroider/addon-shim@^1.2.0", "@embroider/addon-shim@^1.8.4", "@embroider/addon-shim@^1.8.6", "@embroider/addon-shim@^1.8.7", "@embroider/addon-shim@^1.8.9":
-  version "1.8.9"
-  resolved "https://registry.yarnpkg.com/@embroider/addon-shim/-/addon-shim-1.8.9.tgz#ef37eba069d391b2d2a80aa62880c469051c4d43"
-  integrity sha512-qyN64T1jMHZ99ihlk7VFHCWHYZHLE1DOdHi0J7lmn5waV1DoW7gD8JLi1i7FregzXtKhbDc7shyEmTmWPTs8MQ==
-  dependencies:
-    "@embroider/shared-internals" "^2.6.0"
-    broccoli-funnel "^3.0.8"
-    common-ancestor-path "^1.0.1"
-    semver "^7.3.8"
-
-"@embroider/addon-shim@^1.8.3":
+"@embroider/addon-shim@^1.2.0", "@embroider/addon-shim@^1.8.3", "@embroider/addon-shim@^1.8.4", "@embroider/addon-shim@^1.8.6", "@embroider/addon-shim@^1.8.7", "@embroider/addon-shim@^1.8.9":
   version "1.9.0"
   resolved "https://registry.yarnpkg.com/@embroider/addon-shim/-/addon-shim-1.9.0.tgz#f729cfaf0f2d5f3c178808a546251743335c62f4"
   integrity sha512-fMzayl/licUL8VRAy4qXROKcYvHwUbV8aTh4m97L5/MRuVpxbcAy92DGGTqx5OBKCSQN3gMg+sUKeE6AviefpQ==
@@ -1217,7 +1207,7 @@
     resolve "^1.20.0"
     semver "^7.3.2"
 
-"@embroider/shared-internals@2.6.0", "@embroider/shared-internals@^2.0.0", "@embroider/shared-internals@^2.6.0":
+"@embroider/shared-internals@2.6.0":
   version "2.6.0"
   resolved "https://registry.yarnpkg.com/@embroider/shared-internals/-/shared-internals-2.6.0.tgz#851fd8d051fd4f7f93b2b7130e2ae5cdd537c5d6"
   integrity sha512-A2BYQkhotdKOXuTaxvo9dqOIMbk+2LqFyqvfaaePkZcFJvtCkvTaD31/sSzqvRF6rdeBHjdMwU9Z2baPZ55fEQ==
@@ -1233,7 +1223,7 @@
     semver "^7.3.5"
     typescript-memoize "^1.0.1"
 
-"@embroider/shared-internals@^2.8.1":
+"@embroider/shared-internals@^2.0.0", "@embroider/shared-internals@^2.8.1":
   version "2.8.1"
   resolved "https://registry.yarnpkg.com/@embroider/shared-internals/-/shared-internals-2.8.1.tgz#2aecff7324299f1e5fe563be7ee9882ee5566bcc"
   integrity sha512-zi0CENFD1e0DH7c9M/rNKJnFnt2c3+736J3lguBddZdmaIV6Cb8l3HQSkskSW5O4ady+SavemLKO3hCjQQJBIw==
@@ -5844,10 +5834,10 @@ eslint-plugin-prettier@4.2.1:
   dependencies:
     prettier-linter-helpers "^1.0.0"
 
-eslint-plugin-qunit@8.1.1:
-  version "8.1.1"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-qunit/-/eslint-plugin-qunit-8.1.1.tgz#08c0663a6c9d58d6435c3c6d9283df2752a9003b"
-  integrity sha512-j3xhiAf2Wvr8Dfwl5T6tlJ+F55vqYE9ZdAHUOTzq1lGerYrXzOS46RvK4SSWug2D8sl3ZYr2lA4/hgVXgLloxw==
+eslint-plugin-qunit@8.1.2:
+  version "8.1.2"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-qunit/-/eslint-plugin-qunit-8.1.2.tgz#ac740615e73377dd531429da02769dc2ca205fe1"
+  integrity sha512-2gDQdHlQW8GVXD7YYkO8vbm9Ldc60JeGMuQN5QlD48OeZ8znBvvoHWZZMeXjvoDPReGaLEvyuWrDtrI8bDbcqw==
   dependencies:
     eslint-utils "^3.0.0"
     requireindex "^1.2.0"
