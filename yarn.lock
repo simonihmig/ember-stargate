@@ -1407,10 +1407,10 @@
     vscode-uri "^3.0.8"
     yargs "^17.5.1"
 
-"@glint/environment-ember-loose@1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@glint/environment-ember-loose/-/environment-ember-loose-1.4.0.tgz#282cdc5967345c696be40d046d9bcb3fc231bdd6"
-  integrity sha512-vFR3qgPTisGzS36e04195wTUrtUc6GuVwm6hsC/XXx6PeRw/6rtMxhK08Aw/VtDc00UqQzM9sIEghPVKHwqVVQ==
+"@glint/environment-ember-loose@1.5.0":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@glint/environment-ember-loose/-/environment-ember-loose-1.5.0.tgz#a4d0151975cee68f3ba76ffed37c2d8dd70eb8df"
+  integrity sha512-QCP4pVupq8zGcBmMDcEq9XI5lfrnklwNOIuzdXb8OnbcY6qpuwz5Y6VOsA1WNGRcip/5wwOsmI6gsAEUTlbvPQ==
 
 "@glint/template@1.4.0":
   version "1.4.0"
