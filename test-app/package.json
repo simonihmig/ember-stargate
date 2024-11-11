@@ -32,7 +32,7 @@
     "@glimmer/tracking": "1.1.2",
     "@glint/core": "1.5.0",
     "@glint/environment-ember-loose": "1.5.0",
-    "@glint/template": "1.4.0",
+    "@glint/template": "1.5.0",
     "@types/ember": "4.0.11",
     "@types/htmlbars-inline-precompile": "3.0.3",
     "@types/qunit": "2.19.10",

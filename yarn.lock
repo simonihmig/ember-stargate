@@ -1412,10 +1412,10 @@
   resolved "https://registry.yarnpkg.com/@glint/environment-ember-loose/-/environment-ember-loose-1.5.0.tgz#a4d0151975cee68f3ba76ffed37c2d8dd70eb8df"
   integrity sha512-QCP4pVupq8zGcBmMDcEq9XI5lfrnklwNOIuzdXb8OnbcY6qpuwz5Y6VOsA1WNGRcip/5wwOsmI6gsAEUTlbvPQ==
 
-"@glint/template@1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@glint/template/-/template-1.4.0.tgz#1c9a2f5b84f2944abe52f4e209e3c00b5c6bd710"
-  integrity sha512-yD271NhLei/HSQ6utm6hKgoU+B5D5DY+B1irPvgI4KsDEcZI7v/INf5HAMJfzCg92bP1sIxSOuXu5DU6VsY7Mw==
+"@glint/template@1.5.0":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@glint/template/-/template-1.5.0.tgz#1bb5610b4c78e78d4739564fc0bbf7fb26155df9"
+  integrity sha512-KyQUCWifxl8wDxo3SXzJcGKttHbIPgFBtqsoiu13Edx/o4CgGXr5rrM64jJR7Wvunn8sRM+Rq7Y0cHoB068Wuw==
 
 "@handlebars/parser@~2.0.0":
   version "2.0.0"
