@@ -4826,10 +4826,10 @@ electron-to-chromium@^1.5.41:
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.5.55.tgz#73684752aa2e1aa49cafb355a41386c6637e76a9"
   integrity sha512-6maZ2ASDOTBtjt9FhqYPRnbvKU5tjG0IN9SztUOWYw2AzNDNpKJYLJmlK0/En4Hs/aiWnB+JZ+gW19PIGszgKg==
 
-ember-auto-import@2.7.4:
-  version "2.7.4"
-  resolved "https://registry.yarnpkg.com/ember-auto-import/-/ember-auto-import-2.7.4.tgz#ca99570eb3d6165968df797a4750aa58073852b5"
-  integrity sha512-6CdXSegJJc8nwwK7+1lIcBUnMVrJRNd4ZdMgcKbCAwPvcGxMgRVBddSzrX/+q/UuflvTEO26Dk1g7Z6KHMXUhw==
+ember-auto-import@2.10.0:
+  version "2.10.0"
+  resolved "https://registry.yarnpkg.com/ember-auto-import/-/ember-auto-import-2.10.0.tgz#2a29b82335eba4375d115570cbe836666ed2e7cc"
+  integrity sha512-bcBFDYVTFHyqyq8BNvsj6UO3pE6Uqou/cNmee0WaqBgZ+1nQqFz0UE26usrtnFAT+YaFZSkqF2H36QW84k0/cg==
   dependencies:
     "@babel/core" "^7.16.7"
     "@babel/plugin-proposal-class-properties" "^7.16.7"
@@ -4854,11 +4854,13 @@ ember-auto-import@2.7.4:
     fs-extra "^10.0.0"
     fs-tree-diff "^2.0.0"
     handlebars "^4.3.1"
+    is-subdir "^1.2.0"
     js-string-escape "^1.0.1"
     lodash "^4.17.19"
     mini-css-extract-plugin "^2.5.2"
     minimatch "^3.0.0"
     parse5 "^6.0.1"
+    pkg-entry-points "^1.1.0"
     resolve "^1.20.0"
     resolve-package-path "^4.0.3"
     semver "^7.3.4"
