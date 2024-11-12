@@ -2,10 +2,12 @@
 // These will *not* be published as part of your addon, so be careful that your published code does not rely on them!
 
 import '@glint/environment-ember-loose';
+import '@glint/environment-ember-template-imports';
+
 import Modifier from 'ember-modifier';
 
 declare class RenderModifier<
-  Args extends unknown[] = unknown[]
+  Args extends unknown[] = unknown[],
 > extends Modifier<{
   Element: HTMLElement;
   Args: { Positional: [(element: Element, args: Args) => void, ...Args] };

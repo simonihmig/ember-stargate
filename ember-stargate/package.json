@@ -18,14 +18,14 @@
     "dist"
   ],
   "scripts": {
-    "build": "concurrently 'npm:build:*'",
+    "build": "concurrently 'yarn:build:*'",
     "build:js": "rollup --config",
     "build:types": "glint --declaration",
-    "lint": "concurrently 'npm:lint:*(!fix)' --names 'lint:'",
-    "lint:fix": "concurrently 'npm:lint:*:fix' --names 'fix:'",
+    "lint": "concurrently 'yarn:lint:*(!fix)' --names 'lint:'",
+    "lint:fix": "concurrently 'yarn:lint:*:fix' --names 'fix:'",
     "lint:hbs": "ember-template-lint . --no-error-on-unmatched-pattern",
-    "lint:js": "eslint . --cache",
     "lint:hbs:fix": "ember-template-lint . --fix --no-error-on-unmatched-pattern",
+    "lint:js": "eslint . --cache",
     "lint:js:fix": "eslint . --fix",
     "lint:types": "glint",
     "start": "concurrently 'npm:start:*'",
@@ -37,6 +37,7 @@
   "dependencies": {
     "@embroider/addon-shim": "^1.8.9",
     "@glimmer/component": "^1.1.2",
+    "decorator-transforms": "^2.0.0",
     "ember-modifier": "^4.2.0",
     "ember-resources": "^7.0.3",
     "tracked-built-ins": "^3.3.0"
@@ -49,21 +50,25 @@
     "@embroider/addon-dev": "4.3.1",
     "@glint/core": "1.5.0",
     "@glint/environment-ember-loose": "1.5.0",
+    "@glint/environment-ember-template-imports": "1.5.0",
     "@glint/template": "1.5.0",
     "@tsconfig/ember": "3.0.8",
     "@types/ember": "4.0.11",
     "@typescript-eslint/eslint-plugin": "7.10.0",
     "@typescript-eslint/parser": "7.10.0",
+    "babel-plugin-ember-template-compilation": "2.3.0",
     "@rollup/plugin-babel": "6.0.4",
     "concurrently": "8.2.2",
     "ember-template-lint": "6.0.0",
     "eslint": "8.57.1",
     "eslint-config-prettier": "9.1.0",
-    "eslint-plugin-ember": "11.12.0",
-    "eslint-plugin-node": "11.1.0",
-    "eslint-plugin-prettier": "4.2.1",
-    "prettier": "2.8.8",
-    "rollup": "3.29.5",
+    "eslint-plugin-ember": "12.0.2",
+    "eslint-plugin-import": "2.29.1",
+    "eslint-plugin-n": "17.3.1",
+    "eslint-plugin-prettier": "5.1.3",
+    "prettier": "3.2.5",
+    "prettier-plugin-ember-template-tag": "2.0.2",
+    "rollup": "4.16.4",
     "rollup-plugin-copy": "3.5.0",
     "typescript": "5.4.5"
   },
@@ -76,7 +81,7 @@
   "ember-addon": {
     "version": 2,
     "type": "addon",
-    "main": "addon-main.js",
+    "main": "addon-main.cjs",
     "app-js": {
       "./components/portal-target.js": "./dist/_app_/components/portal-target.js",
       "./components/portal.js": "./dist/_app_/components/portal.js",
@@ -92,7 +97,7 @@
       "types": "./declarations/*.d.ts",
       "default": "./dist/*.js"
     },
-    "./addon-main.js": "./addon-main.js"
+    "./addon-main.js": "./addon-main.cjs"
   },
   "typesVersions": {
     "*": {
