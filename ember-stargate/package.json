@@ -35,9 +35,9 @@
     "prepack": "rollup --config"
   },
   "dependencies": {
-    "@ember/render-modifiers": "^2.1.0",
     "@embroider/addon-shim": "^1.8.9",
     "@glimmer/component": "^1.1.2",
+    "ember-modifier": "^4.2.0",
     "ember-resources": "^7.0.3",
     "tracked-built-ins": "^3.3.0"
   },
