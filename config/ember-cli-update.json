@@ -8,12 +8,7 @@
         {
           "name": "@embroider/addon-blueprint",
           "isBaseBlueprint": true,
-          "options": [
-            "--yarn",
-            "--ci-provider=github",
-            "--release-it",
-            "--typescript"
-          ]
+          "options": ["--yarn", "--ci-provider=github", "--typescript"]
         }
       ]
     }
