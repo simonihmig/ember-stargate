@@ -43,12 +43,12 @@ export default class PortalService extends Service {
   registerTarget(
     name: string,
     element: Element,
-    options: TargetTrackerOptions
+    options: TargetTrackerOptions,
   ): void {
     next(this, () => {
       assert(
         `Portal target with name ${name} already exists`,
-        !this.#targets.has(name)
+        !this.#targets.has(name),
       );
       this.#targets.set(name, new TargetTracker(name, element, options));
     });
