@@ -2186,17 +2186,10 @@
     "@types/mime" "*"
     "@types/node" "*"
 
-"@types/sinon@17.0.3":
+"@types/sinon@17.0.3", "@types/sinon@^17.0.3":
   version "17.0.3"
   resolved "https://registry.yarnpkg.com/@types/sinon/-/sinon-17.0.3.tgz#9aa7e62f0a323b9ead177ed23a36ea757141a5fa"
   integrity sha512-j3uovdn8ewky9kRBG19bOwaZbexJu/XjtkHyjvUgt4xfPFz18dcORIMqnYh66Fx3Powhcr85NT5+er3+oViapw==
-  dependencies:
-    "@types/sinonjs__fake-timers" "*"
-
-"@types/sinon@^10.0.19":
-  version "10.0.20"
-  resolved "https://registry.yarnpkg.com/@types/sinon/-/sinon-10.0.20.tgz#f1585debf4c0d99f9938f4111e5479fb74865146"
-  integrity sha512-2APKKruFNCAZgx3daAyACGzWuJ028VVCUDk6o2rw/Z4PXT0ogwdV4KUegW0MwVs0Zu59auPXbbuBJHF12Sx1Eg==
   dependencies:
     "@types/sinonjs__fake-timers" "*"
 
@@ -5409,13 +5402,14 @@ ember-router-generator@^2.0.0:
     "@babel/traverse" "^7.4.5"
     recast "^0.18.1"
 
-ember-sinon-qunit@7.4.0:
-  version "7.4.0"
-  resolved "https://registry.yarnpkg.com/ember-sinon-qunit/-/ember-sinon-qunit-7.4.0.tgz#90b25cfae11082dd2d4987db4460a3853d1e4b1f"
-  integrity sha512-BcH2scgJ4Vpq5Fnjeq5Z2ESnHLsmcfFRaq/gOujy3my+8w7WTtrHyaUgWzmd5mLw+tfCYssAUEalQhk1ZNpV+g==
+ember-sinon-qunit@7.5.0:
+  version "7.5.0"
+  resolved "https://registry.yarnpkg.com/ember-sinon-qunit/-/ember-sinon-qunit-7.5.0.tgz#12e5a6a01ecfe62b185d1258a2deb7c3334c4fe7"
+  integrity sha512-wSoRqBbiytUtDFIE6DLPDZFYhoS4FH+kgHhr707HJMF5tUYpKPIruBusF9kWezj/yOrJLyLqoWFoaAJ2aG2FQw==
   dependencies:
-    "@embroider/addon-shim" "^1.8.6"
-    "@types/sinon" "^10.0.19"
+    "@embroider/addon-shim" "^1.8.9"
+    "@types/sinon" "^17.0.3"
+    decorator-transforms "^2.0.0"
 
 ember-source-channel-url@3.0.0, ember-source-channel-url@^3.0.0:
   version "3.0.0"
