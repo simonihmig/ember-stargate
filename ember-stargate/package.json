@@ -36,7 +36,7 @@
   },
   "dependencies": {
     "@embroider/addon-shim": "^1.8.9",
-    "@glimmer/component": "^1.1.2",
+    "@glimmer/component": "^2.0.0",
     "decorator-transforms": "^2.0.0",
     "ember-modifier": "^4.2.0",
     "ember-resources": "^7.0.3",
