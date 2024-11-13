@@ -27,6 +27,9 @@
     "test": "yarn workspaces run test",
     "test:ember": "yarn workspace test-app run test:ember"
   },
+  "resolutions": {
+    "@glimmer/component": "2.0.0"
+  },
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
   },
