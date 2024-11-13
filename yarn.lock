@@ -1115,22 +1115,19 @@
   resolved "https://registry.yarnpkg.com/@ember/string/-/string-4.0.0.tgz#24fe5cda227c9e6634e6e0b550944a3a13437878"
   integrity sha512-IMVyVE72twuAMSYcHzWSgtgYTtzlHlKSGW8vEbztnnmkU6uo7kVHmiqSN9R4RkBhzvh0VD4G76Eph+55t3iNIA==
 
-"@ember/test-helpers@3.3.1":
-  version "3.3.1"
-  resolved "https://registry.yarnpkg.com/@ember/test-helpers/-/test-helpers-3.3.1.tgz#b19287dbb7ba169a2033574bb5021c0490b199b9"
-  integrity sha512-h4uFBy4pquBtHsHI+tx9S0wtMmn1L+8dkXiDiyoqG1+3e0Awk6GBujiFM9s4ANq6wC8uIhC3wEFyts10h2OAoQ==
+"@ember/test-helpers@4.0.4":
+  version "4.0.4"
+  resolved "https://registry.yarnpkg.com/@ember/test-helpers/-/test-helpers-4.0.4.tgz#2ffb55c8438b8ba54ecd4f546059ba0166bc00f2"
+  integrity sha512-1mbOVyVEcLxYOGzBaeeaQkCrL1o9Av86QaHk/1RvrVBW24I6YUj1ILLEi2qLZT5PzcCy0TdfadHT3hKJwJ0GcQ==
   dependencies:
-    "@ember/test-waiters" "^3.0.2"
-    "@embroider/macros" "^1.10.0"
+    "@ember/test-waiters" "^3.1.0"
+    "@embroider/addon-shim" "^1.8.7"
+    "@embroider/macros" "^1.16.5"
     "@simple-dom/interface" "^1.4.0"
-    broccoli-debug "^0.6.5"
-    broccoli-funnel "^3.0.8"
+    decorator-transforms "^2.0.0"
     dom-element-descriptors "^0.5.0"
-    ember-auto-import "^2.6.0"
-    ember-cli-babel "^8.2.0"
-    ember-cli-htmlbars "^6.2.0"
 
-"@ember/test-waiters@^3.0.2":
+"@ember/test-waiters@^3.1.0":
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/@ember/test-waiters/-/test-waiters-3.1.0.tgz#61399919cbf793978da0b8bfdfdb7bca0cb80e9e"
   integrity sha512-bb9h95ktG2wKY9+ja1sdsFBdOms2lB19VWs8wmNpzgHv1NCetonBoV5jHBV4DHt0uS1tg9z66cZqhUVlYs96KQ==
@@ -1195,12 +1192,26 @@
     typescript-memoize "^1.0.1"
     walk-sync "^3.0.0"
 
-"@embroider/macros@1.16.1", "@embroider/macros@^1.0.0", "@embroider/macros@^1.10.0", "@embroider/macros@^1.12.3", "@embroider/macros@^1.13.1":
+"@embroider/macros@1.16.1":
   version "1.16.1"
   resolved "https://registry.yarnpkg.com/@embroider/macros/-/macros-1.16.1.tgz#925c947ae00d7937d1c6b1ffb0d778924642c67b"
   integrity sha512-yBavtQBbiCjIW4tTNdoS+5/eu3mckZImrcVFkloRvZ5ZWvs2zqnLJVtfNsPMxhWu6dknFlmLqfuT30+kqnsQbg==
   dependencies:
     "@embroider/shared-internals" "2.6.0"
+    assert-never "^1.2.1"
+    babel-import-util "^2.0.0"
+    ember-cli-babel "^7.26.6"
+    find-up "^5.0.0"
+    lodash "^4.17.21"
+    resolve "^1.20.0"
+    semver "^7.3.2"
+
+"@embroider/macros@^1.0.0", "@embroider/macros@^1.12.3", "@embroider/macros@^1.13.1", "@embroider/macros@^1.16.5":
+  version "1.16.9"
+  resolved "https://registry.yarnpkg.com/@embroider/macros/-/macros-1.16.9.tgz#d1292105259f53f31a8bf0fde48cf972495f06d1"
+  integrity sha512-AUrmHQdixczIU3ouv/+HzWxwYVsw/NwssZxAQnXfBDJ3d3/CRtAvGRu3JhY6OT3AAPFwfa2WT66tB5jeAa7r5g==
+  dependencies:
+    "@embroider/shared-internals" "2.8.1"
     assert-never "^1.2.1"
     babel-import-util "^2.0.0"
     ember-cli-babel "^7.26.6"
@@ -1225,7 +1236,7 @@
     semver "^7.3.5"
     typescript-memoize "^1.0.1"
 
-"@embroider/shared-internals@^2.0.0", "@embroider/shared-internals@^2.8.1":
+"@embroider/shared-internals@2.8.1", "@embroider/shared-internals@^2.0.0", "@embroider/shared-internals@^2.8.1":
   version "2.8.1"
   resolved "https://registry.yarnpkg.com/@embroider/shared-internals/-/shared-internals-2.8.1.tgz#2aecff7324299f1e5fe563be7ee9882ee5566bcc"
   integrity sha512-zi0CENFD1e0DH7c9M/rNKJnFnt2c3+736J3lguBddZdmaIV6Cb8l3HQSkskSW5O4ady+SavemLKO3hCjQQJBIw==
@@ -5357,7 +5368,7 @@ electron-to-chromium@^1.5.41:
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.5.55.tgz#73684752aa2e1aa49cafb355a41386c6637e76a9"
   integrity sha512-6maZ2ASDOTBtjt9FhqYPRnbvKU5tjG0IN9SztUOWYw2AzNDNpKJYLJmlK0/En4Hs/aiWnB+JZ+gW19PIGszgKg==
 
-ember-auto-import@2.10.0, ember-auto-import@^2.6.0, ember-auto-import@^2.6.3:
+ember-auto-import@2.10.0, ember-auto-import@^2.6.3:
   version "2.10.0"
   resolved "https://registry.yarnpkg.com/ember-auto-import/-/ember-auto-import-2.10.0.tgz#2a29b82335eba4375d115570cbe836666ed2e7cc"
   integrity sha512-bcBFDYVTFHyqyq8BNvsj6UO3pE6Uqou/cNmee0WaqBgZ+1nQqFz0UE26usrtnFAT+YaFZSkqF2H36QW84k0/cg==
@@ -5506,7 +5517,7 @@ ember-cli-get-component-path-option@^1.0.0:
   resolved "https://registry.yarnpkg.com/ember-cli-get-component-path-option/-/ember-cli-get-component-path-option-1.0.0.tgz#0d7b595559e2f9050abed804f1d8eff1b08bc771"
   integrity sha512-k47TDwcJ2zPideBCZE8sCiShSxQSpebY2BHcX2DdipMmBox5gsfyVrbKJWIHeSTTKyEUgmBIvQkqTOozEziCZA==
 
-ember-cli-htmlbars@6.3.0, ember-cli-htmlbars@^6.2.0:
+ember-cli-htmlbars@6.3.0:
   version "6.3.0"
   resolved "https://registry.yarnpkg.com/ember-cli-htmlbars/-/ember-cli-htmlbars-6.3.0.tgz#ac85f2bbd09788992ab7f9ca832cd044fb8e5798"
   integrity sha512-N9Y80oZfcfWLsqickMfRd9YByVcTGyhYRnYQ2XVPVrp6jyUyOeRWmEAPh7ERSXpp8Ws4hr/JB9QVQrn/yZa+Ag==
