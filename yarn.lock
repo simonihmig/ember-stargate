@@ -4790,11 +4790,6 @@ content-disposition@0.5.4:
   dependencies:
     safe-buffer "5.2.1"
 
-content-tag@^1.2.2:
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/content-tag/-/content-tag-1.2.2.tgz#8cbc3cdb9957a81f7c425b138e334330dd6fd78d"
-  integrity sha512-9guqKIx2H+78N17otBpl8yLZbQGL5q1vBO/jDb3gF2JjixtcVpC62jDUNxjVMNoaZ09oxRX84ZOD6VX02qkVvg==
-
 content-tag@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/content-tag/-/content-tag-2.0.1.tgz#0b908ed97e13df60b019039713ab63f1b73f2b22"
@@ -10857,13 +10852,13 @@ prettier-linter-helpers@^1.0.0:
   dependencies:
     fast-diff "^1.1.2"
 
-prettier-plugin-ember-template-tag@2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/prettier-plugin-ember-template-tag/-/prettier-plugin-ember-template-tag-2.0.2.tgz#306672e3bc874b4cf34d583de9a2b0e69b06e479"
-  integrity sha512-eSEnrxdD3NtMyIGwG2FxcTPOdpcbCK7VnBNhAufdaoeOIs+mNwmTsZdkWxr/LMhBdgtR1IUQB0l0YQhUQGz6kQ==
+prettier-plugin-ember-template-tag@2.0.4:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/prettier-plugin-ember-template-tag/-/prettier-plugin-ember-template-tag-2.0.4.tgz#9783f1c3d2056c80d08ec07f789ca2d97465c3ab"
+  integrity sha512-Ude3MJyPBMr/Er5aSS9Y0dsnHWX3prpJB+Jj/BKKUT/EvG2ftnIMBsZXmRu68RJA62JJB8MdKBloYmCu2pTRNg==
   dependencies:
     "@babel/core" "^7.23.6"
-    content-tag "^1.2.2"
+    content-tag "^2.0.1"
     prettier "^3.1.1"
 
 prettier@3.3.3, prettier@^3.1.1:
