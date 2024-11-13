@@ -1302,7 +1302,15 @@
     "@glimmer/vm" "0.92.3"
     "@glimmer/wire-format" "0.92.3"
 
-"@glimmer/component@1.1.2", "@glimmer/component@^1.1.0", "@glimmer/component@^1.1.2":
+"@glimmer/component@2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@glimmer/component/-/component-2.0.0.tgz#b39b6d91d67fb5212b9a95f966ecbd4e4b04e381"
+  integrity sha512-eATSzBOUm0MZ9+YfJx7Y5p3gbwnaeMzLSSsCDn1ihDtUOIm5YYEV0ee0G7tXt/uKxowt8tXYn/EMbI9OlRF0CA==
+  dependencies:
+    "@embroider/addon-shim" "^1.8.9"
+    "@glimmer/env" "^0.1.7"
+
+"@glimmer/component@^1.1.0":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@glimmer/component/-/component-1.1.2.tgz#892ec0c9f0b6b3e41c112be502fde073cf24d17c"
   integrity sha512-XyAsEEa4kWOPy+gIdMjJ8XlzA3qrGH55ZDv6nA16ibalCR17k74BI0CztxuRds+Rm6CtbUVgheCVlcCULuqD7A==

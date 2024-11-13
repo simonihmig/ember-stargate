@@ -36,7 +36,6 @@
   },
   "dependencies": {
     "@embroider/addon-shim": "^1.8.9",
-    "@glimmer/component": "^1.1.2",
     "decorator-transforms": "^2.0.0",
     "ember-modifier": "^4.2.0",
     "ember-resources": "^7.0.3",
@@ -71,6 +70,9 @@
     "rollup": "4.26.0",
     "rollup-plugin-copy": "3.5.0",
     "typescript": "5.6.3"
+  },
+  "peerDependencies": {
+    "@glimmer/component": "^1.1.2 || ^2.0.0"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
