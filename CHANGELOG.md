@@ -4,6 +4,27 @@
 
 
 
+
+## v1.0.0 (2024-11-14)
+
+#### :rocket: Enhancement
+* [#735](https://github.com/simonihmig/ember-stargate/pull/735) Update @glimmer/component to allow for v2 ([@simonihmig](https://github.com/simonihmig))
+* [#710](https://github.com/simonihmig/ember-stargate/pull/710) Drop @ember/render-modifiers usage ([@simonihmig](https://github.com/simonihmig))
+* [#708](https://github.com/simonihmig/ember-stargate/pull/708) Import TrackedMap from tracked-built-ins instead of tracked-maps-and-sets #701 ([@johanrd](https://github.com/johanrd))
+* [#704](https://github.com/simonihmig/ember-stargate/pull/704) Upgrades ember-resources to newest version which allows @glimmer/component v2.0.0 as peer dependency. ([@johanrd](https://github.com/johanrd))
+
+#### :bug: Bug Fix
+* [#702](https://github.com/simonihmig/ember-stargate/pull/702) Export `Portal` and `PortalTarget` signatures ([@didoo](https://github.com/didoo))
+
+#### :house: Internal
+* [#718](https://github.com/simonihmig/ember-stargate/pull/718) Update v2 addon boilerplate ([@simonihmig](https://github.com/simonihmig))
+* [#706](https://github.com/simonihmig/ember-stargate/pull/706) Disable prototype extensions to fix Ember 6 tests ([@simonihmig](https://github.com/simonihmig))
+
+#### Committers: 3
+- Cristiano Rastelli ([@didoo](https://github.com/didoo))
+- Simon Ihmig ([@simonihmig](https://github.com/simonihmig))
+- [@johanrd](https://github.com/johanrd)
+
 ## v0.6.0 (2024-06-03)
 
 #### :boom: Breaking Change
