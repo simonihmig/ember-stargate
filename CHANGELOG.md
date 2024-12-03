@@ -5,6 +5,15 @@
 
 
 
+
+## v1.0.1 (2024-12-03)
+
+#### :bug: Bug Fix
+* [#741](https://github.com/simonihmig/ember-stargate/pull/741) Fix addon-main.cjs missing in published npm package ([@simonihmig](https://github.com/simonihmig))
+
+#### Committers: 1
+- Simon Ihmig ([@simonihmig](https://github.com/simonihmig))
+
 ## v1.0.0 (2024-11-14)
 
 #### :rocket: Enhancement
