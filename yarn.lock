@@ -991,14 +991,15 @@
     ember-cli-version-checker "^5.1.2"
     semver "^7.3.5"
 
-"@embroider/addon-dev@7.0.0":
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/@embroider/addon-dev/-/addon-dev-7.0.0.tgz#2ca19eaefe7ffdc23227433532706c8fdc903a7e"
-  integrity sha512-jxRh++d2YXnEAjPxvjHGsTqx/Gd9U3LDeuLYBhLW6wzXakCyvU3K6V7jbYfx5fAxbdGkr2jFIp2gmGEsai2fpQ==
+"@embroider/addon-dev@7.1.0":
+  version "7.1.0"
+  resolved "https://registry.yarnpkg.com/@embroider/addon-dev/-/addon-dev-7.1.0.tgz#3b231cf2d06809c29583775f87a0eba71f229c64"
+  integrity sha512-VOv9NCdRX1tGQlfAbq4/tqvi2yB7s843QL8T98NSvCVBcO4x+xqv5I8t9oy1pOVbD8yk2PSfnzlDWZl/H4sZvw==
   dependencies:
-    "@embroider/core" "^3.4.19"
+    "@embroider/core" "^3.4.20"
     "@rollup/pluginutils" "^4.1.1"
     content-tag "^3.0.0"
+    execa "^5.1.1"
     fs-extra "^10.0.0"
     minimatch "^3.0.4"
     rollup-plugin-copy-assets "^2.0.3"
@@ -1015,15 +1016,15 @@
     common-ancestor-path "^1.0.1"
     semver "^7.3.8"
 
-"@embroider/core@^3.4.19":
-  version "3.4.19"
-  resolved "https://registry.yarnpkg.com/@embroider/core/-/core-3.4.19.tgz#41066c214a534adebcf7aa9c50a4d36380985b39"
-  integrity sha512-nnjQzXa+LkbqcSl7+a5sX6UKzeyHaiKrYCi/Wg5EG5OzyukiFmX2ZNI44fJ/U69htIphCZXAvLsMsEsUPm94ZA==
+"@embroider/core@^3.4.20":
+  version "3.4.20"
+  resolved "https://registry.yarnpkg.com/@embroider/core/-/core-3.4.20.tgz#70c9fbca11d771835774def9e5f8c5e388bb46ab"
+  integrity sha512-bKy/uIrcoUyJXcBud2d8E7J8R8NRMz0T3xaKbEUx4nxc4/BbBsU+y7wSyzzfggykyJTK/95PwNIxls8gqnyYYA==
   dependencies:
     "@babel/core" "^7.14.5"
     "@babel/parser" "^7.14.5"
     "@babel/traverse" "^7.14.5"
-    "@embroider/macros" "1.16.9"
+    "@embroider/macros" "1.16.10"
     "@embroider/shared-internals" "2.8.1"
     assert-never "^1.2.1"
     babel-plugin-ember-template-compilation "^2.1.1"
@@ -1046,10 +1047,10 @@
     typescript-memoize "^1.0.1"
     walk-sync "^3.0.0"
 
-"@embroider/macros@1.16.9", "@embroider/macros@^1.0.0", "@embroider/macros@^1.12.3", "@embroider/macros@^1.13.1", "@embroider/macros@^1.16.5":
-  version "1.16.9"
-  resolved "https://registry.yarnpkg.com/@embroider/macros/-/macros-1.16.9.tgz#d1292105259f53f31a8bf0fde48cf972495f06d1"
-  integrity sha512-AUrmHQdixczIU3ouv/+HzWxwYVsw/NwssZxAQnXfBDJ3d3/CRtAvGRu3JhY6OT3AAPFwfa2WT66tB5jeAa7r5g==
+"@embroider/macros@1.16.10", "@embroider/macros@^1.0.0", "@embroider/macros@^1.12.3", "@embroider/macros@^1.13.1", "@embroider/macros@^1.16.5":
+  version "1.16.10"
+  resolved "https://registry.yarnpkg.com/@embroider/macros/-/macros-1.16.10.tgz#4f00c959409ee7327a344c250fc91c4622bf1589"
+  integrity sha512-G0vCsKgNCX0PMmuVNsTLG7IYXz8VkekQMK4Kcllzqpwb7ivFRDwVx2bD4QSvZ9LCTd4eWQ654RsCqVbW5aviww==
   dependencies:
     "@embroider/shared-internals" "2.8.1"
     assert-never "^1.2.1"
