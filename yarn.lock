@@ -991,10 +991,10 @@
     ember-cli-version-checker "^5.1.2"
     semver "^7.3.5"
 
-"@embroider/addon-dev@7.1.0":
-  version "7.1.0"
-  resolved "https://registry.yarnpkg.com/@embroider/addon-dev/-/addon-dev-7.1.0.tgz#3b231cf2d06809c29583775f87a0eba71f229c64"
-  integrity sha512-VOv9NCdRX1tGQlfAbq4/tqvi2yB7s843QL8T98NSvCVBcO4x+xqv5I8t9oy1pOVbD8yk2PSfnzlDWZl/H4sZvw==
+"@embroider/addon-dev@7.1.1":
+  version "7.1.1"
+  resolved "https://registry.yarnpkg.com/@embroider/addon-dev/-/addon-dev-7.1.1.tgz#a74419f0faafcd0cbb1f61aafbcacc62c78239c8"
+  integrity sha512-81xGvfvIULEvZTZIswdF4X2Ag7dRKfiUfIQsQ9s11ScozexVj7gyBsMZ4iIwpPmv9iz7WZdBu+ptyJjOdx+HgA==
   dependencies:
     "@embroider/core" "^3.4.20"
     "@rollup/pluginutils" "^4.1.1"
