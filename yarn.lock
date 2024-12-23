@@ -1006,7 +1006,7 @@
     walk-sync "^3.0.0"
     yargs "^17.0.1"
 
-"@embroider/addon-shim@^1.2.0", "@embroider/addon-shim@^1.8.6", "@embroider/addon-shim@^1.8.7", "@embroider/addon-shim@^1.8.9":
+"@embroider/addon-shim@^1.2.0", "@embroider/addon-shim@^1.8.6", "@embroider/addon-shim@^1.8.7", "@embroider/addon-shim@^1.8.9", "@embroider/addon-shim@^1.9.0":
   version "1.9.0"
   resolved "https://registry.yarnpkg.com/@embroider/addon-shim/-/addon-shim-1.9.0.tgz#f729cfaf0f2d5f3c178808a546251743335c62f4"
   integrity sha512-fMzayl/licUL8VRAy4qXROKcYvHwUbV8aTh4m97L5/MRuVpxbcAy92DGGTqx5OBKCSQN3gMg+sUKeE6AviefpQ==
@@ -4882,7 +4882,7 @@ electron-to-chromium@^1.5.73:
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.5.75.tgz#bba96eabf0e8ca36324679caa38b982800acc87d"
   integrity sha512-Lf3++DumRE/QmweGjU+ZcKqQ+3bKkU/qjaKYhIJKEOhgIO9Xs6IiAQFkfFoj+RhgDk4LUeNsLo6plExHqSyu6Q==
 
-ember-auto-import@2.10.0, ember-auto-import@^2.6.3:
+ember-auto-import@2.10.0, ember-auto-import@^2.10.0:
   version "2.10.0"
   resolved "https://registry.yarnpkg.com/ember-auto-import/-/ember-auto-import-2.10.0.tgz#2a29b82335eba4375d115570cbe836666ed2e7cc"
   integrity sha512-bcBFDYVTFHyqyq8BNvsj6UO3pE6Uqou/cNmee0WaqBgZ+1nQqFz0UE26usrtnFAT+YaFZSkqF2H36QW84k0/cg==
@@ -5352,13 +5352,14 @@ ember-source-channel-url@3.0.0, ember-source-channel-url@^3.0.0:
   dependencies:
     node-fetch "^2.6.0"
 
-ember-source@6.0.1:
-  version "6.0.1"
-  resolved "https://registry.yarnpkg.com/ember-source/-/ember-source-6.0.1.tgz#14fa90c067d77326774d5703ade2344f080705ea"
-  integrity sha512-2IK4qYuJXG3U0ngm2JO+7mABAWlXjjBT2yvwxxTmatyg+iuV5CCtGWZGTGa/uw1nfAaihkDwyaVqNjmlvbovcg==
+ember-source@6.1.0:
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/ember-source/-/ember-source-6.1.0.tgz#b2ebe278a43f1fe1905b898a487806d3c57ff935"
+  integrity sha512-7FBMsr5XlSVs080FEw0ssNgbQEAAzQGc3ZHmgBE40LRcz7g+vMXPwaZ7DGsOoWPXHKAVeeDbr5qiMC13WkVj5w==
   dependencies:
     "@babel/core" "^7.24.4"
     "@ember/edition-utils" "^1.2.0"
+    "@embroider/addon-shim" "^1.9.0"
     "@glimmer/compiler" "0.92.4"
     "@glimmer/destroyable" "0.92.3"
     "@glimmer/env" "^0.1.7"
@@ -5382,7 +5383,7 @@ ember-source@6.0.1:
     broccoli-funnel "^3.0.8"
     broccoli-merge-trees "^4.2.0"
     chalk "^4.0.0"
-    ember-auto-import "^2.6.3"
+    ember-auto-import "^2.10.0"
     ember-cli-babel "^8.2.0"
     ember-cli-get-component-path-option "^1.0.0"
     ember-cli-is-package-missing "^1.0.0"
