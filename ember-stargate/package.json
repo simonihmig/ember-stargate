@@ -58,7 +58,7 @@
     "@typescript-eslint/parser": "7.18.0",
     "babel-plugin-ember-template-compilation": "2.3.0",
     "@rollup/plugin-babel": "6.0.4",
-    "concurrently": "9.1.0",
+    "concurrently": "9.1.1",
     "ember-template-lint": "6.0.0",
     "eslint": "8.57.1",
     "eslint-config-prettier": "9.1.0",
