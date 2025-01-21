@@ -34,7 +34,7 @@
     "@glimmer/component": "2.0.0",
     "@glimmer/tracking": "1.1.2",
     "@glint/environment-ember-loose": "1.5.1",
-    "@glint/template": "1.5.0",
+    "@glint/template": "1.5.1",
     "@tsconfig/ember": "3.0.8",
     "@types/ember": "4.0.11",
     "@types/ember-data": "4.4.16",
