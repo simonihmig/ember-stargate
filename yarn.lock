@@ -1415,10 +1415,10 @@
   resolved "https://registry.yarnpkg.com/@glint/environment-ember-loose/-/environment-ember-loose-1.5.1.tgz#5afa5af05fef130ae50a5bc16e7cb8c49b777da3"
   integrity sha512-cWZaRB5UwmgU6X5VYIkdTSjaLZROnsiHRXj1zjJH/q9FOF4+gtLAW8A/RDbp+pU0SgoJxSbC9IjlxMGsB/3lBA==
 
-"@glint/environment-ember-template-imports@1.5.0":
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/@glint/environment-ember-template-imports/-/environment-ember-template-imports-1.5.0.tgz#81f3e7db55d5750d50dd3922de8f05917d69c00e"
-  integrity sha512-SS+KNffLuNYcsT7iEmCr2jp2538E7KTMEAWY+KWNvUJ0ZMd6oe6xbIIF50+9BgCgGHWwj7oL/NdgCVkS3OqRdw==
+"@glint/environment-ember-template-imports@1.5.1":
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/@glint/environment-ember-template-imports/-/environment-ember-template-imports-1.5.1.tgz#f8ca2f5c3f0ea488cd879d98e84a2e16d450d09a"
+  integrity sha512-jRlLXSQiaSunCDwJxDih5hcdo1/+rQCG7zfBE1rrJIivodCcLuf8/5Ot4GG6q4paugrOROOF37jFdSi5foEq2Q==
   dependencies:
     content-tag "^2.0.1"
 
