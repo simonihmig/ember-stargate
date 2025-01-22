@@ -1422,10 +1422,10 @@
   dependencies:
     content-tag "^2.0.1"
 
-"@glint/template@1.5.0":
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/@glint/template/-/template-1.5.0.tgz#1bb5610b4c78e78d4739564fc0bbf7fb26155df9"
-  integrity sha512-KyQUCWifxl8wDxo3SXzJcGKttHbIPgFBtqsoiu13Edx/o4CgGXr5rrM64jJR7Wvunn8sRM+Rq7Y0cHoB068Wuw==
+"@glint/template@1.5.1":
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/@glint/template/-/template-1.5.1.tgz#03dc6976c784e4f148b59c949a3d068c886f6d5a"
+  integrity sha512-KBWG3XZemv8VyFsq3m7eebXmQuY+AShgKSUlbjiqQaPfMK3a1ri1oS3wqTS5eRGwcfQgbbEHH2rkgppB7yoz5w==
 
 "@handlebars/parser@~2.0.0":
   version "2.0.0"
