@@ -99,7 +99,7 @@
     "qunit": "2.24.0",
     "qunit-dom": "3.4.0",
     "sinon": "19.0.2",
-    "stylelint": "16.12.0",
+    "stylelint": "16.13.2",
     "stylelint-config-standard": "36.0.1",
     "stylelint-prettier": "5.0.2",
     "tracked-built-ins": "3.4.0",
