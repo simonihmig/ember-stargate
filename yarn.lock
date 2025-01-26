@@ -1395,10 +1395,10 @@
     "@glimmer/interfaces" "0.92.3"
     "@glimmer/util" "0.92.3"
 
-"@glint/core@1.5.1":
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/@glint/core/-/core-1.5.1.tgz#4cb467c79c0fe08740e221acc410b8f0990fc78f"
-  integrity sha512-5VDL/7z9CrirHyx4XyCARDOjujl2Z92hftp19ChXWEPLypukoXW+uDG/awgYCh2T1eNtxufX4j2Liqw0m1eAEw==
+"@glint/core@1.5.2":
+  version "1.5.2"
+  resolved "https://registry.yarnpkg.com/@glint/core/-/core-1.5.2.tgz#8667c5dbfd2a3527eac434f47ad45a9061f0c255"
+  integrity sha512-kbEt8jBEkH65yDB20tBq/rnZl+iigmAenKQcgu1cqex6/eT6LrQ5E9QxyKtqe9S18qZv0c/LNa0qE7jwbAEKMA==
   dependencies:
     "@glimmer/syntax" "^0.84.3"
     escape-string-regexp "^4.0.0"
