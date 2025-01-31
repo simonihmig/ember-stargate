@@ -5277,10 +5277,10 @@ ember-cli@6.1.0:
     workerpool "^6.4.0"
     yam "^1.0.0"
 
-ember-eslint-parser@^0.5.6:
-  version "0.5.7"
-  resolved "https://registry.yarnpkg.com/ember-eslint-parser/-/ember-eslint-parser-0.5.7.tgz#ec6467ebdab0199d4a93eb1a1574b83cbaabeccd"
-  integrity sha512-d0nIQxC6TXsMebi7GcpH6meFDVhTUTYZpQ6Yg5n92+eZHqygAEKWZX55lLa49/wucBXS+Wadp2g6okPcN463aA==
+ember-eslint-parser@^0.5.9:
+  version "0.5.9"
+  resolved "https://registry.yarnpkg.com/ember-eslint-parser/-/ember-eslint-parser-0.5.9.tgz#f942c4863866e24a6243c390f743cbe0354d68a6"
+  integrity sha512-IW4/3cEiFp49M2LiKyzi7VcT1egogOe8UxQ9eUKTooenC7Q4qNhzTD6rOZ8j51m8iJC+8hCzjbNCa3K4CN0Hhg==
   dependencies:
     "@babel/eslint-parser" "^7.23.10"
     "@glimmer/syntax" "^0.92.0"
@@ -5794,14 +5794,14 @@ eslint-module-utils@^2.12.0:
   dependencies:
     debug "^3.2.7"
 
-eslint-plugin-ember@12.3.3:
-  version "12.3.3"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-ember/-/eslint-plugin-ember-12.3.3.tgz#27b2a393299054586eda5bea0c23aa9126608458"
-  integrity sha512-OXf3+XofsSMW/zGnp6B1cB2veC9zLzby8RGmHkxNwRHGLs/fYNVBbpwkmdZhzR8+IMN3wjtLR4iNLvkKOAT5bg==
+eslint-plugin-ember@12.5.0:
+  version "12.5.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-ember/-/eslint-plugin-ember-12.5.0.tgz#23bc7300f1a32a6af6db4d876553d2891df1f4fe"
+  integrity sha512-DBUzsaKWDVXsujAZPpRir0O7owdlCoVzZmtaJm7g7iQeSrNtcRWI7AItsTqKSsws1XeAySH0sPsQItMdDCb9Fg==
   dependencies:
     "@ember-data/rfc395-data" "^0.0.4"
     css-tree "^3.0.1"
-    ember-eslint-parser "^0.5.6"
+    ember-eslint-parser "^0.5.9"
     ember-rfc176-data "^0.3.18"
     eslint-utils "^3.0.0"
     estraverse "^5.3.0"
