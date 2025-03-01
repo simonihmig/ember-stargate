@@ -68,7 +68,7 @@
     "eslint-plugin-prettier": "5.2.3",
     "prettier": "3.5.2",
     "prettier-plugin-ember-template-tag": "2.0.4",
-    "rollup": "4.34.8",
+    "rollup": "4.34.9",
     "rollup-plugin-copy": "3.5.0",
     "typescript": "5.8.2"
   },
