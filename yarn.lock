@@ -1018,10 +1018,10 @@
     "@embroider/addon-shim" "^1.9.0"
     "@embroider/macros" "^1.16.9"
 
-"@embroider/addon-dev@7.1.2":
-  version "7.1.2"
-  resolved "https://registry.yarnpkg.com/@embroider/addon-dev/-/addon-dev-7.1.2.tgz#b83023602d04247820f711a422ac09584a9cf6e8"
-  integrity sha512-hR1NTjoQ3BR3OGH0Ldl8I6N9YX59e4dFmFapUTi3ZNrKSp0WMIeFTThyGKDmMOzjLZZRAi1VUWAF5qUQ+xbkDA==
+"@embroider/addon-dev@7.1.3":
+  version "7.1.3"
+  resolved "https://registry.yarnpkg.com/@embroider/addon-dev/-/addon-dev-7.1.3.tgz#6982aff8ba7c575e1c527131f8c1b73cc80b8904"
+  integrity sha512-19Zipr91mt7lsXjZGNZpFp9eTb8dXUzUg0hZy9S3EsjqJxrhL5zOdpRFNpDJeCeNtmFSPh+CWMQU5bc2k/zWhw==
   dependencies:
     "@embroider/core" "^3.5.2"
     "@rollup/pluginutils" "^4.1.1"
