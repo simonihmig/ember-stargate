@@ -65,7 +65,7 @@
     "eslint-plugin-ember": "12.5.0",
     "eslint-plugin-import": "2.31.0",
     "eslint-plugin-n": "17.16.2",
-    "eslint-plugin-prettier": "5.2.3",
+    "eslint-plugin-prettier": "5.2.4",
     "prettier": "3.5.3",
     "prettier-plugin-ember-template-tag": "2.0.4",
     "rollup": "4.37.0",
