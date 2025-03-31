@@ -5472,10 +5472,10 @@ ember-source@6.3.0:
     silent-error "^1.1.1"
     simple-html-tokenizer "^0.5.11"
 
-ember-template-lint@7.0.1:
-  version "7.0.1"
-  resolved "https://registry.yarnpkg.com/ember-template-lint/-/ember-template-lint-7.0.1.tgz#c6c71698924515aa01643983982cd619b00e9b50"
-  integrity sha512-rFGrioqtoHyWGig6PsURQYL797Hj1u9Wbn8ZyTO3H0NUNrRgPOX+2Gu9uTrmnf+KWry/2GB+yok6OY7mVSygIA==
+ember-template-lint@7.0.2:
+  version "7.0.2"
+  resolved "https://registry.yarnpkg.com/ember-template-lint/-/ember-template-lint-7.0.2.tgz#359f0d7aa6af5e56301977a03307af09926da4e9"
+  integrity sha512-3YhHVLqD48GK1M9ZXf3L+eH2800FYCtvENCLzazgiAlU50towMKCV9Dy+lF9XlXzQZSJZzxR16IGCgv8rkiesw==
   dependencies:
     "@babel/generator" "^7.26.9"
     "@babel/parser" "^7.21.8"
