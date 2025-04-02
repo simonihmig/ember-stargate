@@ -1018,12 +1018,12 @@
     "@embroider/addon-shim" "^1.9.0"
     "@embroider/macros" "^1.16.9"
 
-"@embroider/addon-dev@7.1.3":
-  version "7.1.3"
-  resolved "https://registry.yarnpkg.com/@embroider/addon-dev/-/addon-dev-7.1.3.tgz#6982aff8ba7c575e1c527131f8c1b73cc80b8904"
-  integrity sha512-19Zipr91mt7lsXjZGNZpFp9eTb8dXUzUg0hZy9S3EsjqJxrhL5zOdpRFNpDJeCeNtmFSPh+CWMQU5bc2k/zWhw==
+"@embroider/addon-dev@7.1.4":
+  version "7.1.4"
+  resolved "https://registry.yarnpkg.com/@embroider/addon-dev/-/addon-dev-7.1.4.tgz#160322c7722ea9751a235a8458fae7bb88f0f641"
+  integrity sha512-HoyU9CyY8bTi44nshqx8L2w6A1cQ2l+3W4gIFszWJt2wGn1iVSLs9dfozSCrC51FKWJk+tAMs5Y1Epfx4u/o/Q==
   dependencies:
-    "@embroider/core" "^3.5.2"
+    "@embroider/core" "^3.5.5"
     "@rollup/pluginutils" "^4.1.1"
     content-tag "^3.0.0"
     execa "^5.1.1"
@@ -1043,7 +1043,7 @@
     common-ancestor-path "^1.0.1"
     semver "^7.3.8"
 
-"@embroider/core@^3.5.2":
+"@embroider/core@^3.5.5":
   version "3.5.5"
   resolved "https://registry.yarnpkg.com/@embroider/core/-/core-3.5.5.tgz#37313a67662c021deebf630a8dab5ffce4151e8a"
   integrity sha512-qIOPN/Njfw+JwanP67qGPhdVwO9mQW2EEzLK/hl/evC/nkdn4KIH+yCZrtXdJCtfS0AV1ImjHQduqbEIcg9/Ww==
