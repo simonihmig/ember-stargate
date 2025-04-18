@@ -5245,10 +5245,10 @@ ember-cli-version-checker@^5.1.2:
     semver "^7.3.4"
     silent-error "^1.1.1"
 
-ember-cli@6.3.0:
-  version "6.3.0"
-  resolved "https://registry.yarnpkg.com/ember-cli/-/ember-cli-6.3.0.tgz#609363f4b93eedf01a4f1b4cf27dda01d36ea8d2"
-  integrity sha512-eTj96ngnVfUFbz9ctJXTgy8MJ9f6xkEx//7mDpfnnK5tyVJEqhrbttYZEqtpXZQM8UsCAv5vRURO8ZIsXfKRgQ==
+ember-cli@6.3.1:
+  version "6.3.1"
+  resolved "https://registry.yarnpkg.com/ember-cli/-/ember-cli-6.3.1.tgz#5d084b64d28c187e904c56d9038d94dbf7844725"
+  integrity sha512-RtQ78/zl8qUbqaBNIY3+wzcoxVxPkr0zwfU/JycY6Wd4JRviBL9bAkWrfSQqy+xTxou5fV7BPxjekDvoBaB1yw==
   dependencies:
     "@pnpm/find-workspace-dir" "^7.0.2"
     babel-remove-types "^1.0.1"
