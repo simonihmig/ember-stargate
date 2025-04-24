@@ -87,7 +87,7 @@
     "ember-sinon-qunit": "7.5.0",
     "ember-stargate": "1.0.1",
     "ember-template-lint": "7.0.8",
-    "ember-try": "3.0.0",
+    "ember-try": "4.0.0",
     "eslint": "8.57.1",
     "eslint-config-prettier": "10.1.2",
     "eslint-plugin-ember": "12.5.0",
