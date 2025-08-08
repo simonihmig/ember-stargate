@@ -1,6 +1,6 @@
 import Component from '@glimmer/component';
 import { modifier } from 'ember-modifier';
-import { inject as service } from '@ember/service';
+import { service } from '@ember/service';
 import { assert } from '@ember/debug';
 import type PortalService from '../services/-portal';
 

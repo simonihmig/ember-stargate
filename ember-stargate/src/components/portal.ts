@@ -1,5 +1,5 @@
 import Component from '@glimmer/component';
-import { inject as service } from '@ember/service';
+import { service } from '@ember/service';
 import { next } from '@ember/runloop';
 import { use, resource } from 'ember-resources';
 import type PortalService from '../services/-portal';
