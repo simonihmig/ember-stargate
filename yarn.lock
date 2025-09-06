@@ -1928,18 +1928,19 @@
     validate-peer-dependencies "^2.0.0"
     which "^2.0.2"
 
-"@release-it-plugins/workspaces@4.2.1":
-  version "4.2.1"
-  resolved "https://registry.yarnpkg.com/@release-it-plugins/workspaces/-/workspaces-4.2.1.tgz#4360e0846cc626c34edd8523d1c7f97f3fca072b"
-  integrity sha512-lZEARr5tqsFskTPHBLjmYxqfC/DJkWRc0Q/wjOODHW8rtYPhL1w2zv7fwvgSjhFmMp0OdsJOXzkcSkUDvc9NnA==
+"@release-it-plugins/workspaces@5.0.3":
+  version "5.0.3"
+  resolved "https://registry.yarnpkg.com/@release-it-plugins/workspaces/-/workspaces-5.0.3.tgz#bde80b7ffd6cff90a33a39de51f883cac25ec8cd"
+  integrity sha512-J3xvLIABlO/AY06WeqEncIUGXjPNcdCMAVXKyvlPWNi26zUT8x5qYffdy748wUlY73XhATO7bXD7vtY5KKdlMQ==
   dependencies:
-    detect-indent "^6.0.0"
+    detect-indent "^6.1.0"
     detect-newline "^3.1.0"
-    semver "^7.1.3"
+    execa "^8.0.1"
+    semver "^7.7.2"
     url-join "^4.0.1"
-    validate-peer-dependencies "^1.0.0"
-    walk-sync "^2.0.2"
-    yaml "^2.1.1"
+    validate-peer-dependencies "^1.2.0"
+    walk-sync "^2.2.0"
+    yaml "^2.8.0"
 
 "@rollup/plugin-babel@6.0.4":
   version "6.0.4"
@@ -5000,7 +5001,7 @@ detect-file@^1.0.0:
   resolved "https://registry.yarnpkg.com/detect-file/-/detect-file-1.0.0.tgz#f0d66d03672a825cb1b73bdb3fe62310c8e552b7"
   integrity sha512-DtCOLG98P007x7wiiOmfI0fi3eIKyWiLTGJ2MDnVi/E04lWGbf+JzrRHMm0rgIIZJGtHpKpbVgLWHrv8xXpc3Q==
 
-detect-indent@^6.0.0:
+detect-indent@^6.1.0:
   version "6.1.0"
   resolved "https://registry.yarnpkg.com/detect-indent/-/detect-indent-6.1.0.tgz#592485ebbbf6b3b1ab2be175c8393d04ca0d57e6"
   integrity sha512-reYkTUJAZb9gUuZ2RvVCNhVHdg62RHnJ7WJl8ftMi4diZ6NWlciOzQN88pUhSELEwflJht4oQDv0F0BMlwaYtA==
@@ -11193,7 +11194,7 @@ schema-utils@^4.0.0, schema-utils@^4.3.0:
     ajv-formats "^2.1.1"
     ajv-keywords "^5.1.0"
 
-semver@7.7.2, semver@^7.1.3, semver@^7.3.2, semver@^7.3.4, semver@^7.3.5, semver@^7.3.8, semver@^7.5.2, semver@^7.5.4, semver@^7.6.0, semver@^7.6.3, semver@^7.7.0:
+semver@7.7.2, semver@^7.3.2, semver@^7.3.4, semver@^7.3.5, semver@^7.3.8, semver@^7.5.2, semver@^7.5.4, semver@^7.6.0, semver@^7.6.3, semver@^7.7.0, semver@^7.7.2:
   version "7.7.2"
   resolved "https://registry.yarnpkg.com/semver/-/semver-7.7.2.tgz#67d99fdcd35cec21e6f8b87a7fd515a33f982b58"
   integrity sha512-RF0Fw+rO5AMf9MAyaRXI4AV0Ulj5lMHqVxxdSgiVbixSCXoEmmX/jk0CuJw4+3SqroYO9VoUh+HcuJivvtJemA==
@@ -12646,7 +12647,7 @@ validate-npm-package-name@^6.0.0:
   resolved "https://registry.yarnpkg.com/validate-npm-package-name/-/validate-npm-package-name-6.0.0.tgz#3add966c853cfe36e0e8e6a762edd72ae6f1d6ac"
   integrity sha512-d7KLgL1LD3U3fgnvWEY1cQXoO/q6EQ1BSz48Sa149V/5zVTAbgmZIpyI8TRi6U9/JNyeYLlTKsEMPtLC27RFUg==
 
-validate-peer-dependencies@^1.0.0:
+validate-peer-dependencies@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/validate-peer-dependencies/-/validate-peer-dependencies-1.2.0.tgz#22aab93c514f4fda457d36c80685e8b1160d2036"
   integrity sha512-nd2HUpKc6RWblPZQ2GDuI65sxJ2n/UqZwSBVtj64xlWjMx0m7ZB2m9b2JS3v1f+n9VWH/dd1CMhkHfP6pIdckA==
@@ -13082,10 +13083,10 @@ yam@^1.0.0:
     fs-extra "^4.0.2"
     lodash.merge "^4.6.0"
 
-yaml@^2.1.1:
-  version "2.7.1"
-  resolved "https://registry.yarnpkg.com/yaml/-/yaml-2.7.1.tgz#44a247d1b88523855679ac7fa7cda6ed7e135cf6"
-  integrity sha512-10ULxpnOCQXxJvBgxsn9ptjq6uviG/htZKk9veJGhlqn3w/DxQ631zFF+nlQXLwmImeS5amR2dl2U8sg6U9jsQ==
+yaml@^2.8.0:
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/yaml/-/yaml-2.8.1.tgz#1870aa02b631f7e8328b93f8bc574fac5d6c4d79"
+  integrity sha512-lcYcMxX2PO9XMGvAJkJ3OsNMw+/7FKes7/hgerGUYWIoWu5j/+YQqcZr5JnPZWzOsEBgMbSbiSTn/dv/69Mkpw==
 
 yargs-parser@21.1.1, yargs-parser@^21.1.1:
   version "21.1.1"
