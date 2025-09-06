@@ -2543,10 +2543,10 @@
   resolved "https://registry.yarnpkg.com/@types/qs/-/qs-6.9.18.tgz#877292caa91f7c1b213032b34626505b746624c2"
   integrity sha512-kK7dgTYDyGqS+e2Q4aK9X3D7q234CIZ1Bv0q/7Z5IwRDoADNU81xXJK/YVyLbLTZCoIwUoDoffFeF+p/eIklAA==
 
-"@types/qunit@2.19.12":
-  version "2.19.12"
-  resolved "https://registry.yarnpkg.com/@types/qunit/-/qunit-2.19.12.tgz#4cd42684d0473a6e40b6c2ca9196cb88f974bd36"
-  integrity sha512-II+C1wgzUia0g+tGAH+PBb4XiTm8/C/i6sN23r21NNskBYOYrv+qnW0tFQ/IxZzKVwrK4CTglf8YO3poJUclQA==
+"@types/qunit@2.19.13":
+  version "2.19.13"
+  resolved "https://registry.yarnpkg.com/@types/qunit/-/qunit-2.19.13.tgz#f131ad3a7d39c938c20a03ca218afe90c53d9c54"
+  integrity sha512-N4xp3v4s7f0jb2Oij6+6xw5QhH7/IgHCoGIFLCWtbEWoPkGYp8Te4mIwIP21qaurr6ed5JiPMiy2/ZoiGPkLIw==
 
 "@types/range-parser@*":
   version "1.2.7"
