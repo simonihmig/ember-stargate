@@ -6,6 +6,15 @@
 
 
 
+
+## v1.0.2 (2025-09-06)
+
+#### :bug: Bug Fix
+* [#762](https://github.com/simonihmig/ember-stargate/pull/762) fix deprecation: `Importing `inject` from `@ember/service` is deprecated.` ([@johanrd](https://github.com/johanrd))
+
+#### Committers: 1
+- [@johanrd](https://github.com/johanrd)
+
 ## v1.0.1 (2024-12-03)
 
 #### :bug: Bug Fix

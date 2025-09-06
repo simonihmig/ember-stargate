@@ -1,6 +1,6 @@
 {
   "name": "ember-stargate",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Modern lightweight portals for Ember",
   "keywords": [
     "ember-addon"
