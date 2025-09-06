@@ -39,7 +39,7 @@
     "decorator-transforms": "^2.0.0",
     "ember-modifier": "^4.2.0",
     "ember-resources": "^7.0.3",
-    "tracked-built-ins": "^3.3.0"
+    "tracked-built-ins": "^4.0.0"
   },
   "devDependencies": {
     "@babel/core": "7.26.10",
