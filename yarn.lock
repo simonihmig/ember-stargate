@@ -10330,10 +10330,10 @@ prettier-linter-helpers@^1.0.0:
   dependencies:
     fast-diff "^1.1.2"
 
-prettier-plugin-ember-template-tag@2.0.5:
-  version "2.0.5"
-  resolved "https://registry.yarnpkg.com/prettier-plugin-ember-template-tag/-/prettier-plugin-ember-template-tag-2.0.5.tgz#3a436771bb24b2d6a4e0c7e42972c254632f6aee"
-  integrity sha512-G9lbK3wmryIBSzqBKKoy254v7hIjqzqYpqWxi9NvOxcxNtwLyrC1u9NLJJFm+x9blzqHQOzKGOseVnbLtEwEbg==
+prettier-plugin-ember-template-tag@2.0.6:
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/prettier-plugin-ember-template-tag/-/prettier-plugin-ember-template-tag-2.0.6.tgz#48f50dbe9bfc7a37d02414cb24b58890112d0f11"
+  integrity sha512-fo40XXhSEvpi5BQcG/EdKkij9M0s1KiIhPyXHpnAqHOwsd883fJ9YtTkz2RwzMwKU4XtVQ0bWNWXy+vgjlaMcQ==
   dependencies:
     "@babel/core" "^7.23.6"
     content-tag "^3.1.2"
