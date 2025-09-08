@@ -95,7 +95,7 @@
     "eslint-plugin-prettier": "5.5.4",
     "eslint-plugin-qunit": "8.2.5",
     "loader.js": "4.7.0",
-    "prettier": "3.5.3",
+    "prettier": "3.6.2",
     "qunit": "2.24.1",
     "qunit-dom": "3.4.0",
     "sinon": "20.0.0",
