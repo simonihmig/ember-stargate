@@ -27,7 +27,7 @@
   resolved "https://registry.yarnpkg.com/@babel/compat-data/-/compat-data-7.28.4.tgz#96fdf1af1b8859c8474ab39c295312bfb7c24b04"
   integrity sha512-YsmSKC29MJwf0gF8Rjjrg5LQCmyh+j/nD8/eP7f+BeoQTKYqs9RoWbjGOdy0+1Ekr68RJZMUOPVQaQisnIo4Rw==
 
-"@babel/core@7.28.4", "@babel/core@^7.12.0", "@babel/core@^7.14.5", "@babel/core@^7.16.10", "@babel/core@^7.16.7", "@babel/core@^7.23.6", "@babel/core@^7.24.4", "@babel/core@^7.3.4":
+"@babel/core@7.28.4", "@babel/core@^7.12.0", "@babel/core@^7.14.5", "@babel/core@^7.16.10", "@babel/core@^7.16.7", "@babel/core@^7.24.4", "@babel/core@^7.27.4", "@babel/core@^7.3.4":
   version "7.28.4"
   resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.28.4.tgz#12a550b8794452df4c8b084f95003bce1742d496"
   integrity sha512-2BCOP7TN8M+gVDj7/ht3hsaO/B/n5oDbiAyyvnRlNOs+u1o+JWNYTQrmpuNp1/Wq2gcFrI01JAW+paEKDMx/CA==
@@ -4700,6 +4700,11 @@ content-tag@^3.0.0, content-tag@^3.1.1, content-tag@^3.1.2:
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/content-tag/-/content-tag-3.1.2.tgz#f2d1bcbe92403c1a0d00ad79c11273188e4949e1"
   integrity sha512-Z+MGhZfnFFKzYC+pUTWXnoDYhfiXP9ojZe3JbwsYufmDuoeq2EvuDyeFAJ/RnKokUwz5s9bQhDOrbvSYRShcrQ==
+
+content-tag@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/content-tag/-/content-tag-4.0.0.tgz#22336e58901488389c3f8c307ed0f2059c678f07"
+  integrity sha512-qqJiY9nueYAI396MOmfOk+w/0KL6ERKxANQcSKcR0CrNTc38yT//b73l+WHr9brZx57bFHNaW7a/6Yll0bn95w==
 
 content-type@~1.0.4, content-type@~1.0.5:
   version "1.0.5"
@@ -10321,16 +10326,15 @@ prettier-linter-helpers@^1.0.0:
   dependencies:
     fast-diff "^1.1.2"
 
-prettier-plugin-ember-template-tag@2.0.6:
-  version "2.0.6"
-  resolved "https://registry.yarnpkg.com/prettier-plugin-ember-template-tag/-/prettier-plugin-ember-template-tag-2.0.6.tgz#48f50dbe9bfc7a37d02414cb24b58890112d0f11"
-  integrity sha512-fo40XXhSEvpi5BQcG/EdKkij9M0s1KiIhPyXHpnAqHOwsd883fJ9YtTkz2RwzMwKU4XtVQ0bWNWXy+vgjlaMcQ==
+prettier-plugin-ember-template-tag@2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/prettier-plugin-ember-template-tag/-/prettier-plugin-ember-template-tag-2.1.0.tgz#2d65fc1cc7bffae1961eebbc5f24150dd8627074"
+  integrity sha512-Ium+m2zHSZKzRFt1Shn+sv8j1BzfFWP3E0tZeKTKP1U7v/tMyLuQNBRyRCJ7REdKc9bWkIJG/hCSf0CKqCVU1w==
   dependencies:
-    "@babel/core" "^7.23.6"
-    content-tag "^3.1.2"
-    prettier "^3.1.1"
+    "@babel/core" "^7.27.4"
+    content-tag "^4.0.0"
 
-prettier@3.6.2, prettier@^3.1.1:
+prettier@3.6.2:
   version "3.6.2"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-3.6.2.tgz#ccda02a1003ebbb2bfda6f83a074978f608b9393"
   integrity sha512-I7AIg5boAr5R0FFtJ6rCfD+LFsWHp81dolrFD8S79U9tb8Az2nGrJncnMSnys+bpQJfRUzqs9hnA81OAA3hCuQ==
