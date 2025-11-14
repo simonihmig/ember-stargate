@@ -1080,13 +1080,13 @@
   resolved "https://registry.yarnpkg.com/@ember/string/-/string-4.0.1.tgz#2c9d3f749bad92567e99ab5b8d4fdb5ed7f0ff0c"
   integrity sha512-VWeng8BSWrIsdPfffOQt/bKwNKJL7+37gPFh/6iZZ9bke+S83kKqkS30poo4bTGfRcMnvAE0ie7txom+iDu81Q==
 
-"@ember/test-helpers@5.4.0":
-  version "5.4.0"
-  resolved "https://registry.yarnpkg.com/@ember/test-helpers/-/test-helpers-5.4.0.tgz#ddef1a71e04665200f16d3f83c710016b3bafe96"
-  integrity sha512-+dJ27A+w2/S8yYNnVEgHBrQFY9AM4A8KCSzLlO1nSvLsl1WYIz4GMlHOATaeDXuy+AMe7QTYspCsHqZ+5//GMg==
+"@ember/test-helpers@5.4.1":
+  version "5.4.1"
+  resolved "https://registry.yarnpkg.com/@ember/test-helpers/-/test-helpers-5.4.1.tgz#7b7e837560e289356c7ac241483db5bc4cceb461"
+  integrity sha512-BUdT91ra+QibEWAUwtZmvTGFoDHJCxDU+fkQENA8Zs0FR3pZiICxxP/fgdlNExCjjdm1letut7ENoueBuDdixQ==
   dependencies:
     "@ember/test-waiters" "^3.1.0 || ^4.0.0"
-    "@embroider/addon-shim" "^1.8.7"
+    "@embroider/addon-shim" "^1.10.2"
     "@embroider/macros" "^1.16.5"
     "@simple-dom/interface" "^1.4.0"
     decorator-transforms "^2.0.0"
@@ -1115,12 +1115,12 @@
     walk-sync "^3.0.0"
     yargs "^17.0.1"
 
-"@embroider/addon-shim@^1.2.0", "@embroider/addon-shim@^1.8.6", "@embroider/addon-shim@^1.8.7", "@embroider/addon-shim@^1.8.9", "@embroider/addon-shim@^1.9.0":
-  version "1.10.0"
-  resolved "https://registry.yarnpkg.com/@embroider/addon-shim/-/addon-shim-1.10.0.tgz#7c3325e0939674290a9ca4ad7d744ee69313c0a0"
-  integrity sha512-gcJuHiXgnrzaU8NyU+2bMbtS6PNOr5v5B8OXBqaBvTCsMpXLvKo8OBOQFCoUN0rPX2J6VaFqrbi/371sMvzZug==
+"@embroider/addon-shim@^1.10.2", "@embroider/addon-shim@^1.2.0", "@embroider/addon-shim@^1.8.6", "@embroider/addon-shim@^1.8.7", "@embroider/addon-shim@^1.8.9", "@embroider/addon-shim@^1.9.0":
+  version "1.10.2"
+  resolved "https://registry.yarnpkg.com/@embroider/addon-shim/-/addon-shim-1.10.2.tgz#5164c65de0fd242422594c2f94b3c5eab4ab8e36"
+  integrity sha512-EfI9cJ5/3QSUJtwm7x1MXrx3TEa2p7RNgSHefy7fvGm8/DP1xUFL25nST1NaHbHcqR1UhMlrTtv5iUIDoVzeQQ==
   dependencies:
-    "@embroider/shared-internals" "^3.0.0"
+    "@embroider/shared-internals" "^3.0.1"
     broccoli-funnel "^3.0.8"
     common-ancestor-path "^1.0.1"
     semver "^7.3.8"
@@ -1220,7 +1220,7 @@
     semver "^7.3.5"
     typescript-memoize "^1.0.1"
 
-"@embroider/shared-internals@3.0.1", "@embroider/shared-internals@^3.0.0":
+"@embroider/shared-internals@3.0.1", "@embroider/shared-internals@^3.0.1":
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/@embroider/shared-internals/-/shared-internals-3.0.1.tgz#e2ad3ce7d247a85c9fbca50c326e5111bd47adab"
   integrity sha512-d7RQwDwqqHo7YvjE9t1rtIrCCYtbSoO0uRq2ikVhRh4hGS5OojZNu2ZtS0Wqrg+V72CRtMFr/hibTvHNsRM2Lg==
