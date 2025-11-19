@@ -1674,10 +1674,10 @@
   dependencies:
     content-tag "^2.0.1"
 
-"@glint/template@1.7.2":
-  version "1.7.2"
-  resolved "https://registry.yarnpkg.com/@glint/template/-/template-1.7.2.tgz#b754f57a1dd7e203cb4fb85ef8d782cfea1bcb98"
-  integrity sha512-2oR9keyT1+MEP61zM9D7wPRTvoukUtRm+OpRZgWPIJH8WhjaVWardTuF3l7OX2frR1j/46FpKt0kZoFBXhzW4Q==
+"@glint/template@1.7.3":
+  version "1.7.3"
+  resolved "https://registry.yarnpkg.com/@glint/template/-/template-1.7.3.tgz#c347637aa28f08202cab8e56b4860bafb291ddf9"
+  integrity sha512-ouB9HjLJ5kDnAhORLx43vTmGukm6uHg5hg+jAoiSlyifQdVINmXIkkGPGCD1HQ0WeIDZ/CmxH7aIZlIyI90AAw==
 
 "@handlebars/parser@~2.0.0":
   version "2.0.0"
