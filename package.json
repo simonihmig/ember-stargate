@@ -4,7 +4,7 @@
     "@release-it-plugins/lerna-changelog": "8.0.1",
     "@release-it-plugins/workspaces": "5.0.3",
     "concurrently": "9.2.1",
-    "prettier": "3.7.3",
+    "prettier": "3.7.4",
     "prettier-plugin-ember-template-tag": "2.1.2",
     "release-it": "19.0.6"
   },
