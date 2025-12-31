@@ -2660,6 +2660,11 @@
   resolved "https://registry.yarnpkg.com/@types/minimatch/-/minimatch-3.0.5.tgz#1001cc5e6a3704b83c236027e77f2f58ea010f40"
   integrity sha512-Klz949h02Gz2uZCMGwDUSDS1YBlTdDDgbWHi+81l29tQALUtvz4rAYi5uoVhE5Lagoq6DeqAUlbrHvW/mXDgdQ==
 
+"@types/minimatch@^5.1.2":
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/@types/minimatch/-/minimatch-5.1.2.tgz#07508b45797cb81ec3f273011b054cd0755eddca"
+  integrity sha512-K0VQKziLUWkVKiRVrx4a40iPaxTUefQmjtkQofBkYRcoaaL/8rhwDWww9qWbrgicNOgnpIsMxyNIUM4+n6dUIA==
+
 "@types/ms@*":
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/@types/ms/-/ms-2.1.0.tgz#052aa67a48eccc4309d7f0191b7e41434b90bb78"
@@ -3399,7 +3404,7 @@ babel-plugin-ember-template-compilation@~2.3.0:
     "@glimmer/syntax" "^0.84.3"
     babel-import-util "^3.0.0"
 
-babel-plugin-htmlbars-inline-precompile@^5.0.0, babel-plugin-htmlbars-inline-precompile@^5.2.1, babel-plugin-htmlbars-inline-precompile@^5.3.0:
+babel-plugin-htmlbars-inline-precompile@^5.0.0, babel-plugin-htmlbars-inline-precompile@^5.2.1:
   version "5.3.1"
   resolved "https://registry.yarnpkg.com/babel-plugin-htmlbars-inline-precompile/-/babel-plugin-htmlbars-inline-precompile-5.3.1.tgz#5ba272e2e4b6221522401f5f1d98a73b1de38787"
   integrity sha512-QWjjFgSKtSRIcsBhJmEwS2laIdrA6na8HAlc/pEAhjHgQsah/gMiBFRZvbQTy//hWxR4BMwV7/Mya7q5H8uHeA==
@@ -5246,25 +5251,21 @@ ember-cli-get-component-path-option@^1.0.0:
   resolved "https://registry.yarnpkg.com/ember-cli-get-component-path-option/-/ember-cli-get-component-path-option-1.0.0.tgz#0d7b595559e2f9050abed804f1d8eff1b08bc771"
   integrity sha512-k47TDwcJ2zPideBCZE8sCiShSxQSpebY2BHcX2DdipMmBox5gsfyVrbKJWIHeSTTKyEUgmBIvQkqTOozEziCZA==
 
-ember-cli-htmlbars@6.3.0:
-  version "6.3.0"
-  resolved "https://registry.yarnpkg.com/ember-cli-htmlbars/-/ember-cli-htmlbars-6.3.0.tgz#ac85f2bbd09788992ab7f9ca832cd044fb8e5798"
-  integrity sha512-N9Y80oZfcfWLsqickMfRd9YByVcTGyhYRnYQ2XVPVrp6jyUyOeRWmEAPh7ERSXpp8Ws4hr/JB9QVQrn/yZa+Ag==
+ember-cli-htmlbars@7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/ember-cli-htmlbars/-/ember-cli-htmlbars-7.0.0.tgz#e02a3ba8b0dc8ec42789b453c1709a8679bc048d"
+  integrity sha512-6BFxD19eZY+K62JLBDIKb8fXV29+QBrcT5QH4iHi8xseERX9SEWnYej9FpqL2QuoGjaTGml6QOvu9QlSTDYdVw==
   dependencies:
     "@ember/edition-utils" "^1.2.0"
     babel-plugin-ember-template-compilation "^2.0.0"
-    babel-plugin-htmlbars-inline-precompile "^5.3.0"
     broccoli-debug "^0.6.5"
     broccoli-persistent-filter "^3.1.2"
     broccoli-plugin "^4.0.3"
-    ember-cli-version-checker "^5.1.2"
     fs-tree-diff "^2.0.1"
-    hash-for-dep "^1.5.1"
     heimdalljs-logger "^0.1.10"
     js-string-escape "^1.0.1"
-    semver "^7.3.4"
     silent-error "^1.1.1"
-    walk-sync "^2.2.0"
+    walk-sync "^4.0.1"
 
 ember-cli-htmlbars@^5.7.1:
   version "5.7.2"
@@ -9004,7 +9005,7 @@ mini-css-extract-plugin@^2.5.2:
     schema-utils "^4.0.0"
     tapable "^2.2.1"
 
-minimatch@*, minimatch@^10.1.1:
+minimatch@*, minimatch@^10.0.3, minimatch@^10.1.1:
   version "10.1.1"
   resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-10.1.1.tgz#e6e61b9b0c1dcab116b5a7d1458e8b6ae9e73a55"
   integrity sha512-enIvLvRAFZYXJzkCYG5RKmPfrFArdLv+R+lbQ53BmIMLIry74bjKzX6iHAm8WYamJkhSSEabrWN5D97XnKObjQ==
@@ -12294,6 +12295,16 @@ walk-sync@^3.0.0:
     ensure-posix-path "^1.1.0"
     matcher-collection "^2.0.1"
     minimatch "^3.0.4"
+
+walk-sync@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/walk-sync/-/walk-sync-4.0.1.tgz#b702a0c032cdbb8176a3ff7c94f10f9e5d4a8e9d"
+  integrity sha512-oXP3IlkfG9Mqdgqh3JGYTPAcryRQd1J1CJOxOgsri2I1MD6N+k4OqxEVP4ZQ0xyYJfYPhBVPRMUVK+N5f13+jQ==
+  dependencies:
+    "@types/minimatch" "^5.1.2"
+    ensure-posix-path "^1.1.1"
+    matcher-collection "^2.0.1"
+    minimatch "^10.0.3"
 
 walker@~1.0.5:
   version "1.0.8"
