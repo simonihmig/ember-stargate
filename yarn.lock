@@ -1656,10 +1656,10 @@
   dependencies:
     content-tag "^2.0.1"
 
-"@glint/template@1.7.3":
-  version "1.7.3"
-  resolved "https://registry.yarnpkg.com/@glint/template/-/template-1.7.3.tgz#c347637aa28f08202cab8e56b4860bafb291ddf9"
-  integrity sha512-ouB9HjLJ5kDnAhORLx43vTmGukm6uHg5hg+jAoiSlyifQdVINmXIkkGPGCD1HQ0WeIDZ/CmxH7aIZlIyI90AAw==
+"@glint/template@1.7.10":
+  version "1.7.10"
+  resolved "https://registry.yarnpkg.com/@glint/template/-/template-1.7.10.tgz#2bca3f4841354bdbc595e88aad01bbae00e3b243"
+  integrity sha512-dixKlQDF4jMM7AekQ+PPdMZRJy+Jze6ejcV/wUzRJm59nFY+D32zsYxGIm3vVLiIvafhW78QSgAf3KPUrrP5Jg==
 
 "@handlebars/parser@~2.0.0":
   version "2.0.0"
