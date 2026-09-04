@@ -2679,10 +2679,10 @@
   dependencies:
     parse-path "*"
 
-"@types/qunit@2.19.13":
-  version "2.19.13"
-  resolved "https://registry.yarnpkg.com/@types/qunit/-/qunit-2.19.13.tgz#f131ad3a7d39c938c20a03ca218afe90c53d9c54"
-  integrity sha512-N4xp3v4s7f0jb2Oij6+6xw5QhH7/IgHCoGIFLCWtbEWoPkGYp8Te4mIwIP21qaurr6ed5JiPMiy2/ZoiGPkLIw==
+"@types/qunit@2.19.14":
+  version "2.19.14"
+  resolved "https://registry.yarnpkg.com/@types/qunit/-/qunit-2.19.14.tgz#d73ab00eb202b48757cd7d15b65e1de6d142c930"
+  integrity sha512-ou2RMtwyDnW1btrMnDMZeL6V5/yRRbuHKrRC6y8IuzDljjVzw6wPCVFb8p4qJD0NkUkf3BdZeJJIBzjK1BUUDQ==
 
 "@types/rimraf@^2.0.2", "@types/rimraf@^2.0.3":
   version "2.0.5"
