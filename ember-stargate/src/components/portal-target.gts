@@ -33,7 +33,6 @@ export default class PortalTarget extends Component<PortalTargetSignature> {
     return this.portalService.getPortalCount(this.args.name);
   }
 
-  <template>
-    <div {{this.register}} ...attributes>{{yield this.count}}</div>
-  </template>
+  // prettier-ignore
+  <template><div {{this.register}} ...attributes>{{yield this.count}}</div></template>
 }

@@ -78,7 +78,7 @@ export default class Portal extends Component<PortalSignature> {
   }
 
   <template>
-    {{#if this.renderInPlace}}
+    {{~#if this.renderInPlace}}
       {{yield}}
     {{else if this.target}}
       {{#if this.target.multiple}}
@@ -90,6 +90,6 @@ export default class Portal extends Component<PortalSignature> {
           {{yield}}
         {{/in-element}}
       {{/if}}
-    {{/if}}
+    {{/if~}}
   </template>
 }
