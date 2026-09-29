@@ -76,4 +76,20 @@ export default class Portal extends Component<PortalSignature> {
       (!this.target && this.args.fallback === 'inplace')
     );
   }
+
+  <template>
+    {{#if this.renderInPlace}}
+      {{yield}}
+    {{else if this.target}}
+      {{#if this.target.multiple}}
+        {{#in-element this.target.element insertBefore=null}}
+          {{yield}}
+        {{/in-element}}
+      {{else}}
+        {{#in-element this.target.element}}
+          {{yield}}
+        {{/in-element}}
+      {{/if}}
+    {{/if}}
+  </template>
 }

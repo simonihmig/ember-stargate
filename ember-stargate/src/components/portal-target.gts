@@ -32,4 +32,8 @@ export default class PortalTarget extends Component<PortalTargetSignature> {
   get count(): number {
     return this.portalService.getPortalCount(this.args.name);
   }
+
+  <template>
+    <div {{this.register}} ...attributes>{{yield this.count}}</div>
+  </template>
 }
