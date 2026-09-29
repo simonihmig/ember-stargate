@@ -58,6 +58,7 @@ module.exports = {
         // require relative imports use full extensions
         'import/extensions': ['error', 'always', { ignorePackages: true }],
         // Add any custom rules here
+        'ember/no-runloop': 'off',
       },
     },
     {

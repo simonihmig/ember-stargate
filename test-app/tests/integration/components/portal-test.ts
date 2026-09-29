@@ -175,6 +175,15 @@ module('Integration | Component | portal', function (hooks) {
     assert.dom('div#portal:empty').exists();
   });
 
+  test('a portal target renders no whitespace around its element', async function (assert) {
+    await render(hbs`<div id="wrapper"><PortalTarget @name="main" /></div>`);
+
+    assert.strictEqual(
+      document.querySelector('#wrapper')?.childNodes.length,
+      1,
+    );
+  });
+
   test('a portal target renders only one portal by default', async function (assert) {
     await render(hbs`
       <PortalTarget @name="main" id="portal" />
