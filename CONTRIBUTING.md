@@ -4,28 +4,23 @@
 
 - `git clone <repository-url>`
 - `cd ember-stargate`
-- `yarn install`
+- `pnpm install`
 
 ## Linting
 
-- `yarn lint`
-- `yarn lint:fix`
+- `pnpm lint`
+- `pnpm lint:fix`
 
 ## Building the addon
 
-- `cd ember-stargate`
-- `yarn build`
+- `pnpm build`
 
 ## Running tests
 
-- `cd test-app`
-- `yarn test` – Runs the test suite on the current Ember version
-- `yarn test:watch` – Runs the test suite in "watch mode"
+- `pnpm test` – Runs the test suite on the current Ember version
+- `pnpm dlx @embroider/try apply <scenario>` – Applies an Ember version scenario from `.try.mjs`. Then run `pnpm install --no-lockfile` and `pnpm test`. The command edits `package.json`, so revert it afterwards.
 
-## Running the test-app application
+## Running the demo application
 
-- `cd test-app`
-- `yarn start`
-- Visit the test application at [http://localhost:4200](http://localhost:4200).
-
-For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
+- `pnpm start`
+- Visit the URL that Vite prints.

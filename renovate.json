@@ -1,6 +1,4 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "local>kaliber5/renovate-config:ember-addon"
-  ]
+  "extends": ["local>kaliber5/renovate-config:ember-addon"]
 }
