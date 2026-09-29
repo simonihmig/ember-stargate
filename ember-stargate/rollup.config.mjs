@@ -47,7 +47,6 @@ export default {
       babelHelpers: 'bundled',
     }),
 
-
     // Ensure that .gjs files are properly integrated as Javascript
     addon.gjs(),
 
